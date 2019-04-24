@@ -4,7 +4,7 @@
   "description": "Hive Conference by Honeypot.io",
   "scripts": {
     "dev": "next",
-    "build": "next build && next export -o _public",
+    "build": "next build && next export -o dist",
     "start": "next start"
   },
   "repository": {

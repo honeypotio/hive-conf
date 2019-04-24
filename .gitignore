@@ -1,6 +1,7 @@
 # Dev stuff
 .next/
 node_modules/
+dist/
 
 # OSX stuff
 .DS_Store
