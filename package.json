@@ -1,0 +1,29 @@
+{
+  "name": "hive-conf",
+  "version": "1.0.0",
+  "description": "Hive Conference by Honeypot.io",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/honeypotio/hive-conf.git"
+  },
+  "keywords": [
+    "hive",
+    "conference"
+  ],
+  "author": "Honeypot GmbH",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/honeypotio/hive-conf/issues"
+  },
+  "homepage": "https://github.com/honeypotio/hive-conf#readme",
+  "dependencies": {
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
