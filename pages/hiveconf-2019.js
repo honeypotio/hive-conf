@@ -1,5 +1,5 @@
 export default function Main() {
   return (
-    <div></div>
+    <div>Hi There</div>
   )
 }
