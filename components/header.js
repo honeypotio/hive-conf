@@ -41,7 +41,9 @@ export default function Header() {
         }
       </ul>
       <style jsx>{`
-        padding-bottom: 80px;
+        @media ${ PageBreaks.smUp } {
+          padding-bottom: 80px;
+        }
 
         div {
           background-color: #000000;
@@ -57,6 +59,7 @@ export default function Header() {
           background-color: rgba(0,0,0,0.6);
           padding: 20px 12px;
           margin: 0;
+          padding-bottom: 120px;
         }
         @media ${ PageBreaks.smUp } {
           ul {
@@ -69,7 +72,7 @@ export default function Header() {
         li {
           display: block;
           flex-grow: 1;
-          padding: 12px;
+          padding: 12px 0;
           text-align: center;
         }
 
@@ -112,13 +115,12 @@ export default function Header() {
           color: #ffffff;
         }
         .header-link :global(.btn){
-          background-color: #0000bb;
           color: #ffffff;
           padding: 6px 14px;
           border-radius: 2px;
           text-decoration: none;
           font-weight: 600;
-          background-image: linear-gradient(to left, #0007ff, #0000bb);
+          background-image: linear-gradient(0.66turn, #0007ff, #0000bb);
         }
         @media ${ PageBreaks.mdUp } {
           .header-link :global(.btn){

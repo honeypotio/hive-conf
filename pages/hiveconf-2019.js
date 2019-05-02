@@ -2,6 +2,7 @@
 import Head from 'next/head';
 import Header from '../components/header';
 import Intro from '../components/intro';
+import Speakers from '../components/speakers';
 import "../styles/main.scss"
 
 export default function Main() {
@@ -15,10 +16,14 @@ export default function Main() {
 
       <Header />
       <Intro />
+      <Speakers />
 
       <style jsx>{`
         :global(body) {
           margin: 0;
+        }
+        * {
+          box-sizing: border-box;
         }
       `}</style>
     </div>
