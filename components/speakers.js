@@ -34,7 +34,7 @@ const SpeakerList = [{
 },
 {
   img: 'Anna_Low@2x.jpg',
-  name: 'Anna Low',
+  name: 'Anna Low 2',
   title: 'VP of Awesome, Giant Swarm',
   linkedin: 'https://www.linkedin.com',
   twitter: 'https://www.twitter.com',
@@ -42,7 +42,7 @@ const SpeakerList = [{
 },
 {
   img: 'Emma_Tracey@2x.png',
-  name: 'Emma Tracey',
+  name: 'Emma Tracey 2',
   title: 'VP of Awesome, Honeypot',
   linkedin: 'https://www.linkedin.com',
   twitter: 'https://www.twitter.com',
@@ -50,7 +50,7 @@ const SpeakerList = [{
 },
 {
   img: 'Eva_Glanzer@2x.jpg',
-  name: 'Eva Glanzer',
+  name: 'Eva Glanzer 2',
   title: 'VP of Awesome, XYZ Company',
   linkedin: 'https://www.linkedin.com',
   twitter: 'https://www.twitter.com',
@@ -58,7 +58,7 @@ const SpeakerList = [{
 },
 {
   img: 'Jenny_Jung@2x.png',
-  name: 'Jenny Jung',
+  name: 'Jenny Jung 2',
   title: 'VP of Awesome, XYZ Company',
   linkedin: 'https://www.linkedin.com',
   twitter: 'https://www.twitter.com',
@@ -71,29 +71,32 @@ export default function Speakers() {
     <div id={ "speakers" } className={"wrapper"}>
       <h2>Speakers</h2>
       <div className={"oval"}></div>
+      <img className={"background-logo"} src={`static/graphics/Hive_WhiteGradient_Op80.svg`}/>
+      <div className={"filters"}>Placeholder Filters</div>
+
       <div className={"speaker-list"}>
         {
           SpeakerList.map(speaker => (
-            <div className={"speaker-card"}>
+            <div key={speaker.name} className={"speaker-card"}>
               <img className={"speaker-image"} src={`/static/images/speakers/${ speaker.img }`} alt={ speaker.name }/>
               <h4>{ speaker.name }</h4>
               <p>{ speaker.title }</p>
               <ul className={"speaker-social"}>
-              {speaker.linkedin.length > 0 &&
+              {speaker.linkedin &&
                 <li>
                   <a href={`${ speaker.linkedin }`} target="_blank">
                     <img src={"/static/icons/Linkedin_Icon_Speaker.svg"}/>
                   </a>
                 </li>
               }
-              {speaker.twitter.length > 0 &&
+              {speaker.twitter &&
                 <li>
                   <a href={`${ speaker.twitter }`} target="_blank">
                     <img src={"/static/icons/Twitter_Icon_Speaker.svg"}/>
                   </a>
                 </li>
               }
-              {speaker.github.length > 0 &&
+              {speaker.github &&
                 <li>
                   <a href={`${ speaker.github }`} target="_blank">
                     <img src={"/static/icons/Github_Icon.svg"}/>
@@ -127,6 +130,7 @@ export default function Speakers() {
           h2 {
             font-size: 60px;
             margin-top: 50px;
+            margin-bottom: 30px;
           }
         }
         
@@ -146,13 +150,28 @@ export default function Speakers() {
           }
         }
 
+        .background-logo {
+          position: absolute;
+          z-index: -1;
+          right: -150px;
+          top: 400px;
+
+        }
+
+        .filters {
+          height: 50px;
+          background: black;
+          margin-bottom: 80px;
+          color: white;
+        }
+
         .speaker-list {
           display: grid;
           width: 80%;
           margin: 0 auto;
-          grid-template-columns: 25% 25% 25% 25%;
+          grid-template-columns: repeat(4, 25%);
           grid-template-rows: auto;
-          grid-column-gap: 100px;
+          grid-row-gap: 50px;
         }
 
         .speaker-card {
@@ -175,6 +194,7 @@ export default function Speakers() {
           p {
             font-size: 15px;
             line-heigt: 34px;
+            padding: 0px 10px;
           }
         }
 
