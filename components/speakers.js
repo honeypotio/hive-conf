@@ -108,6 +108,17 @@ export default function Speakers() {
             </div>
           ))
         }
+        <div className={"speaker-card you"}>
+          <div className={"speaker-image"}>
+            <div className={"content"}>You?</div>
+          </div>
+          <div className={"cta-container"}>
+            <div className={"cta"}>
+              <p>Have an idea about building great tech teams? <br></br> Reach out and submit your proposal for HiveConf!</p>
+              <div className={"submit"}>Submit</div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <style jsx>{`
@@ -182,7 +193,6 @@ export default function Speakers() {
           max-width: calc(100% - 50px);
         }
 
-
         @media ${ PageBreaks.smUp } {
           h4 {
             font-size: 18px;
@@ -207,6 +217,81 @@ export default function Speakers() {
         
         .speaker-social li {
           margin: 0 5px;
+        }
+
+        .speaker-card.you {
+          position: relative;
+        }
+        
+        .speaker-card.you .speaker-image {
+          background-color: #ECECEC;
+          position: relative;
+          margin: 0 auto;
+          
+        }
+        .speaker-card.you .speaker-image:after {
+          content: '';
+          display: block;
+          padding-bottom: 100%;
+          
+        }
+
+        .speaker-image .content {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%,-50%);
+          font-size: 30px;
+          font-weight: bold;
+          color: #4a4a4a;
+        }
+
+
+        .cta-container {
+          position: absolute;
+          left: -102%;
+          bottom: -105%;
+        }
+        .cta {
+          width: 420px;
+          background: linear-gradient(90deg, #FFFFFF 0%, #ECECEC 80%);
+          position: relative;
+        }
+        .cta:after {
+          bottom: 100%;
+          left: 80%;
+          border: solid transparent;
+          content: " ";
+          height: 0;
+          width: 0;
+          position: absolute;
+          pointer-events: none;
+          border-bottom-color: #ECECEC;
+          border-width: 30px;
+          margin-left: -30px;  
+        }
+
+        .cta p {
+          text-align: left;
+          padding: 30px 40px;
+          font-size: 15px;
+          line-height: 34px;
+          color: #4a4a4a;
+          margin: 0;
+        }
+        
+        .submit {
+          position: absolute;
+          border-radius: 6px;
+          background-color: #F9FF00;
+          color: #000000;
+          font-size: 18px;
+          font-weight: bold;
+          line-height: 22px;
+          padding: 15px 40px;
+          right: 35px;
+          bottom: -26px;
+          }
         }
         
         
