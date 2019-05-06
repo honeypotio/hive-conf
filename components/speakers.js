@@ -1,12 +1,24 @@
 import PageBreaks from '../utils/page-breaks';
 
+const SpeakerList = [{
+  img: 'image_url.svg',
+  title: 'Title goes here'
+}];
+
 export default function Speakers() {
   return (
     <div id={ "speakers" } className={"wrapper"}>
       <h2>Speakers</h2>
 
       <div className={"speaker-list"}>
-        // Drop some list here of speakers with the grid ready :)
+        {
+          SpeakerList.map(speaker => (
+            <div className="speaker-card">
+              <img src={`/static/images/${ speaker.img }`} alt={ speaker.name }/>
+              <p>{ speaker.title }</p>
+            </div>
+          ))
+        }
       </div>
 
       <style jsx>{`
