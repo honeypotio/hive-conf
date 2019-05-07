@@ -1,0 +1,17 @@
+[[redirects]]
+  from = "/hive-conference-2018"
+  to = "https://honeypot.netlify.com/hive-conference-2018/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/hive-conference-2018/"
+  to = "https://honeypot.netlify.com/hive-conference-2018/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://hive.honeypot.io/*"
+  to = "https://hive.honeypot.io/:splat"
+  status = 301
+  force = true
