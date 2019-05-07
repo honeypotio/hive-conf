@@ -1,2 +1,3 @@
-# http to https
-http://hive.honeypot.io/*     https://hive.honeypot.io/:splat
+/hive-conference-2018           https://honeypot.netlify.com/hive-conference-2018/
+/hive-conference-2018/          https://honeypot.netlify.com/hive-conference-2018/
+http://hive.honeypot.io/*       https://hive.honeypot.io/:splat
