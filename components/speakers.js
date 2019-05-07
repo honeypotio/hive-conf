@@ -26,7 +26,7 @@ export default class Speakers extends React.Component {
       <div id={ "speakers" } className={"wrapper"}>
         <h2>Speakers</h2>
         <div className={"oval"}></div>
-        <img className={"background-logo rotating"} src={`static/graphics/Hive_WhiteGradient_${this.state.filter}.svg`}/>
+        <img className={"background-logo rotating"} src={`/static/graphics/Hive_WhiteGradient_${this.state.filter}.svg`}/>
         <div className={"filters"}>
         <button className={`all ${this.state.filter === null && "active"}`} onClick={this.changeFilter.bind(this, null)}>All Speakers</button>
         <button className={`hr ${this.state.filter === "hr" && "active"}`} onClick={this.changeFilter.bind(this, 'hr')}>HR Speakers</button>
