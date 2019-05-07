@@ -90,11 +90,11 @@ export default class Speakers extends React.Component {
       <div id={ "speakers" } className={"wrapper"}>
         <h2>Speakers</h2>
         <div className={"oval"}></div>
-        <img className={"background-logo rotating"} src={`static/graphics/Hive_WhiteGradient_Op80.svg`}/>
+        <img className={"background-logo rotating"} src={`static/graphics/Hive_WhiteGradient_${this.state.filter}.svg`}/>
         <div className={"filters"}>
-        <button className={"all"} onClick={this.changeFilter.bind(this, null)}>All Speakers</button>
-        <button className={"hr"} onClick={this.changeFilter.bind(this, 'hr')}>HR Speakers</button>
-        <button className={"tech"} onClick={this.changeFilter.bind(this, 'tech')}>Tech Speakers</button>
+        <button className={this.state.filter === null && "active"} onClick={this.changeFilter.bind(this, null)}>All Speakers</button>
+        <button className={this.state.filter === "hr" && "active"} onClick={this.changeFilter.bind(this, 'hr')}>HR Speakers</button>
+        <button className={this.state.filter === "tech" && "active"} onClick={this.changeFilter.bind(this, 'tech')}>Tech Speakers</button>
         </div>
         
   
@@ -200,10 +200,67 @@ export default class Speakers extends React.Component {
           }
 
           .filters button {
-            padding: 15px 60px;
+            padding: 15px 50px;
             border: none;
+            position: relative;
+            background: linear-gradient(90deg, #FFFFFF 0%, #ECECEC 100%);
           }
 
+          .filters button.active {
+            background: #1A1A1A;
+            color: #ffffff;
+          }
+          .filters button.active:after, .filters button.active:before {
+            border-top-color: #1A1A1A !important;
+            border-bottom-color: #1A1A1A !important;
+          }
+
+          .filters button:nth-child(2) {
+            margin: 0 19px;
+          }
+
+          .filters button:first-child:after {
+            position: absolute;
+            left: 100%;
+            top: 0;
+            content: " ";
+            width: 0; 
+            height: 0; 
+            border-top: 46px solid #ECECEC; 
+            border-right: 20px solid transparent;
+          }
+
+          .filters button:nth-child(2):after {
+            position: absolute;
+            left: 100%;
+            top: 0;
+            content: " ";
+            width: 0; 
+            height: 0; 
+            border-top: 46px solid #ECECEC; 
+            border-right: 20px solid transparent;
+          }
+          .filters button:nth-child(2):before {
+            position: absolute;
+            right: 100%;
+            top: 0;
+            content: " ";
+            width: 0; 
+            height: 0; 
+            border-bottom: 46px solid white; 
+            border-left: 20px solid transparent;
+          }
+
+          .filters button:nth-child(3):before {
+            position: absolute;
+            right: 100%;
+            top: 0;
+            content: " ";
+            width: 0; 
+            height: 0; 
+            border-bottom: 46px solid white; 
+            border-left: 20px solid transparent;
+          }
           
   
           .speaker-list {
