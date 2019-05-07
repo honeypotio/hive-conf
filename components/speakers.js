@@ -85,6 +85,7 @@ export default class Speakers extends React.Component {
     let currentSpeakers = SpeakerList.filter(speaker => {
       return !this.state.filter || speaker.type === this.state.filter;
     });
+    let placeholders = 3 - (currentSpeakers.length  % 4) ;
     return (
       <div id={ "speakers" } className={"wrapper"}>
         <h2>Speakers</h2>
@@ -124,16 +125,14 @@ export default class Speakers extends React.Component {
               </div>
             ))
           }
-          {console.log(currentSpeakers.length % 4)}
-          <div className={"speaker-card"}>
-            <img className={"speaker-image"} src={`/static/images/speakers/PH_Speaker01@2x.png`} alt="Placeholder"/>
-          </div>
-          <div className={"speaker-card"}>
-            <img className={"speaker-image"} src={`/static/images/speakers/PH_Speaker04@2x.png`} alt="Placeholder"/>
-          </div>
-          <div className={"speaker-card"}>
-            <img className={"speaker-image"} src={`/static/images/speakers/PH_Speaker05@2x.png`} alt="Placeholder"/>
-          </div>
+         
+          {
+            new Array(placeholders).fill(1).map((el, index) => {
+              return (<div key={`Placeholder-${index}`} className={"speaker-card"}>
+                        <img className={"speaker-image"} src={`/static/images/speakers/PH_Speaker${index}.png`} alt="Placeholder"/>
+                      </div>)
+            })
+          }
   
           <div className={"speaker-card you"}>
             <div className={"speaker-image"}>
@@ -205,15 +204,7 @@ export default class Speakers extends React.Component {
             border: none;
           }
 
-          .filters button.all {
-            -webkit-clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
-            clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
-          }
-
-          .filters button.hr {
-            -webkit-clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0% 100%);
-            clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0% 100%);
-          }
+          
   
           .speaker-list {
             display: grid;
