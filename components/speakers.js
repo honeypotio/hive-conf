@@ -99,7 +99,7 @@ export default function Speakers() {
               {speaker.github &&
                 <li>
                   <a href={`${ speaker.github }`} target="_blank">
-                    <img src={"/static/icons/Github_Icon.svg"}/>
+                    <img src={"/static/icons/GitHub_Icon.svg"}/>
                   </a>
                 </li>
               }
@@ -108,6 +108,16 @@ export default function Speakers() {
             </div>
           ))
         }
+        <div className={"speaker-card"}>
+          <img className={"speaker-image"} src={`/static/images/speakers/PH_Speaker01@2x.png`} alt="Placeholder"/>
+        </div>
+        <div className={"speaker-card"}>
+          <img className={"speaker-image"} src={`/static/images/speakers/PH_Speaker04@2x.png`} alt="Placeholder"/>
+        </div>
+        <div className={"speaker-card"}>
+          <img className={"speaker-image"} src={`/static/images/speakers/PH_Speaker05@2x.png`} alt="Placeholder"/>
+        </div>
+
         <div className={"speaker-card you"}>
           <div className={"speaker-image"}>
             <div className={"content"}>You?</div>
@@ -115,7 +125,7 @@ export default function Speakers() {
           <div className={"cta-container"}>
             <div className={"cta"}>
               <p>Have an idea about building great tech teams? <br></br> Reach out and submit your proposal for HiveConf!</p>
-              <div className={"submit"}>Submit</div>
+              <a target="_blank" href="mailto:hiveconf@honeypot.io" className={"submit"}>Contact us</a>
             </div>
           </div>
         </div>
