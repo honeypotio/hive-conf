@@ -5,64 +5,56 @@ const SpeakerList = [{
   name: 'Anna Low',
   title: 'VP of Awesome, Giant Swarm',
   linkedin: 'https://www.linkedin.com',
-  twitter: 'https://www.twitter.com',
-  github:  'https://www.github.com'
+  twitter: 'https://www.twitter.com'
 },
 {
   img: 'Emma_Tracey@2x.png',
   name: 'Emma Tracey',
   title: 'VP of Awesome, Honeypot',
   linkedin: 'https://www.linkedin.com',
-  twitter: 'https://www.twitter.com',
-  github:  'https://www.github.com'
+  twitter: 'https://www.twitter.com'
 },
 {
   img: 'Eva_Glanzer@2x.jpg',
   name: 'Eva Glanzer',
   title: 'VP of Awesome, XYZ Company',
   linkedin: 'https://www.linkedin.com',
-  twitter: 'https://www.twitter.com',
-  github:  'https://www.github.com'
+  twitter: 'https://www.twitter.com'
 },
 {
   img: 'Jenny_Jung@2x.png',
   name: 'Jenny Jung',
   title: 'VP of Awesome, XYZ Company',
   linkedin: 'https://www.linkedin.com',
-  twitter: 'https://www.twitter.com',
-  github:  'https://www.github.com'
+  twitter: 'https://www.twitter.com'
 },
 {
   img: 'Anna_Low@2x.jpg',
   name: 'Anna Low 2',
   title: 'VP of Awesome, Giant Swarm',
   linkedin: 'https://www.linkedin.com',
-  twitter: 'https://www.twitter.com',
-  github:  'https://www.github.com'
+  twitter: 'https://www.twitter.com'
 },
 {
   img: 'Emma_Tracey@2x.png',
   name: 'Emma Tracey 2',
   title: 'VP of Awesome, Honeypot',
   linkedin: 'https://www.linkedin.com',
-  twitter: 'https://www.twitter.com',
-  github:  'https://www.github.com'
+  twitter: 'https://www.twitter.com'
 },
 {
   img: 'Eva_Glanzer@2x.jpg',
   name: 'Eva Glanzer 2',
   title: 'VP of Awesome, XYZ Company',
   linkedin: 'https://www.linkedin.com',
-  twitter: 'https://www.twitter.com',
-  github:  'https://www.github.com'
+  twitter: 'https://www.twitter.com'
 },
 {
   img: 'Jenny_Jung@2x.png',
   name: 'Jenny Jung 2',
   title: 'VP of Awesome, XYZ Company',
   linkedin: 'https://www.linkedin.com',
-  twitter: 'https://www.twitter.com',
-  github:  'https://www.github.com'
+  twitter: 'https://www.twitter.com'
 }
 ];
 
@@ -85,21 +77,14 @@ export default function Speakers() {
               {speaker.linkedin &&
                 <li>
                   <a href={`${ speaker.linkedin }`} target="_blank">
-                    <img src={"/static/icons/Linkedin_Icon_Speaker.svg"}/>
+                    <img src={`/static/icons/Linkedin_Icon_Speaker.svg`}/>
                   </a>
                 </li>
               }
               {speaker.twitter &&
                 <li>
                   <a href={`${ speaker.twitter }`} target="_blank">
-                    <img src={"/static/icons/Twitter_Icon_Speaker.svg"}/>
-                  </a>
-                </li>
-              }
-              {speaker.github &&
-                <li>
-                  <a href={`${ speaker.github }`} target="_blank">
-                    <img src={"/static/icons/GitHub_Icon.svg"}/>
+                    <img src={`/static/icons/Twitter_Icon_Speaker.svg`}/>
                   </a>
                 </li>
               }
@@ -227,6 +212,10 @@ export default function Speakers() {
         
         .speaker-social li {
           margin: 0 5px;
+        }
+        .speaker-social li img {
+          height: 30px;
+          width: 30px;
         }
 
         .speaker-card.you {
