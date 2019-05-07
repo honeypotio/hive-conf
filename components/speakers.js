@@ -1,71 +1,7 @@
 import PageBreaks from '../utils/page-breaks';
 import React from 'react';
 
-const SpeakerList = [{
-  img: 'Anna_Low@2x.jpg',
-  name: 'Anna Low',
-  title: 'VP of Awesome, Giant Swarm',
-  linkedin: 'https://www.linkedin.com',
-  twitter: 'https://www.twitter.com',
-  type: 'tech'
-},
-{
-  img: 'Emma_Tracey@2x.png',
-  name: 'Emma Tracey',
-  title: 'VP of Awesome, Honeypot',
-  linkedin: 'https://www.linkedin.com',
-  twitter: 'https://www.twitter.com',
-  type: 'tech'
-},
-{
-  img: 'Eva_Glanzer@2x.jpg',
-  name: 'Eva Glanzer',
-  title: 'VP of Awesome, XYZ Company',
-  linkedin: 'https://www.linkedin.com',
-  twitter: 'https://www.twitter.com',
-  type: 'tech'
-},
-{
-  img: 'Jenny_Jung@2x.png',
-  name: 'Jenny Jung',
-  title: 'VP of Awesome, XYZ Company',
-  linkedin: 'https://www.linkedin.com',
-  twitter: 'https://www.twitter.com',
-  type: 'tech'
-},
-{
-  img: 'Anna_Low@2x.jpg',
-  name: 'Anna Low 2',
-  title: 'VP of Awesome, Giant Swarm',
-  linkedin: 'https://www.linkedin.com',
-  twitter: 'https://www.twitter.com',
-  type: 'hr'
-},
-{
-  img: 'Emma_Tracey@2x.png',
-  name: 'Emma Tracey 2',
-  title: 'VP of Awesome, Honeypot',
-  linkedin: 'https://www.linkedin.com',
-  twitter: 'https://www.twitter.com',
-  type: 'hr'
-},
-{
-  img: 'Eva_Glanzer@2x.jpg',
-  name: 'Eva Glanzer 2',
-  title: 'VP of Awesome, XYZ Company',
-  linkedin: 'https://www.linkedin.com',
-  twitter: 'https://www.twitter.com',
-  type: 'hr'
-},
-{
-  img: 'Jenny_Jung@2x.png',
-  name: 'Jenny Jung 2',
-  title: 'VP of Awesome, XYZ Company',
-  linkedin: 'https://www.linkedin.com',
-  twitter: 'https://www.twitter.com',
-  type: 'hr'
-}
-];
+import SpeakerList from '../utils/speakers.json';
 
 export default class Speakers extends React.Component {
   constructor(props) {
@@ -92,9 +28,9 @@ export default class Speakers extends React.Component {
         <div className={"oval"}></div>
         <img className={"background-logo rotating"} src={`static/graphics/Hive_WhiteGradient_${this.state.filter}.svg`}/>
         <div className={"filters"}>
-        <button className={this.state.filter === null && "active"} onClick={this.changeFilter.bind(this, null)}>All Speakers</button>
-        <button className={this.state.filter === "hr" && "active"} onClick={this.changeFilter.bind(this, 'hr')}>HR Speakers</button>
-        <button className={this.state.filter === "tech" && "active"} onClick={this.changeFilter.bind(this, 'tech')}>Tech Speakers</button>
+        <button className={`all ${this.state.filter === null && "active"}`} onClick={this.changeFilter.bind(this, null)}>All Speakers</button>
+        <button className={`hr ${this.state.filter === "hr" && "active"}`} onClick={this.changeFilter.bind(this, 'hr')}>HR Speakers</button>
+        <button className={`tech ${this.state.filter === "tech" && "active"}`} onClick={this.changeFilter.bind(this, 'tech')}>Tech Speakers</button>
         </div>
         
   
@@ -215,11 +151,11 @@ export default class Speakers extends React.Component {
             border-bottom-color: #1A1A1A !important;
           }
 
-          .filters button:nth-child(2) {
+          .filters button.hr {
             margin: 0 19px;
           }
 
-          .filters button:first-child:after {
+          .filters button.all:after {
             position: absolute;
             left: 100%;
             top: 0;
@@ -230,7 +166,7 @@ export default class Speakers extends React.Component {
             border-right: 20px solid transparent;
           }
 
-          .filters button:nth-child(2):after {
+          .filters button.hr:after {
             position: absolute;
             left: 100%;
             top: 0;
@@ -240,7 +176,7 @@ export default class Speakers extends React.Component {
             border-top: 46px solid #ECECEC; 
             border-right: 20px solid transparent;
           }
-          .filters button:nth-child(2):before {
+          .filters button.hr:before {
             position: absolute;
             right: 100%;
             top: 0;
@@ -251,7 +187,7 @@ export default class Speakers extends React.Component {
             border-left: 20px solid transparent;
           }
 
-          .filters button:nth-child(3):before {
+          .filters button.tech:before {
             position: absolute;
             right: 100%;
             top: 0;
