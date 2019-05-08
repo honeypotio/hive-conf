@@ -4,6 +4,7 @@ import Header from '../components/header';
 import Intro from '../components/intro';
 import Speakers from '../components/speakers';
 import Topics from '../components/topics';
+import Sponsorships from '../components/sponsorships';
 import "../styles/main.scss"
 
 export default function Main() {
@@ -19,6 +20,7 @@ export default function Main() {
       <Intro />
       <Speakers />
       <Topics />
+      <Sponsorships />
 
       <style jsx>{`
         :global(body) {
