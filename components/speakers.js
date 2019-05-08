@@ -319,6 +319,9 @@ export default class Speakers extends React.Component {
             right: 35px;
             bottom: -26px;
             }
+          .submit:hover {
+            background-color: #FFF;
+            box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
           }
   
           /** 
