@@ -318,6 +318,8 @@ export default class Speakers extends React.Component {
             padding: 15px 40px;
             right: 35px;
             bottom: -26px;
+            cursor: pointer;
+            text-decoration: none;
             }
           .submit:hover {
             background-color: #FFF;

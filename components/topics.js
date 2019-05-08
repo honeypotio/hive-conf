@@ -5,8 +5,8 @@ export default function Topics() {
     <div id={"topics"} className={"wrapper"}>
       <h2>Topics</h2>
       <div className={"oval"}></div>
-      <img className={"background-logo hr reverse-rotating"} src={`/static/graphics/Hive_WhiteGradient_hr.svg`}/>
-      <img className={"background-logo tech rotating"} src={`/static/graphics/Hive_WhiteGradient_tech.svg`}/>
+      <img className={"background-logo hr rotating"} src={`/static/graphics/Hive_WhiteGradient_hr.svg`}/>
+      <img className={"background-logo tech reverse-rotating"} src={`/static/graphics/Hive_WhiteGradient_tech.svg`}/>
 
       <div className={"topic-list"}>
         <div className={"topic"}>
@@ -14,7 +14,7 @@ export default function Topics() {
           <p>Learn from both sides of the spectrum as technical leaders and recruiters share insights on recruiting the best technical hires. Topics include sourcing, interviewing, employer branding, candidate experience, automation and fighting unconscious bias.</p>
         </div>
         <div className={"topic"}>
-          <h3>Empower Your Tech Team</h3>
+          <h3>Empower<br></br>Your Tech Team</h3>
           <p>Gain perspectives from CTOs, Technical Executives and Engineering Leaders to learn how to best engage with your technical team. Topics include employee retention, career blueprinting, people training, leadership development and scaling culture.</p>
         </div>
         <div className={"topic"}>
@@ -93,7 +93,7 @@ export default function Topics() {
         color: white;
         font-size: 18px;
         line-height: 22px;
-        padding: 24px 50px;
+        padding: 22px 50px;
         background: linear-gradient(270deg, #0000FF 0%, #0000AA 100%);
         border-radius: 6px;
         text-decoration: none;
