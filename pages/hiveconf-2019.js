@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Header from '../components/header';
 import Intro from '../components/intro';
 import Speakers from '../components/speakers';
+import Topics from '../components/topics';
 import "../styles/main.scss"
 
 export default function Main() {
@@ -17,6 +18,7 @@ export default function Main() {
       <Header />
       <Intro />
       <Speakers />
+      <Topics />
 
       <style jsx>{`
         :global(body) {
