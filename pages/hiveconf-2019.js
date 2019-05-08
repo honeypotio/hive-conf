@@ -5,6 +5,7 @@ import Intro from '../components/intro';
 import Speakers from '../components/speakers';
 import Topics from '../components/topics';
 import Sponsorships from '../components/sponsorships';
+import Honeypot from '../components/honeypot';
 import "../styles/main.scss"
 
 export default function Main() {
@@ -21,6 +22,7 @@ export default function Main() {
       <Speakers />
       <Topics />
       <Sponsorships />
+      <Honeypot />
 
       <style jsx>{`
         :global(body) {
