@@ -8,7 +8,7 @@ export default class Speakers extends React.Component {
     super(props);
     this.state = {
       filter: null
-    }
+    };
   }
 
   changeFilter(type) {
@@ -122,13 +122,18 @@ export default class Speakers extends React.Component {
               top: 60px;
             }
           }
-  
+
           .background-logo {
-            position: absolute;
-            z-index: -100;
-            right: -150px;
-            top: 400px;
-  
+            display: none;
+          }
+          @media ${ PageBreaks.smUp } {
+            .background-logo {
+              display: inline;
+              position: absolute;
+              z-index: -100;
+              right: -150px;
+              top: 400px;
+            }
           }
   
           .filters {
@@ -197,17 +202,22 @@ export default class Speakers extends React.Component {
             border-bottom: 46px solid white; 
             border-left: 20px solid transparent;
           }
-          
-  
+
           .speaker-list {
             display: grid;
             width: 80%;
             margin: 0 auto;
-            grid-template-columns: repeat(4, 25%);
+            grid-template-columns: repeat(2, 50%);
             grid-template-rows: auto;
             grid-row-gap: 50px;
           }
-  
+
+          @media ${ PageBreaks.smUp } {
+            .speaker-list {
+              grid-template-columns: repeat(4, 25%);
+            }
+          }
+
           .speaker-card {
             text-align: center;
           }
@@ -275,10 +285,24 @@ export default class Speakers extends React.Component {
   
   
           .cta-container {
-            position: absolute;
-            left: -102%;
-            bottom: -105%;
+            position: relative;
+            left: -100%;
+            bottom: -100px;
+            margin-bottom: 100px;
           }
+          @media ${ PageBreaks.xsUp } {
+            .cta-container {
+              position: relative;
+              left: -70%;
+            }
+          }
+          @media ${ PageBreaks.smUp } {
+            .cta-container {
+              position: relative;
+              left: -100%;
+            }
+          }
+
           .cta {
             width: 420px;
             background: linear-gradient(90deg, #FFFFFF 0%, #ECECEC 80%);

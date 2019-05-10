@@ -65,11 +65,16 @@ export default function Topics() {
         display: grid;
         width: 80%;
         margin: 0 auto;
-        grid-template-columns: repeat(2, calc(50% - 60px));
+        grid-template-columns: repeat(1, 100%);
         grid-column-gap: 120px;
         grid-template-rows: auto;
         grid-row-gap: 50px;
         margin-bottom: 70px;
+      }
+      @media ${ PageBreaks.smUp } {
+        .topic-list {
+          grid-template-columns: repeat(2, calc(50% - 60px));
+        }
       }
 
       h3 {

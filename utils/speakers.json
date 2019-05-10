@@ -2,65 +2,73 @@
     {
         "img": "Anna_Low@2x.jpg",
         "name": "Anna Low",
-        "title": "VP of Awesome, Giant Swarm",
-        "linkedin": "https://www.linkedin.com",
-        "twitter": "https://www.twitter.com",
-        "type": "tech"
+        "title": "Head of People @ Giant Swarm",
+        "linkedin": "https://www.linkedin.com/in/anna-l%C3%B6w-b834395/",
+        "twitter": "https://twitter.com/anna__loew?lang=en",
+        "type": "hr"
     },
     {
         "img": "Emma_Tracey@2x.png",
         "name": "Emma Tracey",
-        "title": "VP of Awesome, Honeypot",
-        "linkedin": "https://www.linkedin.com",
-        "twitter": "https://www.twitter.com",
+        "title": "Co-Founder @ Honeypot ",
+        "linkedin": "https://www.linkedin.com/in/emmalouisetracey/",
+        "twitter": "https://twitter.com/emchenita?lang=en",
         "type": "tech"
     },
     {
         "img": "Eva_Glanzer@2x.jpg",
         "name": "Eva Glanzer",
-        "title": "VP of Awesome, XYZ Company",
-        "linkedin": "https://www.linkedin.com",
-        "twitter": "https://www.twitter.com",
-        "type": "tech"
+        "title": "VP of People @ GetYourGuide",
+        "linkedin": "https://www.linkedin.com/in/evaglanzer/",
+        "twitter": "https://twitter.com/GetYourGuide ",
+        "type": "hr"
     },
     {
         "img": "Jenny_Jung@2x.png",
         "name": "Jenny Jung",
-        "title": "VP of Awesome, XYZ Company",
-        "linkedin": "https://www.linkedin.com",
-        "twitter": "https://www.twitter.com",
+        "title": "Founder @ MindTheLeader (former VP People & Organization @ EyeEm, former COO @ Factory)",
+        "linkedin": "https://www.linkedin.com/in/jennyejung/",
+        "twitter": "https://twitter.com/jung?lang=en",
+        "type": "hr"
+    },
+    {
+        "img": "Kaya_Taner@2x.jpg",
+        "name": "Kaya Taner",
+        "title": "Co-Founder @ Honeypot",
+        "linkedin": "https://www.linkedin.com/in/kayataner/",
+        "twitter": "https://twitter.com/kayataner1?lang=en",
+        "type": "hr"
+    },
+    {
+        "img": "Jessica_Jordan@2x.png",
+        "name": "Jessica Jordan",
+        "title": "Software Engineer @ simplabs and Community Support @ Ember Learning Core Team",
+        "linkedin": "https://www.linkedin.com/in/jessicajordanfedev/",
+        "twitter": "https://twitter.com/jjordan_dev?lang=en",
         "type": "tech"
     },
     {
-        "img": "Anna_Low@2x.jpg",
-        "name": "Anna Low 2",
-        "title": "VP of Awesome, Giant Swarm",
-        "linkedin": "https://www.linkedin.com",
-        "twitter": "https://www.twitter.com",
+        "img": "Carsten_Wenzel@2x.jpg",
+        "name": "Carsten Wenzel",
+        "title": "Talent Acquisition Lead @ IT Adidas",
+        "linkedin": "https://www.linkedin.com/in/carstenwenzel/",
+        "twitter": "https://twitter.com/adidascareers",
         "type": "hr"
     },
     {
-        "img": "Emma_Tracey@2x.png",
-        "name": "Emma Tracey 2",
-        "title": "VP of Awesome, Honeypot",
-        "linkedin": "https://www.linkedin.com",
-        "twitter": "https://www.twitter.com",
-        "type": "hr"
+        "img": "Kevin_Goldsmith@2x.png",
+        "name": "Kevin Goldsmith",
+        "title": "CTO @ Onfido",
+        "linkedin": "https://www.linkedin.com/in/goldsmith/",
+        "twitter": "https://twitter.com/KevinGoldsmith",
+        "type": "tech"
     },
     {
-        "img": "Eva_Glanzer@2x.jpg",
-        "name": "Eva Glanzer 2",
-        "title": "VP of Awesome, XYZ Company",
-        "linkedin": "https://www.linkedin.com",
-        "twitter": "https://www.twitter.com",
-        "type": "hr"
-    },
-    {
-        "img": "Jenny_Jung@2x.png",
-        "name": "Jenny Jung 2",
-        "title": "VP of Awesome, XYZ Company",
-        "linkedin": "https://www.linkedin.com",
-        "twitter": "https://www.twitter.com",
-        "type": "hr"
+        "img": "Maria_Gutierrez@2x.png",
+        "name": "Maria Gutierrez",
+        "title": "Head of Engineering @ Intercom",
+        "linkedin": "https://www.linkedin.com/in/mariagutierrez/",
+        "twitter": "https://twitter.com/mariagutierrez?lang=en",
+        "type": "tech"
     }
 ]
