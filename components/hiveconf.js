@@ -14,6 +14,40 @@ const Testimonials = [{
   "text" : "I really loved to see people who were interested in how to improve recruitment in their companies! After all, we are all in it and the sooner we become \"partners in crime\" (Thanks Kevin!) the better!"
 }]
 
+const Logos = [{
+  "name" : "Logo_LinkedIn_White"
+},
+{
+  "name" : "Logo_Soundcloud_White"
+},
+{
+  "name" : "Logo_ProSieben_White"
+},
+{
+  "name" : "Logo_DeliveryHero_White"
+},
+{
+  "name" : "Logo_Blacklane_White"
+},
+{
+  "name" : "Logo_HeyCar_White"
+},
+{
+  "name" : "Logo_Lufthansa_White"
+},
+{
+  "name" : "Logo_Zalando_White"
+},
+{
+  "name" : "Logo_Flixbus_White"
+},
+{
+  "name" : "Logo_Auto1_White"
+},
+{
+  "name" : "Logo_Omio_White"
+}]
+
 export default function Hiveconf() {
   return (
     <div id={"hiveconf18"}>
@@ -32,7 +66,6 @@ export default function Hiveconf() {
           <p><strong>97% of our attendees</strong> shared that they are likely to come back for HiveConf’19</p>
         </div>
       </div>
-      <div>
       <div className={"carouselcontainer"}>
         <div className={"carouseloval"}></div>
           <Carousel 
@@ -41,7 +74,7 @@ export default function Hiveconf() {
           prevIcon={<img aria-hidden="true" src={`/static/icons/ArrowYellow_Left.svg`} />}>
             {Testimonials.map(testimonial => (
               <Carousel.Item>
-                <div className={"test"}>
+                <div className={"narrow"}>
                   <img className={"quotesign"} src={`/static/icons/Quote.svg`} alt={"Quote Signs"}/>
                   <div className={"testimonial"}>
                     <div className={"left"}>
@@ -60,6 +93,13 @@ export default function Hiveconf() {
             ))}
           </Carousel>
       </div>
+      <div className={"companies"}>
+        <h5>Companies at HiveConf'18</h5>
+        <div className={"logos"}>
+          {Logos.map(logo =>(
+            <img src={`/static/images/logos/${logo.name}.svg`} alt={`${logo.name}`}/>
+          ))}
+        </div>
       </div>
     
     <style jsx>{`
@@ -83,6 +123,8 @@ export default function Hiveconf() {
     h2 {
       font-size: 36px;
       color: white;
+      font-weight: bold;
+      letter-spacing: -0.4px;
     }
     @media ${ PageBreaks.smUp } {
       h2 {
@@ -187,15 +229,7 @@ export default function Hiveconf() {
       transform: translate(-50%,-50%);
       border-radius: 50%;
     }
-    
-    .placer {
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-
+  
     .testimonial {
       display: grid;
       grid-template-columns: repeat(2, calc(50% - 15px));
@@ -237,10 +271,37 @@ export default function Hiveconf() {
       width: 80px;
       margin-bottom: 50px;
     }
-
-    .test {
-      width: 80%; 
+    
+    .narrow {
+      width: 80%;
       margin: 0 auto;
+    }
+    .companies {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .companies h5 {
+      width: 80%;
+      margin: 0 auto;
+      color: white;
+      font-size: 30px;
+      line-height: 41px;
+      font-weight: bold;
+      margin-bottom: 50px;
+    }
+    
+    .logos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .logos img {
+      flex: 0 0 calc(16.66% - 20px);
+      padding: 20px;
+      margin: 10px;
+      max-height: 100px;
     }
     `}</style>
     </div>
