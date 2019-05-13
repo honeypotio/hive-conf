@@ -56,8 +56,8 @@ export default function Hiveconf() {
                     <div className={"right"}>
                       <p>{testimonial.text}</p>
                     </div>
-                  </div>     
-                </div>       
+                  </div>
+                </div>
               </Carousel.Item>
             ))}
           </Carousel>
@@ -70,215 +70,225 @@ export default function Hiveconf() {
           ))}
         </div>
       </div>
-    
-    <style jsx>{`
-    #hiveconf18 {
-      background: linear-gradient(90deg, #0000FF 0%, #0000AA 100%);
-    }
-    
-    .wrapper {
-      margin: 0 auto;
-      padding: 40px 0;
-      position: relative;
-      z-index: 1;
-    }
-    @media  ${ PageBreaks.smUp } {
-      .wrapper {
-        padding: 150px 0 60px 0;
-      }
-    }
 
-    h2 {
-      font-size: 36px;
-      color: white;
-      font-weight: bold;
-      letter-spacing: -0.4px;
-    }
-    @media ${ PageBreaks.smUp } {
-      h2 {
-        font-size: 60px;
-        margin-top: 0;
-        margin-bottom: 40px;
-      }
-    }
+      <style jsx>{`
+        #hiveconf18 {
+          background: linear-gradient(90deg, #0000FF 0%, #0000AA 100%);
+        }
 
-    .oval {
-      height: 413px;
-      width: 413px;
-      border-radius: 50%;	
-      background: linear-gradient(90deg, #0000FF 0%, #0000AA 100%);
-      position: absolute;
-      left: 100px;
-      z-index: -1;
-    }
-    @media  ${ PageBreaks.smUp } {
-      .oval {
-        top: -40px;
-      }
-    }
+        .wrapper {
+          margin: 0 auto;
+          padding: 40px 0;
+          position: relative;
+          z-index: 1;
+        }
+        @media  ${ PageBreaks.smUp } {
+          .wrapper {
+            padding: 150px 0 60px 0;
+          }
+        }
 
-    .description {
-      display: grid;
-      width: 100%;
-      margin: 20px auto;
-      grid-template-columns: 100%;
-      grid-column-gap: 30px;
-      grid-template-rows: auto;
-    }
-    @media  ${ PageBreaks.smUp } {
-      .description {
-        margin: 0px auto;
-        width: 80%;
-        grid-template-columns: repeat(2, calc(50% - 15px));
-      }
-    }
+        h2 {
+          font-size: 36px;
+          color: white;
+          font-weight: bold;
+          letter-spacing: -0.4px;
+        }
+        @media ${ PageBreaks.smUp } {
+          h2 {
+            font-size: 60px;
+            margin-top: 0;
+            margin-bottom: 40px;
+          }
+        }
 
-    .description p {
-      color: white;
-      font-size: 18px;
-      line-height: 46px;
-    }
+        .oval {
+          height: 413px;
+          width: 413px;
+          border-radius: 50%; 
+          background: linear-gradient(90deg, #0000FF 0%, #0000AA 100%);
+          position: absolute;
+          left: 100px;
+          z-index: -1;
+        }
+        @media  ${ PageBreaks.smUp } {
+          .oval {
+            top: -40px;
+          }
+        }
 
-    .description img {
-      max-width: 100%;
-      max-height: 90%;
-      align-self: center;
-    }
+        .description {
+          display: grid;
+          width: 100%;
+          margin: 20px auto;
+          grid-template-columns: 100%;
+          grid-column-gap: 30px;
+          grid-template-rows: auto;
+        }
+        @media  ${ PageBreaks.smUp } {
+          .description {
+            margin: 0px auto;
+            width: 80%;
+            grid-template-columns: repeat(2, calc(50% - 15px));
+          }
+        }
 
-    .feedback {
-      width: 60%;
-      margin: 100px auto 0 auto;
-      display: grid;
-      grid-template-columns: auto auto;
-      grid-column-gap: 32px;
-    }
+        .description p {
+          color: white;
+          font-size: 18px;
+          line-height: 46px;
+        }
 
-    .thumbsup {
-      background: linear-gradient(90deg, #0000FF 0%, #0000AA 100%);
-      width: 105px;
-      height: 105px;
-      border-radius: 50%;
-      position: relative
-    }
-    .thumbsup img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      margin: auto;
-    }
+        .description img {
+          max-width: 100%;
+          max-height: 90%;
+          align-self: center;
+        }
 
-    .feedback p {
-      font-size: 27px;
-      line-height: 52px;
-      color: white;
-      margin: 0;
-    }
+        .feedback {
+          width: 60%;
+          margin: 100px auto 0 auto;
+          display: grid;
+          grid-template-columns: auto auto;
+          grid-column-gap: 32px;
+        }
 
-    .carouselcontainer {
-      position: relative;
-      height: 650px;
-    }
+        .thumbsup {
+          background: linear-gradient(90deg, #0000FF 0%, #0000AA 100%);
+          width: 105px;
+          height: 105px;
+          border-radius: 50%;
+          position: relative
+        }
+        .thumbsup img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+        }
 
-    .carouselcontainer > :global(.carousel) {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      right: 0;
-      transform: translateY(-50%);
-    }
-    .carouselcontainer > :global(.carousel) > :global(.carousel-inner) {
-      max-width: 1100px;
-      margin: 0 auto;
-      height: 500px;
-    }
+        .feedback p {
+          font-size: 27px;
+          line-height: 52px;
+          color: white;
+          margin: 0;
+        }
 
-    .carouseloval {
-      width: 650px;
-      height: 650px;
-      background: linear-gradient(90deg, #0000FF 0%, #0000AA 100%);
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-      border-radius: 50%;
-    }
-  
-    .testimonial {
-      display: grid;
-      grid-template-columns: repeat(2, calc(50% - 15px));
-      grid-column-gap: 30px;
-      grid-template-rows: auto;
-      color: white;
-    }
+        .carouselcontainer {
+          position: relative;
+          height: 650px;
+        }
 
-    .testimonial p {
-      font-size: 18px;
-      line-height: 46px;
-      margin: 0;
-    }
-    
-    .testimonial h3 {
-      font-weight: bold;
-      font-size: 36px;
-      line-height: 44px;
-    }
+        .carouselcontainer > :global(.carousel) {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          right: 0;
+          transform: translateY(-50%);
+        }
+        .carouselcontainer > :global(.carousel) > :global(.carousel-inner) {
+          max-width: 1100px;
+          margin: 0 auto;
+          height: 500px;
+        }
 
-    .testimonial .left {
-      position: relative;
-    }
+        .carouseloval {
+          width: 650px;
+          height: 650px;
+          background: linear-gradient(90deg, #0000FF 0%, #0000AA 100%);
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+          border-radius: 50%;
+        }
 
-    .testimonial .info {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-    }
-    
-    .testimonial .position {
-      font-size: 24px;
-      font-weight: 500;
-      line-height: 45px;
+        .testimonial {
+          display: grid;
+          grid-template-columns: repeat(2, calc(50% - 15px));
+          grid-column-gap: 30px;
+          grid-template-rows: auto;
+          color: white;
+        }
 
-    }
+        .testimonial p {
+          font-size: 18px;
+          line-height: 46px;
+          margin: 0;
+        }
 
-    .quotesign {
-      width: 80px;
-      margin-bottom: 50px;
-    }
-    
-    .narrow {
-      width: 80%;
-      margin: 0 auto;
-    }
-    .companies {
-      max-width: 1100px;
-      margin: 0 auto;
-    }
+        .testimonial h3 {
+          font-weight: bold;
+          font-size: 36px;
+          line-height: 44px;
+        }
 
-    .companies h5 {
-      width: 80%;
-      margin: 0 auto;
-      color: white;
-      font-size: 30px;
-      line-height: 41px;
-      font-weight: bold;
-      margin-bottom: 50px;
-    }
-    
-    .logos {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+        .testimonial .left {
+          position: relative;
+        }
 
-    .logos img {
-      flex: 0 0 calc(16.66% - 20px);
-      padding: 20px;
-      margin: 10px;
-      max-height: 100px;
-    }
-    `}</style>
+        .testimonial .info {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        }
+
+        .testimonial .position {
+          font-size: 24px;
+          font-weight: 500;
+          line-height: 45px;
+
+        }
+
+        .quotesign {
+          width: 80px;
+          margin-bottom: 50px;
+        }
+
+        .narrow {
+          width: 80%;
+          margin: 0 auto;
+        }
+        .companies {
+          max-width: 1100px;
+          margin: 0 auto;
+        }
+
+        .companies h5 {
+          width: 80%;
+          margin: 0 auto;
+          color: white;
+          font-size: 30px;
+          line-height: 41px;
+          font-weight: bold;
+        }
+        @media ${ PageBreaks.smUp } {
+          .companies h5 {
+            margin-bottom: 50px;
+          }
+        }
+
+        .logos {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .logos img {
+          flex: 0 0 calc(16.66% - 20px);
+          padding: 20px;
+          margin: 10px;
+          max-width: 120px;
+        }
+        @media ${ PageBreaks.smUp } {
+          .logos img {
+            max-height: 100px;
+            max-width: none;
+          }
+        }
+      `}</style>
     </div>
   )
 }
