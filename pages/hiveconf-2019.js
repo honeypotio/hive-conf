@@ -11,7 +11,7 @@ import "../styles/main.scss"
 
 export default function Main() {
   return (
-    <div>
+    <div className={ "main" }>
       <Head>
         <title>{ "Hive Conf 2019" }</title>
         <link rel={"icon"} type={"image/svg"} href={"/static/images/favicon.png"} />
@@ -36,8 +36,13 @@ export default function Main() {
         :global(body) {
           margin: 0;
         }
+
         * {
           box-sizing: border-box;
+        }
+
+        .main {
+          padding: 0 20px;
         }
       `}</style>
     </div>
