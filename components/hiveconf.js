@@ -1,5 +1,6 @@
 import PageBreaks from '../utils/page-breaks';
 import Carousel from 'react-bootstrap/Carousel';
+import CarouselItem from 'react-bootstrap/CarouselItem';
 
 const Testimonials = [{
   "title" : "Share Experiences Across Teams",
@@ -16,6 +17,37 @@ const Testimonials = [{
 
 const Logos = ["Logo_LinkedIn_White", "Logo_Soundcloud_White", "Logo_ProSieben_White", "Logo_DeliveryHero_White", "Logo_Blacklane_White", "Logo_HeyCar_White", "Logo_Lufthansa_White", "Logo_Zalando_White", "Logo_Flixbus_White", "Logo_Auto1_White", "Logo_Omio_White"
 ];
+
+const Quotes = [{
+  "img" : "MarkLevy",
+  "text" : "All functions that touch the employee journey should be \"in service\" to the employee.",
+  "name" : "Mark Levy",
+  "position" : "Former Airbnb Employee Experience Pioneer"
+},
+{
+  "img" : "AleksandraGavrilovska",
+  "text" : "All functions that touch the employee journey should be \"in service\" to the employee.",
+  "name" : "Aleksandra Gavrilovska",
+  "position" : "Former Airbnb Employee Experience Pioneer"
+},
+{
+  "img" : "DanielKrauss",
+  "text" : "All functions that touch the employee journey should be \"in service\" to the employee.",
+  "name" : "Daniel Krauss",
+  "position" : "Former Airbnb Employee Experience Pioneer"
+},
+{
+  "img" : "KevinGoldsmith",
+  "text" : "All functions that touch the employee journey should be \"in service\" to the employee.",
+  "name" : "Kevin Goldsmith",
+  "position" : "Former Airbnb Employee Experience Pioneer"
+},
+{
+  "img" : "MartinaNiemann",
+  "text" : "All functions that touch the employee journey should be \"in service\" to the employee.",
+  "name" : "Martina Niemann",
+  "position" : "Former Airbnb Employee Experience Pioneer"
+}]
 
 export default function Hiveconf() {
   return (
@@ -35,7 +67,7 @@ export default function Hiveconf() {
           <p><strong>97% of our attendees</strong> shared that they are likely to come back for HiveConf’19</p>
         </div>
       </div>
-      <div className={"carouselcontainer"}>
+      <div className={"testimonials"}>
         <div className={"carouseloval"}></div>
           <Carousel 
           indicators={false}
@@ -70,6 +102,34 @@ export default function Hiveconf() {
           ))}
         </div>
       </div>
+      <div className={"quotes"}>
+      <Carousel
+      indicators={false}
+      nextIcon={<img aria-hidden="true" src={`/static/icons/ArrowYellow_Right.svg`} />}
+      prevIcon={<img aria-hidden="true" src={`/static/icons/ArrowYellow_Left.svg`} />}>
+        {Quotes.map(quote => (
+          <Carousel.Item key={quote.name}>
+            <div className={"quotewrap"}>
+              <img src={`/static/images/quotes/${quote.img}@2x.png`}/>
+              <div className={"speaker-info"}>
+                <img className={"quotesign"} src={`/static/icons/Quote.svg`} alt={"Quote Signs"}/>
+                <p>{quote.text}</p>
+                <h3>{quote.name}</h3>
+                <h4>{quote.position}</h4>
+              </div>
+            </div>
+          </Carousel.Item>
+        ))}
+      </Carousel>
+      </div>
+      <div className={"cta-wrapper"}>
+        <div className={"cta-container"}>
+          <h3>HR Analytics: The Biggest Buzz at HiveConf’18</h3>
+          <p>Read what our amazing speakers said last year about HR Analytics in our blog. </p>
+          <a target="_blank" href="mailto:hiveconf@honeypot.io" className={"cta"}>Read Now</a>
+        </div>
+
+      </div>
     
     <style jsx>{`
     #hiveconf18 {
@@ -77,6 +137,7 @@ export default function Hiveconf() {
     }
     
     .wrapper {
+      max-width: 1100px;
       margin: 0 auto;
       padding: 40px 0;
       position: relative;
@@ -172,23 +233,23 @@ export default function Hiveconf() {
     .feedback p {
       font-size: 27px;
       line-height: 52px;
-      color: white;
+      color: white; 
       margin: 0;
     }
 
-    .carouselcontainer {
+    .testimonials {
       position: relative;
       height: 650px;
     }
 
-    .carouselcontainer > :global(.carousel) {
+    .testimonials > :global(.carousel) {
       position: absolute;
       top: 50%;
       left: 0;
       right: 0;
       transform: translateY(-50%);
     }
-    .carouselcontainer > :global(.carousel) > :global(.carousel-inner) {
+    .testimonials > :global(.carousel) > :global(.carousel-inner) {
       max-width: 1100px;
       margin: 0 auto;
       height: 500px;
@@ -277,6 +338,99 @@ export default function Hiveconf() {
       padding: 20px;
       margin: 10px;
       max-height: 100px;
+    }
+
+    .quotewrap {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      
+    }
+
+    .quotewrap > img {
+      height: 500px;
+      z-index: 10;
+      margin-right: -200px;
+    }
+
+    .speaker-info {
+      background: linear-gradient(90deg, #0000FF 0%, #0000AA 100%);
+      padding: 80px 0 0 300px;
+      color: white;
+      position: relative;
+    }
+    .speaker-info p {
+      font-size: 27px;
+      line-height: 52px;
+      margin: 0;
+      width: 500px;
+    }
+    .speaker-info h3 {
+      margin-top: 40px;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 44px;
+    }
+    .speaker-info h4 {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 45px;
+    }
+    .speaker-info .quotesign {
+      position: absolute;
+      width: 100px;
+      margin-bottom: 0;
+      top: 130px;
+      left: 80px;
+      z-index: 101;
+
+    }
+    
+    .quotes > :global(.carousel) > :global(.carousel-control-prev) {
+      z-index: 101;
+    }
+
+
+    .cta-wrapper {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 80px 0;
+    }
+
+    .cta-container {
+      width: 80%;
+      margin: 0 auto;
+      color: white;
+      position: relative;
+    }
+
+    .cta-container h3 {
+      font-size: 30px;
+      line-height: 41px;
+      font-weight: bold;
+    }
+
+    .cta-container p {
+      font-size: 18px;
+      line-height: 46px;
+    }
+    .cta {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 6px;
+      background-color: #F9FF00;
+      color: #000000;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 22px;
+      padding: 15px 40px;
+      cursor: pointer;
+      text-decoration: none;
+      }
+    .cta:hover {
+      background-color: #FFF;
+      box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
     }
     `}</style>
     </div>
