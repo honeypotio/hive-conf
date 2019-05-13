@@ -144,6 +144,7 @@ export default class Speakers extends React.Component {
             padding: 15px 50px;
             border: none;
             position: relative;
+            height: 54px;
             background: linear-gradient(90deg, #FFFFFF 0%, #ECECEC 100%);
           }
 
@@ -167,7 +168,7 @@ export default class Speakers extends React.Component {
             content: " ";
             width: 0; 
             height: 0; 
-            border-top: 46px solid #ECECEC; 
+            border-top: 54px solid #ECECEC; 
             border-right: 20px solid transparent;
           }
 
@@ -178,7 +179,7 @@ export default class Speakers extends React.Component {
             content: " ";
             width: 0; 
             height: 0; 
-            border-top: 46px solid #ECECEC; 
+            border-top: 54px solid #ECECEC; 
             border-right: 20px solid transparent;
           }
           .filters button.hr:before {
@@ -188,7 +189,7 @@ export default class Speakers extends React.Component {
             content: " ";
             width: 0; 
             height: 0; 
-            border-bottom: 46px solid white; 
+            border-bottom: 54px solid white; 
             border-left: 20px solid transparent;
           }
 
@@ -199,7 +200,7 @@ export default class Speakers extends React.Component {
             content: " ";
             width: 0; 
             height: 0; 
-            border-bottom: 46px solid white; 
+            border-bottom: 54px solid white; 
             border-left: 20px solid transparent;
           }
 
