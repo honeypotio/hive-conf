@@ -73,7 +73,7 @@ export default function Hiveconf() {
           nextIcon={<img aria-hidden="true" src={`/static/icons/ArrowYellow_Right.svg`} />}
           prevIcon={<img aria-hidden="true" src={`/static/icons/ArrowYellow_Left.svg`} />}>
             {Testimonials.map(testimonial => (
-              <Carousel.Item>
+              <Carousel.Item key={testimonial.name}>
                 <div className={"narrow"}>
                   <img className={"quotesign"} src={`/static/icons/Quote.svg`} alt={"Quote Signs"}/>
                   <div className={"testimonial"}>
@@ -97,7 +97,7 @@ export default function Hiveconf() {
         <h5>Companies at HiveConf'18</h5>
         <div className={"logos"}>
           {Logos.map(logo =>(
-            <img src={`/static/images/logos/${logo.name}.svg`} alt={`${logo.name}`}/>
+            <img key={logo.name} src={`/static/images/logos/${logo.name}.svg`} alt={`${logo.name}`}/>
           ))}
         </div>
       </div>
