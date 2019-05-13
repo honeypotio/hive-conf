@@ -7,6 +7,7 @@ import Topics from '../components/topics';
 import Sponsorships from '../components/sponsorships';
 import Honeypot from '../components/honeypot';
 import Hiveconf from '../components/hiveconf';
+import Location from '../components/location';
 import PageBreaks from '../utils/page-breaks';
 import "../styles/main.scss"
 
@@ -25,6 +26,7 @@ export default function Main() {
       <Speakers />
       <Topics />
       <Hiveconf />
+      <Location />
       <Sponsorships />
       <Honeypot />
 
