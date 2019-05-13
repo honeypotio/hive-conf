@@ -88,8 +88,8 @@ export default function Hiveconf() {
                     <div className={"right"}>
                       <p>{testimonial.text}</p>
                     </div>
-                  </div>     
-                </div>       
+                  </div>
+                </div>
               </Carousel.Item>
             ))}
           </Carousel>
@@ -130,309 +130,316 @@ export default function Hiveconf() {
         </div>
 
       </div>
-    
-    <style jsx>{`
-    #hiveconf18 {
-      background: linear-gradient(90deg, #0000FF 0%, #0000AA 100%);
-    }
-    
+
+<style jsx>{`
+  #hiveconf18 {
+    background: linear-gradient(90deg, #0000FF 0%, #0000AA 100%);
+  }
+
+  .wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 0;
+    position: relative;
+    z-index: 1;
+  }
+  @media  ${ PageBreaks.smUp } {
     .wrapper {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 40px 0;
-      position: relative;
-      z-index: 1;
+      padding: 150px 0 60px 0;
     }
-    @media  ${ PageBreaks.smUp } {
-      .wrapper {
-        padding: 150px 0 60px 0;
-      }
-    }
+  }
 
+  h2 {
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: -0.4px;
+  }
+  @media ${ PageBreaks.smUp } {
     h2 {
-      font-size: 36px;
-      color: white;
-      font-weight: bold;
-      letter-spacing: -0.4px;
+      font-size: 60px;
+      margin-top: 0;
+      margin-bottom: 40px;
     }
-    @media ${ PageBreaks.smUp } {
-      h2 {
-        font-size: 60px;
-        margin-top: 0;
-        margin-bottom: 40px;
-      }
-    }
+  }
 
+  .oval {
+    height: 413px;
+    width: 413px;
+    border-radius: 50%; 
+    background: linear-gradient(90deg, #0000FF 0%, #0000AA 100%);
+    position: absolute;
+    left: 100px;
+    z-index: -1;
+  }
+  @media  ${ PageBreaks.smUp } {
     .oval {
-      height: 413px;
-      width: 413px;
-      border-radius: 50%;	
-      background: linear-gradient(90deg, #0000FF 0%, #0000AA 100%);
-      position: absolute;
-      left: 100px;
-      z-index: -1;
+      top: -40px;
     }
-    @media  ${ PageBreaks.smUp } {
-      .oval {
-        top: -40px;
-      }
-    }
+  }
 
+  .description {
+    display: grid;
+    width: 100%;
+    margin: 20px auto;
+    grid-template-columns: 100%;
+    grid-column-gap: 30px;
+    grid-template-rows: auto;
+  }
+  @media  ${ PageBreaks.smUp } {
     .description {
-      display: grid;
-      width: 100%;
-      margin: 20px auto;
-      grid-template-columns: 100%;
-      grid-column-gap: 30px;
-      grid-template-rows: auto;
-    }
-    @media  ${ PageBreaks.smUp } {
-      .description {
-        margin: 0px auto;
-        width: 80%;
-        grid-template-columns: repeat(2, calc(50% - 15px));
-      }
-    }
-
-    .description p {
-      color: white;
-      font-size: 18px;
-      line-height: 46px;
-    }
-
-    .description img {
-      max-width: 100%;
-      max-height: 90%;
-      align-self: center;
-    }
-
-    .feedback {
-      width: 60%;
-      margin: 100px auto 0 auto;
-      display: grid;
-      grid-template-columns: auto auto;
-      grid-column-gap: 32px;
-    }
-
-    .thumbsup {
-      background: linear-gradient(90deg, #0000FF 0%, #0000AA 100%);
-      width: 105px;
-      height: 105px;
-      border-radius: 50%;
-      position: relative
-    }
-    .thumbsup img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      margin: auto;
-    }
-
-    .feedback p {
-      font-size: 27px;
-      line-height: 52px;
-      color: white; 
-      margin: 0;
-    }
-
-    .testimonials {
-      position: relative;
-      height: 650px;
-    }
-
-    .testimonials > :global(.carousel) {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      right: 0;
-      transform: translateY(-50%);
-    }
-    .testimonials > :global(.carousel) > :global(.carousel-inner) {
-      max-width: 1100px;
-      margin: 0 auto;
-      height: 500px;
-    }
-
-    .carouseloval {
-      width: 650px;
-      height: 650px;
-      background: linear-gradient(90deg, #0000FF 0%, #0000AA 100%);
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-      border-radius: 50%;
-    }
-  
-    .testimonial {
-      display: grid;
+      margin: 0px auto;
+      width: 80%;
       grid-template-columns: repeat(2, calc(50% - 15px));
-      grid-column-gap: 30px;
-      grid-template-rows: auto;
-      color: white;
     }
+  }
 
-    .testimonial p {
-      font-size: 18px;
-      line-height: 46px;
-      margin: 0;
-    }
+  .description p {
+    color: white;
+    font-size: 18px;
+    line-height: 46px;
+  }
+
+  .description img {
+    max-width: 100%;
+    max-height: 90%;
+    align-self: center;
+  }
+
+  .feedback {
+    width: 60%;
+    margin: 100px auto 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 32px;
+  }
+
+  .thumbsup {
+    background: linear-gradient(90deg, #0000FF 0%, #0000AA 100%);
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    position: relative
+  }
+  .thumbsup img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }    
+
+  .feedback p {
+    font-size: 27px;
+    line-height: 52px;
+    color: white; 
+    margin: 0;
+  }
+
+  .testimonials {
+    position: relative;
+    height: 650px;
+  }
+
+  .testimonials > :global(.carousel) {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+  }
+  .testimonials > :global(.carousel) > :global(.carousel-inner) {
+    max-width: 1100px;
+    margin: 0 auto;
+    height: 500px;
+  }
+  .carouseloval {
+    width: 650px;
+    height: 650px;
+    background: linear-gradient(90deg, #0000FF 0%, #0000AA 100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+  }
+
+  .testimonial {
+    display: grid;
+    grid-template-columns: repeat(2, calc(50% - 15px));
+    grid-column-gap: 30px;
+    grid-template-rows: auto;
+    color: white;
+  }
+
+  .testimonial p {
+    font-size: 18px;
+    line-height: 46px;
+    margin: 0;
+  }
+
+  .testimonial h3 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .testimonial .left {
+    position: relative;
+  }
+  .testimonial .info {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .testimonial .position {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 45px;
     
-    .testimonial h3 {
-      font-weight: bold;
-      font-size: 36px;
-      line-height: 44px;
-    }
+  }
 
-    .testimonial .left {
-      position: relative;
-    }
+  .quotesign {
+    width: 80px;
+    margin-bottom: 50px;
+  }
 
-    .testimonial .info {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-    }
-    
-    .testimonial .position {
-      font-size: 24px;
-      font-weight: 500;
-      line-height: 45px;
+  .narrow {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .companies {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
 
-    }
-
-    .quotesign {
-      width: 80px;
-      margin-bottom: 50px;
-    }
-    
-    .narrow {
-      width: 80%;
-      margin: 0 auto;
-    }
-    .companies {
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
+  .companies h5 {
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    font-size: 30px;
+    line-height: 41px;
+    font-weight: bold;
+  }
+  @media ${ PageBreaks.smUp } {
     .companies h5 {
-      width: 80%;
-      margin: 0 auto;
-      color: white;
-      font-size: 30px;
-      line-height: 41px;
-      font-weight: bold;
       margin-bottom: 50px;
     }
-    
-    .logos {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+  }
 
+  .logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .logos img {
+    flex: 0 0 calc(16.66% - 20px);
+    padding: 20px;
+    margin: 10px;
+    max-width: 120px;
+  }
+  @media ${ PageBreaks.smUp } {
     .logos img {
-      flex: 0 0 calc(16.66% - 20px);
-      padding: 20px;
-      margin: 10px;
       max-height: 100px;
+      max-width: none;
     }
-
-    .quotewrap {
-      display: grid;
-      grid-template-columns: auto 1fr;
-      
-    }
-
-    .quotewrap > img {
-      height: 500px;
-      z-index: 10;
-      margin-right: -200px;
-    }
-
-    .speaker-info {
-      background: linear-gradient(90deg, #0000FF 0%, #0000AA 100%);
-      padding: 80px 0 0 300px;
-      color: white;
-      position: relative;
-    }
-    .speaker-info p {
-      font-size: 27px;
-      line-height: 52px;
-      margin: 0;
-      width: 500px;
-    }
-    .speaker-info h3 {
-      margin-top: 40px;
-      font-weight: bold;
-      font-size: 36px;
-      line-height: 44px;
-    }
-    .speaker-info h4 {
-      font-size: 24px;
-      font-weight: 500;
-      line-height: 45px;
-    }
-    .speaker-info .quotesign {
-      position: absolute;
-      width: 100px;
-      margin-bottom: 0;
-      top: 130px;
-      left: 80px;
-      z-index: 101;
-
-    }
+  }
+  .quotewrap {
+    display: grid;
+    grid-template-columns: auto 1fr;
     
-    .quotes > :global(.carousel) > :global(.carousel-control-prev) {
-      z-index: 101;
-    }
+  }
+
+  .quotewrap > img {
+    height: 500px;
+    z-index: 10;
+    margin-right: -200px;
+  }
+
+  .speaker-info {
+    background: linear-gradient(90deg, #0000FF 0%, #0000AA 100%);
+    padding: 80px 0 0 300px;
+    color: white;
+    position: relative;
+  }
+  .speaker-info p {
+    font-size: 27px;
+    line-height: 52px;
+    margin: 0;
+    width: 500px;
+  }
+  .speaker-info h3 {
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .speaker-info h4 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 45px;
+  }
+  .speaker-info .quotesign {
+    position: absolute;
+    width: 100px;
+    margin-bottom: 0;
+    top: 130px;
+    left: 80px;
+    z-index: 101;
+    
+  }
+
+  .quotes > :global(.carousel) > :global(.carousel-control-prev) {
+    z-index: 101;
+  }
 
 
-    .cta-wrapper {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 80px 0;
-    }
+  .cta-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 0;
+  }
 
-    .cta-container {
-      width: 80%;
-      margin: 0 auto;
-      color: white;
-      position: relative;
-    }
+  .cta-container {
+    width: 80%;
+    margin: 0 auto;
+    color: white;
+    position: relative;
+  }
 
-    .cta-container h3 {
-      font-size: 30px;
-      line-height: 41px;
-      font-weight: bold;
-    }
+  .cta-container h3 {
+    font-size: 30px;
+    line-height: 41px;
+    font-weight: bold;
+  }
 
-    .cta-container p {
-      font-size: 18px;
-      line-height: 46px;
-    }
-    .cta {
-      position: absolute;
-      right: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      border-radius: 6px;
-      background-color: #F9FF00;
-      color: #000000;
-      font-size: 18px;
-      font-weight: bold;
-      line-height: 22px;
-      padding: 15px 40px;
-      cursor: pointer;
-      text-decoration: none;
-      }
-    .cta:hover {
-      background-color: #FFF;
-      box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
-    }
-    `}</style>
+  .cta-container p {
+    font-size: 18px;
+    line-height: 46px;
+  }
+  .cta {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 6px;
+    background-color: #F9FF00;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+    padding: 15px 40px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .cta:hover {
+    background-color: #FFF;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
+  }
+`}</style>
     </div>
   )
 }
