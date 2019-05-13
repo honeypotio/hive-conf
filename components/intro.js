@@ -18,12 +18,12 @@ export default function Intro() {
       </div>
       <style jsx>{`
         .intro {
-          background-image: url("/static/images/mountain-bg.svg"), linear-gradient(to bottom, rgba(238, 238, 238, 0) 10%, rgba(238, 238, 238, 0.8));
+          background-image: url("/static/images/mountain-bg.svg"), linear-gradient(to bottom, rgba(238, 238, 238, 0) 10%, rgba(238, 238, 238, 0.85) 20%, rgba(238, 238, 238, 0.8));
           background-size: 100vw;
-          background-repeat-y: repeat;
+          background-repeat-y: no-repeat;
           padding: 60px 20px;
           padding-top: 110px;
-          margin-top: -110px;
+          margin-top: -50px;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -32,6 +32,9 @@ export default function Intro() {
         @media ${ PageBreaks.smUp } {
           .intro {
             flex-direction: row;
+            margin-top: -150px;
+            background-image: url("/static/images/mountain-bg.svg"), linear-gradient(to bottom, rgba(238, 238, 238, 0) 10%, rgba(238, 238, 238, 0.8));
+            background-repeat-y: repeat;
           }
         }
 

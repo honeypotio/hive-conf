@@ -3,6 +3,7 @@
 node_modules/
 dist/
 .jshintrc
+npm-debug.log
 
 # OSX stuff
 .DS_Store

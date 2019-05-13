@@ -7,6 +7,7 @@ import Topics from '../components/topics';
 import Sponsorships from '../components/sponsorships';
 import Honeypot from '../components/honeypot';
 import Hiveconf from '../components/hiveconf';
+import PageBreaks from '../utils/page-breaks';
 import "../styles/main.scss"
 
 export default function Main() {
@@ -16,12 +17,7 @@ export default function Main() {
         <title>{ "Hive Conf 2019" }</title>
         <link rel={"icon"} type={"image/svg"} href={"/static/images/favicon.png"} />
         <link rel={"stylesheet"} href={"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"} />
-        <link
-  rel="stylesheet"
-  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-  crossOrigin="anonymous"
-/>
+        <link rel={"stylesheet"} href={"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"} integrity={"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"} crossOrigin={"anonymous"} />
       </Head>
 
       <Header />
@@ -41,8 +37,14 @@ export default function Main() {
           box-sizing: border-box;
         }
 
-        .main {
-          padding: 0 20px;
+        .main > :global(div) {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+
+        @media ${ PageBreaks.smUp } {
+          .main > :global(div) {
+          }
         }
       `}</style>
     </div>

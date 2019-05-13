@@ -12,41 +12,10 @@ const Testimonials = [{
   "name" : "Teddy Tod",
   "position" : "Talent Manager",
   "text" : "I really loved to see people who were interested in how to improve recruitment in their companies! After all, we are all in it and the sooner we become \"partners in crime\" (Thanks Kevin!) the better!"
-}]
+}];
 
-const Logos = [{
-  "name" : "Logo_LinkedIn_White"
-},
-{
-  "name" : "Logo_Soundcloud_White"
-},
-{
-  "name" : "Logo_ProSieben_White"
-},
-{
-  "name" : "Logo_DeliveryHero_White"
-},
-{
-  "name" : "Logo_Blacklane_White"
-},
-{
-  "name" : "Logo_HeyCar_White"
-},
-{
-  "name" : "Logo_Lufthansa_White"
-},
-{
-  "name" : "Logo_Zalando_White"
-},
-{
-  "name" : "Logo_Flixbus_White"
-},
-{
-  "name" : "Logo_Auto1_White"
-},
-{
-  "name" : "Logo_Omio_White"
-}]
+const Logos = ["Logo_LinkedIn_White", "Logo_Soundcloud_White", "Logo_ProSieben_White", "Logo_DeliveryHero_White", "Logo_Blacklane_White", "Logo_HeyCar_White", "Logo_Lufthansa_White", "Logo_Zalando_White", "Logo_Flixbus_White", "Logo_Auto1_White", "Logo_Omio_White"
+];
 
 export default function Hiveconf() {
   return (
@@ -97,7 +66,7 @@ export default function Hiveconf() {
         <h5>Companies at HiveConf'18</h5>
         <div className={"logos"}>
           {Logos.map(logo =>(
-            <img key={logo.name} src={`/static/images/logos/${logo.name}.svg`} alt={`${logo.name}`}/>
+            <img key={logo} src={`/static/images/logos/${logo}.svg`} alt={`${logo}`}/>
           ))}
         </div>
       </div>
@@ -108,9 +77,8 @@ export default function Hiveconf() {
     }
     
     .wrapper {
-      max-width: 1100px;
       margin: 0 auto;
-      padding: 20px 0;
+      padding: 40px 0;
       position: relative;
       z-index: 1;
     }
@@ -134,7 +102,7 @@ export default function Hiveconf() {
       }
     }
 
-    .oval {	
+    .oval {
       height: 413px;
       width: 413px;
       border-radius: 50%;	
@@ -151,11 +119,18 @@ export default function Hiveconf() {
 
     .description {
       display: grid;
+      width: 100%;
+      margin: 20px auto;
+      grid-template-columns: 100%;
+      grid-column-gap: 30px;
+      grid-template-rows: auto;
+    }
+    @media  ${ PageBreaks.smUp } {
+      .description {
+        margin: 0px auto;
         width: 80%;
-        margin: 0 auto;
         grid-template-columns: repeat(2, calc(50% - 15px));
-        grid-column-gap: 30px;
-        grid-template-rows: auto;
+      }
     }
 
     .description p {

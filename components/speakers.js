@@ -206,7 +206,7 @@ export default class Speakers extends React.Component {
 
           .speaker-list {
             display: grid;
-            width: 80%;
+            width: 100%;
             margin: 0 auto;
             grid-template-columns: repeat(2, 50%);
             grid-template-rows: auto;
@@ -215,6 +215,7 @@ export default class Speakers extends React.Component {
 
           @media ${ PageBreaks.smUp } {
             .speaker-list {
+              width: 80%;
               grid-template-columns: repeat(4, 25%);
             }
           }
