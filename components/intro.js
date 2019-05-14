@@ -13,25 +13,27 @@ export default function Intro() {
       </div>
       <div className={"right"}>
         <p className={"description"}>HiveConf is a one-day conference for HR & Talent Acquisition Leaders, Technical Hiring managers, CTOs and VPs of Engineering focused on all aspects of building & scaling great tech teams.</p>
-        <a href="https://hiveconf19.eventbrite.com/?aff=website" className={"btn btn-tickets"}>Get Tickets</a>
-        <a href="https://www.youtube.com/watch?v=twa5saz97EU&feature=youtu.be" className={"btn btn-trailer"}>Watch Trailer</a>
+        <div className={ "btn-wrapper" }>
+          <a href="https://hiveconf19.eventbrite.com/?aff=website" className={"btn btn-tickets"}>Get Tickets</a>
+          <a href="https://www.youtube.com/watch?v=twa5saz97EU&feature=youtu.be" className={"btn btn-trailer"}>Watch Trailer</a>
+        </div>
       </div>
       <style jsx>{`
         .intro {
-          background-image: url("/static/images/mountain-bg.svg"), linear-gradient(to bottom, rgba(238, 238, 238, 0) 10%, rgba(238, 238, 238, 0.85) 20%, rgba(238, 238, 238, 0.8));
+          background-image: url("/static/images/mountain-bg.svg"), linear-gradient(to bottom, rgba(238, 238, 238, 0) 10%, rgba(238, 238, 238, 0.85) 20%, rgba(238, 238, 238, 1));
           background-size: 100vw;
           background-repeat-y: no-repeat;
           padding: 60px 20px;
-          padding-top: 110px;
+          padding-top: 80px;
           margin-top: -50px;
           display: flex;
           flex-direction: column;
-          align-items: center;
         }
 
         @media ${ PageBreaks.smUp } {
           .intro {
             flex-direction: row;
+            padding-top: 110px;
             margin-top: -150px;
             background-image: url("/static/images/mountain-bg.svg"), linear-gradient(to bottom, rgba(238, 238, 238, 0) 10%, rgba(238, 238, 238, 0.8));
             background-repeat-y: repeat;
@@ -41,12 +43,12 @@ export default function Intro() {
         .left,
         .right {
           display: block;
-          flex: 1;
         }
 
         @media ${ PageBreaks.smUp } {
           .left, .right {
             padding: 0 20px;
+            flex: 1;
           }
         }
 
@@ -55,17 +57,22 @@ export default function Intro() {
             text-align: right;
           }
         }
-        
+
+        .img-wrapper {
+          padding: 20px 0;
+          text-align: center;
+        }
         @media ${ PageBreaks.smUp } {
           .img-wrapper {
-            padding: 20px 0;
+            text-align: right;
+            padding-top: 12px;
           }
         }
 
         .hive-conf {
           height: 40px;
+          margin: 0 auto;
         }
-
         @media ${ PageBreaks.smUp } {
           .hive-conf {
             height: 70px;
@@ -82,23 +89,53 @@ export default function Intro() {
             margin-left: -10px;
           }
         }
-        
+
         h4 {
-          margin: 8px 0;
-          font-weight: 400;
-          font-size: 24px;
+          clear: both;
+          font-weight: 600;
+          font-size: 20px;
+          text-align: center;
+        }
+        @media ${ PageBreaks.smUp } {
+          h4 {
+            margin: 12px 0;
+            font-size: 24px;
+            text-align: right;
+          }
         }
 
         .info {
+          margin-top: 20px;
           font-size: 18px;
+          display: flex;
+          justify-content: space-around;
+        }
+        @media ${ PageBreaks.smUp } {
+          .info {
+            justify-content: flex-end;
+          }
         }
 
         span {
-          margin: 0 12px;
+          display: inline-block;
+          font-size: 12px;
+        }
+        @media ${ PageBreaks.smUp } {
+          span {
+            font-size: 14px;
+            max-width: 50%;
+            margin-left: 20px;
+          }
         }
 
         .fa {
-          font-size: 24px;
+          font-size: 20px;
+          margin-bottom: -5px;
+        }
+        @media ${ PageBreaks.smUp } {
+          .fa {
+            font-size: 24px;
+          }
         }
 
         .description {
@@ -119,14 +156,30 @@ export default function Intro() {
           }
         }
 
+        .btn-wrapper {
+          display: flex;
+          justify-content: center;
+        }
+        @media ${ PageBreaks.mdUp} {
+          .btn-wrapper {
+            justify-content: start;
+          }
+        }
+
         .btn {
           display: inline-block;
           text-decoration: none;
           font-weight: 600;
-          font-size: 20px;
-          padding: 14px 24px;
+          font-size: 16px;
+          padding: 8px 12px;
           border-radius: 5px;
           margin-right: 20px;
+        }
+        @media ${ PageBreaks.mdUp} {
+          .btn {
+            font-size: 20px;
+            padding: 10px 35px;
+          }
         }
 
         .btn-tickets {

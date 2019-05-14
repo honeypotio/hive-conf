@@ -32,15 +32,14 @@ export default class Speakers extends React.Component {
         <button className={`hr ${this.state.filter === "hr" && "active"}`} onClick={this.changeFilter.bind(this, 'hr')}>HR Speakers</button>
         <button className={`tech ${this.state.filter === "tech" && "active"}`} onClick={this.changeFilter.bind(this, 'tech')}>Tech Speakers</button>
         </div>
-        
-  
+
         <div className={"speaker-list"}>
           {
             currentSpeakers.map(speaker => (
               <div key={speaker.name} className={"speaker-card"}>
                 <img className={"speaker-image"} src={`/static/images/speakers/${ speaker.img }`} alt={ speaker.name }/>
-                <h4>{ speaker.name }</h4>
-                <p>{ speaker.title }</p>
+                <p className={ "speaker-name" }>{ speaker.name }</p>
+                <p className={ "speaker-title" }>{ speaker.title }</p>
                 <ul className={"speaker-social"}>
                 {speaker.linkedin &&
                   <li>
@@ -57,11 +56,11 @@ export default class Speakers extends React.Component {
                   </li>
                 }
                 </ul>
-  
+
               </div>
             ))
           }
-         
+
           {
             new Array(placeholders).fill(1).map((el, index) => {
               return (<div key={`Placeholder-${index}`} className={"speaker-card"}>
@@ -69,7 +68,7 @@ export default class Speakers extends React.Component {
                       </div>)
             })
           }
-  
+
           <div className={"speaker-card you"}>
             <div className={"speaker-image"}>
               <div className={"content"}>You?</div>
@@ -82,7 +81,7 @@ export default class Speakers extends React.Component {
             </div>
           </div>
         </div>
-  
+
         <style jsx>{`
           .wrapper {
             max-width: 1100px;
@@ -95,7 +94,7 @@ export default class Speakers extends React.Component {
               padding: 60px 0;
             }
           }
-          
+
           h2 {
             font-size: 36px;
           }
@@ -106,7 +105,7 @@ export default class Speakers extends React.Component {
               margin-bottom: 30px;
             }
           }
-          
+
           .oval {	
             height: 246px;
             width: 246px;
@@ -135,17 +134,38 @@ export default class Speakers extends React.Component {
               top: 400px;
             }
           }
-  
+
           .filters {
-            margin-bottom: 80px;
+            display: flex;
+            align-items: stretch;
+            margin-bottom: 40px;
+          }
+          @media ${ PageBreaks.smUp } {
+            .filters {
+               margin-bottom: 80px;
+            }
           }
 
           .filters button {
-            padding: 15px 50px;
+            font-size: 12px;
+            display: inline-block;
+            padding: 4px 5px;
             border: none;
             position: relative;
-            height: 54px;
+            height: 30px;
             background: linear-gradient(90deg, #FFFFFF 0%, #ECECEC 100%);
+            flex-grow: 1;
+          }
+          @media ${ PageBreaks.smUp } {
+            .filters button {
+              font-size: 16px;
+              padding: 15px 50px;
+              border: none;
+              position: relative;
+              height: 54px;
+              background: linear-gradient(90deg, #FFFFFF 0%, #ECECEC 100%);
+              flex-grow: initial;
+            }
           }
 
           .filters button.active {
@@ -155,6 +175,16 @@ export default class Speakers extends React.Component {
           .filters button.active:after, .filters button.active:before {
             border-top-color: #1A1A1A !important;
             border-bottom-color: #1A1A1A !important;
+          }
+
+          .all {
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+          }
+
+          .tech {
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
           }
 
           .filters button.hr {
@@ -167,9 +197,14 @@ export default class Speakers extends React.Component {
             top: 0;
             content: " ";
             width: 0; 
-            height: 0; 
-            border-top: 54px solid #ECECEC; 
+            height: 0;
+            border-top: 30px solid #ECECEC; 
             border-right: 20px solid transparent;
+          }
+          @media ${ PageBreaks.smUp } {
+            .filters button.all:after {
+              border-top: 54px solid #ECECEC; 
+            }
           }
 
           .filters button.hr:after {
@@ -179,9 +214,15 @@ export default class Speakers extends React.Component {
             content: " ";
             width: 0; 
             height: 0; 
-            border-top: 54px solid #ECECEC; 
+            border-top: 30px solid #ECECEC; 
             border-right: 20px solid transparent;
           }
+          @media ${ PageBreaks.smUp } {
+            .filters button.hr:after {
+              border-top: 54px solid #ECECEC; 
+            }
+          }
+
           .filters button.hr:before {
             position: absolute;
             right: 100%;
@@ -189,8 +230,13 @@ export default class Speakers extends React.Component {
             content: " ";
             width: 0; 
             height: 0; 
-            border-bottom: 54px solid white; 
+            border-bottom: 30px solid white; 
             border-left: 20px solid transparent;
+          }
+          @media ${ PageBreaks.smUp } {
+            .filters button.hr:before {
+              border-bottom: 54px solid white; 
+            }
           }
 
           .filters button.tech:before {
@@ -200,8 +246,13 @@ export default class Speakers extends React.Component {
             content: " ";
             width: 0; 
             height: 0; 
-            border-bottom: 54px solid white; 
+            border-bottom: 30px solid white; 
             border-left: 20px solid transparent;
+          }
+          @media ${ PageBreaks.smUp } {
+            .filters button.tech:before {
+              border-bottom: 54px solid white; 
+            }
           }
 
           .speaker-list {
@@ -223,33 +274,44 @@ export default class Speakers extends React.Component {
           .speaker-card {
             text-align: center;
           }
-  
+
           .speaker-image {
             max-width: calc(100% - 50px);
           }
-  
+
+          .speaker-name {
+            font-size: 16px;
+            margin: 5px 0;
+            font-weight: 600;
+          }
           @media ${ PageBreaks.smUp } {
-            h4 {
+            .speaker-name {
               font-size: 18px;
               line-heigt: 22px;
+              margin: 8px 0;
             }
           }
-  
+
+          .speaker-title {
+            font-size: 14px;
+            line-heigt: 34px;
+            padding: 0px 10px;
+          }
           @media ${ PageBreaks.smUp } {
-            p {
-              font-size: 15px;
+            .speaker-title {
+              font-size: 16px;
               line-heigt: 34px;
               padding: 0px 10px;
             }
           }
-  
+
           .speaker-social {
             padding: 0;
             list-style-type: none;
             display: flex;
             justify-content: center;
           }
-          
+
           .speaker-social li {
             margin: 0 5px;
           }
@@ -257,24 +319,24 @@ export default class Speakers extends React.Component {
             height: 30px;
             width: 30px;
           }
-  
+
           .speaker-card.you {
             position: relative;
           }
-          
+
           .speaker-card.you .speaker-image {
             background-color: #ECECEC;
             position: relative;
             margin: 0 auto;
-            
+
           }
           .speaker-card.you .speaker-image:after {
             content: '';
             display: block;
             padding-bottom: 100%;
-            
+
           }
-  
+
           .speaker-image .content {
             position: absolute;
             left: 50%;
@@ -284,8 +346,7 @@ export default class Speakers extends React.Component {
             font-weight: bold;
             color: #4a4a4a;
           }
-  
-  
+
           .cta-container {
             position: relative;
             left: -100%;
@@ -321,9 +382,9 @@ export default class Speakers extends React.Component {
             pointer-events: none;
             border-bottom-color: #ECECEC;
             border-width: 30px;
-            margin-left: -30px;  
+            margin-left: -30px;
           }
-  
+
           .cta p {
             text-align: left;
             padding: 30px 40px;
@@ -332,7 +393,7 @@ export default class Speakers extends React.Component {
             color: #4a4a4a;
             margin: 0;
           }
-          
+
           .submit {
             position: absolute;
             border-radius: 6px;
@@ -351,7 +412,7 @@ export default class Speakers extends React.Component {
             background-color: #FFF;
             box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
           }
-  
+
           /** 
            * Rotation Animation
            **/
@@ -390,11 +451,10 @@ export default class Speakers extends React.Component {
             -o-animation: rotating 60s linear infinite;
             animation: rotating 60s linear infinite;
           }
-          
-          
+
         `}</style>
       </div>
     )
   }
-  
+
 }

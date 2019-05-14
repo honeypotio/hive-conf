@@ -82,7 +82,7 @@ export default class Header extends React.Component {
           .header {
             background-color: #000000;
             background-image: url("/static/images/nav-bg.jpg");
-            background-size: cover;
+            background-size: 100vw;
             background-repeat: no-repeat;
             background-position-x: -10px;
           }
@@ -93,7 +93,7 @@ export default class Header extends React.Component {
           }
 
           .header-expanded {
-            background-position-x: -150px;
+            background-position-x: -10px;
           }
 
           ul {
@@ -104,7 +104,7 @@ export default class Header extends React.Component {
             padding-left: 0;
             padding: 20px 12px;
             margin: 0;
-            padding-bottom: 80px;
+            padding-bottom: 120px;
             margin-left: -20px;
             margin-right: -20px;
           }
@@ -179,11 +179,11 @@ export default class Header extends React.Component {
             transition: 0.3s ease-in;
             padding-bottom: 0;
             overflow: hidden;
-            background-color: rgba(0, 0, 0, 0.6);
           }
 
           .dropdown-expanded {
             max-height: 400px;
+            background-color: rgba(0, 0, 0, 0.6);
           }
 
           .patty {
@@ -214,10 +214,10 @@ export default class Header extends React.Component {
           img {
             max-height: 32px;
           }
-
           @media ${ PageBreaks.smUp } {
             img {
-              max-height: 40px;
+              max-height: 48px;
+              margin-top: 8px;
             }
           }
 
@@ -225,7 +225,7 @@ export default class Header extends React.Component {
             font-weight: 400;
             font-size: 16px;
           }
-          
+
           @media ${ PageBreaks.smUp } {
             .header-link {
               line-height: 60px;
