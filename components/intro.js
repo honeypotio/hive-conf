@@ -122,7 +122,7 @@ export default function Intro() {
         }
         @media ${ PageBreaks.smUp } {
           span {
-            font-size: 14px;
+            font-size: 16px;
             max-width: 50%;
             margin-left: 20px;
           }
@@ -140,7 +140,7 @@ export default function Intro() {
 
         .description {
           font-weight: 200;
-          font-size: 20px;
+          font-size: 18px;
           line-height: 40px;
         }
 

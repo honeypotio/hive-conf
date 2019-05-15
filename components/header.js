@@ -44,7 +44,11 @@ export default class Header extends React.Component {
     return (
       <div className={ `header ${ !this.state.menuCollapsed && "header-expanded"}` }>
         <ul className={ "mobile-header" }>
-          <li className={ "mobile-logo" }><a href={""}><img src="/static/images/hive-logo.svg" alt="Hive Logo"/></a></li>
+          <li className={ "mobile-logo" }>
+            <a href={""}>
+              <img src={"/static/images/hive-logo.svg"} alt={"Hive Logo"} />
+            </a>
+          </li>
           <li className={"menu-toggle"}>
             <a href="#" className="hamburger" onClick={ this.toggleMenu }>
               <span className={`patty ${ !this.state.menuCollapsed && "patty-active" }`}></span>
@@ -63,7 +67,12 @@ export default class Header extends React.Component {
           </ul>
         </ul>
         <ul className={ "large-header" }>
-          <li><a href={"/"}><img src="/static/images/hive-logo.svg" alt="Hive Logo"/></a></li>
+          <li>
+            <a className={ "hover-logo" } href={"/"}>
+              <img className={ "hover-hide" } src="/static/images/hive-logo.svg" alt="Hive Logo"/>
+              <img className={ "hover-show" } src={"/static/images/HiveConf_Logo_White.svg"} alt={"Hive Logo"} />
+            </a>
+          </li>
           { 
               HeaderLinks.map(item => (<li className={"header-link"} key={ item.link }>
                               <AnchorLink href={`${item.link}`} className={item.btn ? "btn" : "link"}>
@@ -232,7 +241,7 @@ export default class Header extends React.Component {
             }
 
             .header-link :global(a) {
-              font-size: 20px;
+              font-size: 17px;
             }
           }
 
@@ -262,6 +271,34 @@ export default class Header extends React.Component {
           .header-link :global(.link:hover) {
             text-decoration: none;
           }
+
+          @-webkit-keyframes slide-in-left {
+              100% { left: 0; }
+          }
+
+          @keyframes slide-in-left {
+              100% { left: 0; }
+          }
+
+          .hover-logo {
+            position: relative;
+            display: block;
+          }
+
+          .hover-show {
+            position: absolute;
+            display: none;
+            left: -50px;
+          }
+
+          /*.hover-logo:hover .hover-show {
+            display: block;
+            animation: slide-in-left 1s forwards;
+          }
+
+          .hover-logo:hover .hover-hide {
+            display: none;
+          }*/
         `}</style>
       </div>
     )
