@@ -5,13 +5,24 @@ export default function Location() {
     <div id={"location"}>
       <div className={"wrapper"}>
         <div className={"oval"}></div>
-        <h2>HiveConf'18</h2>
-        <img /><a>Festsaal Kreuzberg</a>
-        <p>Join us at Festsaal Kreuzberg, one of Berlin’s coolest venues. Located close to the Spree in the heart of the city, Festsaal is the perfect location for intimate talks, interactive workshops & networking. The conference runs from 9am to 6pm.</p>
-        <button>Map</button>
-        <button>Venue</button>
-        <button>Venue</button>
-        <button>Venue</button>
+        <h2>Location</h2>
+        <img className={"icon"} src={`/static/icons/Location.svg`}/><a target={"_blank"} href={"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9716.118371794813!2d13.4515843!3d52.4967039!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc26594a9f6726b2e!2sFestsaal+Kreuzberg!5e0!3m2!1sen!2s!4v1533318256540"}>Festsaal Kreuzberg</a>
+        <div className="location-info">
+          <div>
+            <p>Join us at Festsaal Kreuzberg, one of Berlin’s coolest venues. Located close to the Spree in the heart of the city, Festsaal is the perfect location for intimate talks, interactive workshops & networking. The conference runs from 9am to 6pm.</p>
+            <div className={"buttons"}>
+              <button className={"map"}>Map</button>
+              <button className={"venue middle"}>Venue</button>
+              <button className={"venue middle"}>Venue</button>
+              <button className={"venue"}>Venue</button>
+            </div>
+          </div>
+          <div className={"visual"}>
+          <iframe src={"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9716.118371794813!2d13.4515843!3d52.4967039!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc26594a9f6726b2e!2sFestsaal+Kreuzberg!5e0!3m2!1sen!2s!4v1533318256540"} className={"map"}></iframe>
+          <img className={"venue"} src={`/static/venue/Venue01@2x.png`} alt={"Venue Image"}/>
+          </div>
+        </div>
+        
       </div>
 
     <style jsx>{`
@@ -56,11 +67,30 @@ export default function Location() {
         top: 60px;
       }
     }
-
+    
+    .location-info {
+      display: grid;
+      grid-template-columns: repeat (1, 100%);
+      grid-row-gap: 50px;
+    }
+    @media ${ PageBreaks.smUp } {
+      .location-info {
+        grid-template-columns: repeat(2, calc(50% - 30px));
+        grid-column-gap: 60px;
+      }
+    }
+    #location .icon {
+      height: 50px;
+      width: 50px;
+      margin-left: -10px;
+      margin-right: 20px;
+    }
     a {
       font-size: 33px;
       line-height: 40px;
       font-weight: 600;
+      color: #4A4A4A;
+      border-bottom: 3px solid #4a4a4a;
     }
 
     p {
@@ -69,9 +99,135 @@ export default function Location() {
       font-size: 18px;
       line-height: 46px;
       color: #4a4a4a;
-      width: 40%;
 
     }
+
+    .buttons {
+      display: flex;
+      align-items: stretch;
+    }
+
+    .buttons button {
+      font-size: 12px;
+      display: inline-block;
+      padding: 4px 5px;
+      border: none;
+      position: relative;
+      height: 30px;
+      background: linear-gradient(90deg, #FFFFFF 0%, #ECECEC 100%);
+      flex-grow: 1;
+    }
+    @media ${ PageBreaks.smUp } {
+      .buttons button {
+        font-size: 16px;
+        padding: 10px 40px;
+        border: none;
+        position: relative;
+        height: 44px;
+        background: linear-gradient(90deg, #FFFFFF 0%, #ECECEC 100%);
+        flex-grow: initial;
+      }
+    }
+    .buttons button.active {
+      background: #1A1A1A;
+      color: #ffffff;
+      outline: none;
+    }
+    .buttons button.active:after, .buttons button.active:before {
+      border-top-color: #1A1A1A !important;
+      border-bottom-color: #1A1A1A !important;
+    }
+
+    button.map {
+      border-radius: 3px 0 0 3px;
+    }
+
+    .buttons button.map:after {
+      position: absolute;
+      left: 100%;
+      top: 0;
+      content: " ";
+      width: 0; 
+      height: 0;
+      border-top: 30px solid #ECECEC; 
+      border-right: 20px solid transparent;
+    }
+    @media ${ PageBreaks.smUp } {
+      .buttons button.map:after {
+        border-top: 44px solid #ECECEC; 
+      }
+    }
+
+    button.venue {
+      border-radius: 0 3px 3px 0;
+    }
+
+    .buttons button.venue:before {
+      position: absolute;
+      right: 100%;
+      top: 0;
+      content: " ";
+      width: 0; 
+      height: 0; 
+      border-bottom: 30px solid white; 
+      border-left: 20px solid transparent;
+    }
+    @media ${ PageBreaks.smUp } {
+      .buttons button.venue:before {
+        border-bottom: 44px solid white; 
+      }
+    }
+
+    button.venue.middle {
+      border-radius: 0;
+    }
+
+    .buttons button.hr:after {
+      position: absolute;
+      left: 100%;
+      top: 0;
+      content: " ";
+      width: 0; 
+      height: 0; 
+      border-top: 30px solid #ECECEC; 
+      border-right: 20px solid transparent;
+    }
+    @media ${ PageBreaks.smUp } {
+      .buttons button.venue.middle:after {
+        border-top: 44px solid #ECECEC; 
+      }
+    }
+
+    .buttons button.venue.middle:before {
+      position: absolute;
+      right: 100%;
+      top: 0;
+      content: " ";
+      width: 0; 
+      height: 0; 
+      border-bottom: 30px solid white; 
+      border-left: 20px solid transparent;
+    }
+    @media ${ PageBreaks.smUp } {
+      .buttons button.venue.middle:before {
+        border-bottom: 44px solid white; 
+      }
+    }
+
+    .visual img {
+      display: none;
+    }
+
+    .visual iframe {
+      border: none;
+      width: 100%;
+      height: 100%;
+    }
+    
+
+   
+
+    
     }`}</style>
     </div>
   )
