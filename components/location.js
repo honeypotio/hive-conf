@@ -1,6 +1,21 @@
 import PageBreaks from '../utils/page-breaks';
+import React from 'react';
 
-export default function Location() {
+
+
+export default class Location extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      filter: null
+    };
+  }
+  changeFilter(type) {
+    this.setState(() => ({
+      filter: type
+    }));
+  }
+  render() {
   return (
     <div id={"location"}>
       <div className={"wrapper"}>
@@ -11,15 +26,17 @@ export default function Location() {
           <div>
             <p>Join us at Festsaal Kreuzberg, one of Berlin’s coolest venues. Located close to the Spree in the heart of the city, Festsaal is the perfect location for intimate talks, interactive workshops & networking. The conference runs from 9am to 6pm.</p>
             <div className={"buttons"}>
-              <button className={"map"}>Map</button>
-              <button className={"venue middle"}>Venue</button>
-              <button className={"venue middle"}>Venue</button>
-              <button className={"venue"}>Venue</button>
+              <button className={`map ${this.state.filter === null && "active"}`} onClick={this.changeFilter.bind(this, null)}>Map</button>
+              <button className={`venue middle ${this.state.filter === "Venue01" && "active"}`} onClick={this.changeFilter.bind(this, 'Venue01')}>Venue</button>
+              <button className={`venue middle ${this.state.filter === "Venue02" && "active"}`} onClick={this.changeFilter.bind(this, 'Venue02')}>Venue</button>
+              <button className={`venue ${this.state.filter === "Venue03" && "active"}`} onClick={this.changeFilter.bind(this, 'Venue03')}>Venue</button>
             </div>
           </div>
           <div className={"visual"}>
-          <iframe src={"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9716.118371794813!2d13.4515843!3d52.4967039!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc26594a9f6726b2e!2sFestsaal+Kreuzberg!5e0!3m2!1sen!2s!4v1533318256540"} className={"map"}></iframe>
-          <img className={"venue"} src={`/static/venue/Venue01@2x.png`} alt={"Venue Image"}/>
+            <iframe className={`map ${this.state.filter === null && "active"}`} src={"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9716.118371794813!2d13.4515843!3d52.4967039!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc26594a9f6726b2e!2sFestsaal+Kreuzberg!5e0!3m2!1sen!2s!4v1533318256540"}></iframe>
+            <img className={`venue ${this.state.filter === "Venue01" && "active"}`} src={`/static/images/venue/Venue01@2x.png`} alt={"Venue Image"}/>
+            <img className={`venue ${this.state.filter === "Venue02" && "active"}`} src={`/static/images/venue/Venue02@2x.png`} alt={"Venue Image"}/>
+            <img className={`venue ${this.state.filter === "Venue03" && "active"}`} src={`/static/images/venue/Venue03@2x.png`} alt={"Venue Image"}/>
           </div>
         </div>
         
@@ -213,16 +230,27 @@ export default function Location() {
         border-bottom: 44px solid white; 
       }
     }
-
-    .visual img {
+    .visual {
+      height: 600px;
+      margin-top: -200px;
+    }
+    .visual img{
       display: none;
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+    .visual .active {
+      display: block !important;
     }
 
     .visual iframe {
       border: none;
       width: 100%;
       height: 100%;
+      display: none;
     }
+
     
 
    
@@ -231,4 +259,5 @@ export default function Location() {
     }`}</style>
     </div>
   )
+}
 }
