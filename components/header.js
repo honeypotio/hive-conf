@@ -13,7 +13,7 @@ const HeaderLinks = [
     text: "Topics",
     link: "#topics"
   },{
-    text: "Hive Conf '18",
+    text: "HiveConf'18",
     link: `https://honeypot.netlify.com/hive-conference-2018/`
   },{
     text: "Location",
@@ -68,7 +68,7 @@ export default class Header extends React.Component {
         </ul>
         <ul className={ "large-header" }>
           <li>
-            <a className={ "hover-logo" } href={"/"}>
+            <a className={ "hover-logo" } href={""}>
               <img className={ "hover-hide" } src="/static/images/hive-logo.svg" alt="Hive Logo"/>
               <img className={ "hover-show" } src={"/static/images/HiveConf_Logo_White.svg"} alt={"Hive Logo"} />
             </a>
@@ -273,32 +273,35 @@ export default class Header extends React.Component {
           }
 
           @-webkit-keyframes slide-in-left {
-              100% { left: 0; }
+            0% { left: -80px; }  
+            100% { left: 0; }
           }
 
           @keyframes slide-in-left {
-              100% { left: 0; }
+            0% { left: -80px; }  
+            100% { left: 0; }
           }
 
           .hover-logo {
             position: relative;
             display: block;
+            overflow: hidden;
+            height: 60px;
           }
 
           .hover-show {
             position: absolute;
             display: none;
-            left: -50px;
           }
 
-          /*.hover-logo:hover .hover-show {
+          .hover-logo:hover .hover-show {
             display: block;
             animation: slide-in-left 1s forwards;
           }
 
           .hover-logo:hover .hover-hide {
             display: none;
-          }*/
+          }
         `}</style>
       </div>
     )

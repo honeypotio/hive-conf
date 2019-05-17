@@ -339,7 +339,7 @@ export default function Hiveconf() {
     flex: 0 0 calc(16.66% - 20px);
     padding: 20px;
     margin: 10px;
-    max-width: 120px;
+    max-width: 80px;
   }
   @media ${ PageBreaks.smUp } {
     .logos img {
