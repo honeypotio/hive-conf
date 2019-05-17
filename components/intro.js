@@ -130,7 +130,7 @@ export default function Intro() {
 
         .fa {
           font-size: 20px;
-          margin-bottom: -5px;
+          padding-right: 3px;
         }
         @media ${ PageBreaks.smUp } {
           .fa {

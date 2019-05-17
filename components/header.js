@@ -46,7 +46,7 @@ export default class Header extends React.Component {
         <ul className={ "mobile-header" }>
           <li className={ "mobile-logo" }>
             <a href={""}>
-              <img src={"/static/images/hive-logo.svg"} alt={"Hive Logo"} />
+              <img className={"mobile-logo-img"} src={"/static/images/hive-logo.svg"} alt={"Hive Logo"} />
             </a>
           </li>
           <li className={"menu-toggle"}>
@@ -164,6 +164,10 @@ export default class Header extends React.Component {
           .mobile-logo {
             text-align: left;
             padding-left: 20px
+          }
+
+          .mobile-logo-img {
+            margin-left: -80px;
           }
 
           .menu-toggle {

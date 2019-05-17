@@ -1,6 +1,5 @@
 import PageBreaks from '../utils/page-breaks';
 import React from 'react';
-
 import SpeakerList from '../utils/speakers.json';
 
 export default class Speakers extends React.Component {
@@ -282,14 +281,16 @@ export default class Speakers extends React.Component {
 
           .speaker-name {
             font-size: 16px;
-            margin: 5px 0;
+            margin: 0;
+            margin-top: 8px;
             font-weight: 600;
           }
           @media ${ PageBreaks.smUp } {
             .speaker-name {
               font-size: 18px;
               line-heigt: 22px;
-              margin: 8px 0;
+              margin: 0;
+              margin-top: 10px;
             }
           }
 
@@ -297,6 +298,7 @@ export default class Speakers extends React.Component {
             font-size: 14px;
             line-heigt: 34px;
             padding: 0px 10px;
+            font-weight: 300;
           }
           @media ${ PageBreaks.smUp } {
             .speaker-title {
@@ -350,31 +352,30 @@ export default class Speakers extends React.Component {
 
           .cta-container {
             position: relative;
-            left: -100%;
-            bottom: -100px;
+            bottom: -50px;
             margin-bottom: 100px;
-          }
-          @media ${ PageBreaks.xsUp } {
-            .cta-container {
-              position: relative;
-              left: -70%;
-            }
+            left: calc(-70% - 42px);
           }
           @media ${ PageBreaks.smUp } {
             .cta-container {
               position: relative;
-              left: -100%;
+              left: calc(-100% - 22px);
             }
           }
 
           .cta {
-            width: 420px;
+            width: 300px;
             background: linear-gradient(90deg, #FFFFFF 0%, #ECECEC 80%);
             position: relative;
           }
+          @media ${ PageBreaks.smUp } {
+            .cta {
+              width: 420px;
+            }
+          }
           .cta:after {
             bottom: 100%;
-            left: 80%;
+            left: calc(100% - 60px);
             border: solid transparent;
             content: " ";
             height: 0;
@@ -384,6 +385,11 @@ export default class Speakers extends React.Component {
             border-bottom-color: #ECECEC;
             border-width: 30px;
             margin-left: -30px;
+          }
+          @media ${ PageBreaks.smUp } {
+            .cta:after {
+              left: calc(100% - 80px);
+            }
           }
 
           .cta p {
