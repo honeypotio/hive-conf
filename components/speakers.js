@@ -35,7 +35,7 @@ export default class Speakers extends React.Component {
         <div className={"speaker-list"}>
           {
             currentSpeakers.map(speaker => (
-              <div key={speaker.name} className={"speaker-card"}>
+              <div key={`${ speaker.name }-${ this.state.filter }`} className={"speaker-card"}>
                 <img className={"speaker-image"} src={`/static/images/speakers/${ speaker.img }`} alt={ speaker.name }/>
                 <p className={ "speaker-name" }>{ speaker.name }</p>
                 <p className={ "speaker-title" }>{ speaker.title }</p>
@@ -62,7 +62,7 @@ export default class Speakers extends React.Component {
 
           {
             new Array(placeholders).fill(1).map((el, index) => {
-              return (<div key={`Placeholder-${index}`} className={"speaker-card"}>
+              return (<div key={`Placeholder-${index}-${ this.state.filter }`} className={"speaker-card"}>
                         <img className={"speaker-image"} src={`/static/images/speakers/PH_Speaker${index}.png`} alt="Placeholder"/>
                       </div>)
             })
@@ -96,6 +96,7 @@ export default class Speakers extends React.Component {
 
           h2 {
             font-size: 36px;
+            font-weight: 700;
           }
           @media ${ PageBreaks.smUp } {
             h2 {
@@ -273,6 +274,8 @@ export default class Speakers extends React.Component {
 
           .speaker-card {
             text-align: center;
+            animation: slide-in-left 1s forwards;
+            transform-origin: left;
           }
 
           .speaker-image {
@@ -457,6 +460,17 @@ export default class Speakers extends React.Component {
             -ms-animation: rotating 60s linear infinite;
             -o-animation: rotating 60s linear infinite;
             animation: rotating 60s linear infinite;
+          }
+
+          /* For speaker cards */ 
+          @-webkit-keyframes slide-in-left {
+            0% { transform: rotate3d(0,1,0, 120deg); opacity: 0; }
+            100% { transform: rotate3d(0,1,0, 0deg); opacity: 1; }
+          }
+
+          @keyframes slide-in-left {
+            0% { transform: rotate3d(0,1,0, 120deg); opacity: 0; }
+            100% { transform: rotate3d(0,1,0, 0deg); opacity: 1; }
           }
 
         `}</style>

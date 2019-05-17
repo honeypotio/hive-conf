@@ -41,6 +41,7 @@ export default function Topics() {
       
       h2 {
         font-size: 36px;
+        font-weight: 700;
       }
       @media ${ PageBreaks.smUp } {
         h2 {

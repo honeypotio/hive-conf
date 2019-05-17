@@ -300,7 +300,7 @@ export default class Header extends React.Component {
 
           .hover-logo:hover .hover-show {
             display: block;
-            animation: slide-in-left 1s forwards;
+            animation: slide-in-left 0.5s forwards;
           }
 
           .hover-logo:hover .hover-hide {

@@ -58,7 +58,7 @@ export default class Location extends React.Component {
   
     h2 {
       font-size: 36px;
-      font-weight: bold;
+      font-weight: 700;
       letter-spacing: -0.4px;
     }
     @media ${ PageBreaks.smUp } {
