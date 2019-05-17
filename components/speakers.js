@@ -173,6 +173,14 @@ export default class Speakers extends React.Component {
             color: #ffffff;
             outline: none;
           }
+          
+          .filters button:active {
+            outline: none;
+          }
+          .filters button:focus {
+            outline: none;
+          }
+
           .filters button.active:after, .filters button.active:before {
             border-top-color: #1A1A1A !important;
             border-bottom-color: #1A1A1A !important;

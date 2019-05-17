@@ -150,6 +150,13 @@ export default class Location extends React.Component {
       color: #ffffff;
       outline: none;
     }
+    .buttons button:active {
+      outline: none;
+    }
+    .buttons button:focus {
+      outline: none;
+    }
+
     .buttons button.active:after, .buttons button.active:before {
       border-top-color: #1A1A1A !important;
       border-bottom-color: #1A1A1A !important;
