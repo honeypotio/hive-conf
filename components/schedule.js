@@ -10,6 +10,7 @@ export default function schedule() {
       <div className={"information"}>
         <h3>Our schedule is coming soon, but...</h3>
         <p>Stay in the loop and get the latest updates on new speakers, discounted tickets and everything HiveConf'19!</p>
+        <a target="_blank" href="mailto:hiveconf@honeypot.io" className={"submit"}>Contact us</a>
       </div>
       <style jsx>{`
         .wrapper {
@@ -90,6 +91,22 @@ export default function schedule() {
           font-size: 18px;
           line-height: 46px;
           white-space: nowrap;
+        }
+
+        .submit {
+          border-radius: 6px;
+          background-color: #F9FF00;
+          color: #000000;
+          font-size: 18px;
+          font-weight: bold;
+          line-height: 22px;
+          padding: 15px 40px;
+          cursor: pointer;
+          text-decoration: none;
+          }
+        .submit:hover {
+          background-color: #FFF;
+          box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
         }
       `}</style>
     </div>
