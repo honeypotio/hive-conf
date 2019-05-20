@@ -108,6 +108,7 @@ export default class Location extends React.Component {
       font-weight: 600;
       color: #4A4A4A;
       border-bottom: 3px solid #4a4a4a;
+      text-decoration: none;
     }
 
     p {
