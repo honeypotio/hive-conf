@@ -14,7 +14,7 @@ const HeaderLinks = [
     link: "#topics"
   },{
     text: "HiveConf'18",
-    link: `https://honeypot.netlify.com/hive-conference-2018/`
+    link: `#hiveconf18`
   },{
     text: "Location",
     link: "#location"
