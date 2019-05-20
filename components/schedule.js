@@ -6,7 +6,7 @@ export default function schedule() {
       <h2>Schedule</h2>
       <div className={"oval"}></div>
       <div className={"oval-small"}></div>
-      <div className={"date"}><img src={`/static/icons/Location.svg`} alt={"Calendar Icon"}/>September 19, 2019</div>
+      <div className={"date"}><img src={`/static/icons/Calendar.svg`} alt={"Calendar Icon"}/>September 19, 2019</div>
       <div className={"information"}>
         <h3>Our schedule is coming soon, but...</h3>
         <p>Stay in the loop and get the latest updates on new speakers, discounted tickets and everything HiveConf'19!</p>
