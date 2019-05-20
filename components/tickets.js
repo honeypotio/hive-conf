@@ -11,7 +11,7 @@ export default function Tickets() {
           <div className={"box"}>
             <h4>Early Bird</h4>
             <h3>€249</h3>
-            <a target="_blank" href="https://hiveconf19.eventbrite.com/?aff=website" className={"ticket-cta"}>Get Tickets</a>
+            <a target="_blank" href="https://hiveconf19.eventbrite.com/?aff=website#tickets" className={"ticket-cta"}>Get Tickets</a>
           </div>
         </div>
         <div>
@@ -27,7 +27,7 @@ export default function Tickets() {
           </div>
         </div>
       </div>
-      <div className={"groups"}>Bring your team for a discounted price with our <a target={"_blank"} href={"#"}>group tickets!</a></div>
+      <div className={"groups"}>Bring your team for a discounted price with our <a target={"_blank"} href={"https://www.eventbrite.ie/e/hiveconf19-where-tech-meets-hr-tickets-60047828672?aff=website#grouptickets"}>group tickets!</a></div>
       <style jsx>{`
         .wrapper {
           max-width: 1100px;
