@@ -197,7 +197,7 @@ export default class Speakers extends React.Component {
           }
 
           .filters button.hr {
-            margin: 0 19px;
+            margin: 0 20px;
           }
 
           .filters button.all:after {
@@ -218,8 +218,8 @@ export default class Speakers extends React.Component {
 
           .filters button.hr:after {
             position: absolute;
-            left: 100%;
-            top: 0;
+            right: -20px;
+            top: 0px;
             content: " ";
             width: 0; 
             height: 0; 
@@ -228,14 +228,14 @@ export default class Speakers extends React.Component {
           }
           @media ${ PageBreaks.smUp } {
             .filters button.hr:after {
-              border-top: 54px solid #ECECEC; 
+              border-top: 55px solid #ECECEC; 
             }
           }
 
           .filters button.hr:before {
             position: absolute;
-            right: 100%;
-            top: 0;
+            left: -20px;
+            top: -1px;
             content: " ";
             width: 0; 
             height: 0; 
@@ -244,14 +244,14 @@ export default class Speakers extends React.Component {
           }
           @media ${ PageBreaks.smUp } {
             .filters button.hr:before {
-              border-bottom: 54px solid white; 
+              border-bottom: 55px solid white; 
             }
           }
 
           .filters button.tech:before {
             position: absolute;
-            right: 100%;
-            top: 0;
+            left:-20px;
+            top: -1px;
             content: " ";
             width: 0; 
             height: 0; 
@@ -260,7 +260,7 @@ export default class Speakers extends React.Component {
           }
           @media ${ PageBreaks.smUp } {
             .filters button.tech:before {
-              border-bottom: 54px solid white; 
+              border-bottom: 55px solid white; 
             }
           }
 
