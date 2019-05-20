@@ -105,6 +105,11 @@ export default function Topics() {
         text-decoration: none;
         font-weight: bold;
       }
+      .tickets:hover {
+        color: #1A1A1A;
+        background: #FFF;
+        box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
+      }
 
       .background-logo {
         position: absolute;

@@ -94,8 +94,8 @@ export default function Tickets() {
           margin: 0 auto;
         }
         .ticket-cta:hover {
-          color: #4a4a4a;
-          background-color: #FFF;
+          color: #1A1A1A;
+          background: #FFF;
           box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
         }
         .ticketoptions {
