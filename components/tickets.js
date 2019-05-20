@@ -3,7 +3,7 @@ import PageBreaks from '../utils/page-breaks';
 export default function Tickets() {
   return (
     <div id={"tickets"} className={"wrapper"} >
-      <h2>Topics</h2>
+      <h2>Tickets</h2>
       <div className={"oval"}></div>
       <div className={"oval-big"}></div>
       <div className={"ticketoptions"}>
@@ -177,6 +177,7 @@ export default function Tickets() {
         .groups a {
           color: #0000FF;
           border-bottom: 2px solid #0000FF;
+          text-decoration: none;
         }
       `}</style>
     </div>
