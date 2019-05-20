@@ -8,7 +8,8 @@ import Sponsorships from '../components/sponsorships';
 import Honeypot from '../components/honeypot';
 import Hiveconf from '../components/hiveconf';
 import Location from '../components/location';
-import Tickets from '../components/tickets'
+import Tickets from '../components/tickets';
+import Schedule from '../components/schedule';
 import PageBreaks from '../utils/page-breaks';
 import "../styles/main.scss"
 
@@ -25,6 +26,7 @@ export default function Main() {
       <Header />
       <Intro />
       <Speakers />
+      <Schedule />
       <Topics />
       <Hiveconf />
       <Location />
