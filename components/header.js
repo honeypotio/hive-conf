@@ -210,18 +210,18 @@ export default class Header extends React.Component {
             transition: 0.2s ease-in;
           }
 
-          .patty-active:nth-child(2) {
-            transform: rotate(-45deg);
-            top: -6px;
-          }
-
           .patty-active:first-child {
             transform: rotate(45deg);
+            top: 7px;
+          }
+
+          .patty-active:nth-child(2) {
+            transform: rotate(-45deg);
           }
 
           .patty-active:last-child {
             transform: rotate(-45deg);
-            top: -13px;
+            top: -7px;
           }
 
           img {

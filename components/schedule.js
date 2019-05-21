@@ -1,6 +1,6 @@
 import PageBreaks from '../utils/page-breaks';
 
-export default function schedule() {
+export default function Schedule() {
   return (
     <div id={"schedule"} className={"wrapper"} >
       <h2>Schedule</h2>
@@ -15,13 +15,16 @@ export default function schedule() {
       <style jsx>{`
         .wrapper {
           max-width: 1100px;
-          margin: 0 auto;
+          margin: 20px auto;
+          margin-bottom: 40px;
           padding: 20px 0;
           position: relative;
         }
         @media  ${ PageBreaks.smUp } {
           .wrapper {
             padding: 60px 0;
+            margin: 0 auto;
+            margin-bottom: 0px;
           }
         }
         
@@ -38,8 +41,8 @@ export default function schedule() {
         }
   
         .oval {	
-          height: 246px;
-          width: 246px;
+          height: 160px;
+          width: 160px;
           border-radius: 50%;	
           background: linear-gradient(90deg, #FFFFFF 0%, #ECECEC 100%);
           position: absolute;
@@ -47,8 +50,15 @@ export default function schedule() {
           left: 100px;
           z-index: -1;
         }
+        @media ${ PageBreaks.smUp } {
+          .oval { 
+            height: 246px;
+            width: 246px;
+          }
+        }
 
         .oval-small {
+          display: none;
           height: 100px;
           width: 100px;
           border-radius: 50%;	
@@ -58,39 +68,72 @@ export default function schedule() {
           left: 60%;
           z-index: -1;
         }
+        @media ${ PageBreaks.smUp } {
+          .oval-small {
+            display: initial;
+          }
+        }
 
         .date {
-          font-size: 33px;
+          font-size: 20px;
           font-weight: 600;
           color: #4A4A4A;
           line-height: 40px;
-          margin-bottom: 45px;
+          margin-bottom: 20px;
+        }
+        @media ${ PageBreaks.smUp } {
+          .date {
+            font-size: 32px;
+            margin-bottom: 45px;
+          }
         }
 
         .date img {
-          height: 50px;
-          width: 50px;
-          margin-left: -10px;
-          margin-right: 20px;
+          height: 25px;
+          width: 25px;
+          margin-top: -5px;
+          margin-right: 8px;
+        }
+        @media ${ PageBreaks.smUp } {
+          .date img {
+            height: 50px;
+            width: 50px;
+          }
         }
 
         .information {
-          width: 80%;
           margin: 0 auto;
+          margin-left: 20px;
+        }
+        @media ${ PageBreaks.smUp } {
+          .information {
+            width: 80%;
+            margin-left: auto;
+          }
         }
         
-        .information h3 {
+        h3 {
           color: #1A1A1A;
-          font-size: 30px;
+          font-size: 18px;
           font-weight: bold;
           line-height: 41px;
+        }
+        @media ${ PageBreaks.smUp } {
+          h3 {
+            font-size: 30px;
+          }
         }
 
         .information p {
           color: #4A4A4A;
           font-size: 18px;
           line-height: 46px;
-          white-space: nowrap;
+          margin-bottom: 30px;
+        }
+        @media ${ PageBreaks.smUp } {
+          .information p {
+            white-space: nowrap;
+          }
         }
 
         .submit {
@@ -103,7 +146,7 @@ export default function schedule() {
           padding: 15px 40px;
           cursor: pointer;
           text-decoration: none;
-          }
+        }
         .submit:hover {
           background-color: #FFF;
           box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
