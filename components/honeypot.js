@@ -2,8 +2,8 @@ import PageBreaks from '../utils/page-breaks';
 
 export default function Honeypot() {
   return (
-    <div id={"honeypot"} className={"wrapper"}>
-      <div>
+    <div id={"honeypot"}>
+      <div className={"wrapper"}>
       <h2>About <img src={``}/> Honeypot</h2>
       <p>Honeypot is Europe’s leading tech job platform. We help build great tech teams by connecting companies with technical talents from all over the world. On Honeypot, you can hire faster through our pre-screened talents and recruit more transparently through profiles stating tech-stack, salary and location preferences. We believe technical recruitment should be simple and efficient. </p>
       <div className={"cta"}>Save time, hire faster and build your engineering team by creating a free Honeypot account.<a target="_blank" href="https://app.honeypot.io/invite_requests/new" className={"join"}>Join Now</a></div>
@@ -17,14 +17,14 @@ export default function Honeypot() {
         margin: 0 auto;
         padding: 20px 0;
         position: relative;
-        
+
       }
       @media  ${ PageBreaks.smUp } {
         .wrapper {
           padding: 60px 0;
         }
       }
-      
+
       h2 {
         font-size: 36px;
         font-weight: 700;

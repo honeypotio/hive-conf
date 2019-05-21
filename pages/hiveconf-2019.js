@@ -12,6 +12,7 @@ import Tickets from '../components/tickets';
 import Schedule from '../components/schedule';
 import PageBreaks from '../utils/page-breaks';
 import "../styles/main.scss"
+import Footer from '../components/footer';
 
 export default function Main() {
   return (
@@ -33,6 +34,7 @@ export default function Main() {
       <Tickets />
       <Sponsorships />
       <Honeypot />
+      <Footer />
 
       <style jsx>{`
         :global(body) {
