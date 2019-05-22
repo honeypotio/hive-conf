@@ -69,24 +69,29 @@ export default function Hiveconf() {
       </div>
       <div className={"testimonials"}>
         <div className={"carouseloval"}></div>
-          <Carousel 
+          <Carousel
           indicators={false}
-          nextIcon={<img aria-hidden="true" src={`/static/icons/ArrowYellow_Right.svg`} />}
-          prevIcon={<img aria-hidden="true" src={`/static/icons/ArrowYellow_Left.svg`} />}>
+          nextIcon={<img aria-hidden="true" src={`/static/icons/ArrowYellow_Right.svg`} className={ "hide-mobile" } />}
+          prevIcon={<img aria-hidden="true" src={`/static/icons/ArrowYellow_Left.svg`} className={ "hide-mobile" } />}>
             {Testimonials.map(testimonial => (
               <Carousel.Item key={testimonial.name}>
                 <div className={"narrow"}>
-                  <img className={"quotesign"} src={`/static/icons/Quote.svg`} alt={"Quote Signs"}/>
+                  <img className={"quotesign hide-mobile"} src={`/static/icons/Quote.svg`} alt={"Quote Signs"}/>
                   <div className={"testimonial"}>
                     <div className={"left"}>
+                      <img className={"quotesign hide-desktop"} src={`/static/icons/Quote.svg`} alt={"Quote Signs"}/>
                       <h3 className={"title"}>{testimonial.title}</h3>
-                      <div className={"info"}>
+                      <div className={"info hide-mobile"}>
                         <h3 className={"name"}>{testimonial.name}</h3>
                         <div className={"position"}>{testimonial.position}</div>
                       </div>
                     </div>
                     <div className={"right"}>
                       <p>{testimonial.text}</p>
+                    </div>
+                    <div className={ "info hide-desktop" }>
+                      <h3 className={"name"}>{testimonial.name}</h3>
+                      <div className={"position"}>{testimonial.position}</div>
                     </div>
                   </div>
                 </div>
@@ -103,24 +108,24 @@ export default function Hiveconf() {
         </div>
       </div>
       <div className={"quotes"}>
-      <Carousel
-      indicators={false}
-      nextIcon={<img aria-hidden="true" src={`/static/icons/ArrowYellow_Right.svg`} />}
-      prevIcon={<img aria-hidden="true" src={`/static/icons/ArrowYellow_Left.svg`} />}>
-        {Quotes.map(quote => (
-          <Carousel.Item key={quote.name}>
-            <div className={"quotewrap"}>
-              <img src={`/static/images/quotes/${quote.img}@2x.png`}/>
-              <div className={"speaker-info"}>
-                <img className={"quotesign"} src={`/static/icons/Quote.svg`} alt={"Quote Signs"}/>
-                <p>{quote.text}</p>
-                <h3>{quote.name}</h3>
-                <h4>{quote.position}</h4>
+        <Carousel
+        indicators={false}
+        nextIcon={<img aria-hidden="true" src={`/static/icons/ArrowYellow_Right.svg`} className={ "hide-mobile" } />}
+        prevIcon={<img aria-hidden="true" src={`/static/icons/ArrowYellow_Left.svg`} className={ "hide-mobile" } />}>
+          {Quotes.map(quote => (
+            <Carousel.Item key={quote.name}>
+              <div className={"quotewrap"}>
+                <img src={`/static/images/quotes/${quote.img}@2x.png`} className={ "hide-mobile" } />
+                <div className={"speaker-info"}>
+                  <img className={"quotesign"} src={`/static/icons/Quote.svg`} alt={"Quote Signs"}/>
+                  <p className={""}>{quote.text}</p>
+                  <h3 className={""}>{quote.name}</h3>
+                  <h4 className={""}>{quote.position}</h4>
+                </div>
               </div>
-            </div>
-          </Carousel.Item>
-        ))}
-      </Carousel>
+            </Carousel.Item>
+          ))}
+        </Carousel>
       </div>
       <div className={"cta-wrapper"}>
         <div className={"cta-container"}>
@@ -139,7 +144,7 @@ export default function Hiveconf() {
   .wrapper {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 40px 0;
+    padding: 60px 0;
     position: relative;
     z-index: 1;
   }
@@ -154,27 +159,33 @@ export default function Hiveconf() {
     color: white;
     font-weight: bold;
     letter-spacing: -0.4px;
+    text-align: center;
   }
   @media ${ PageBreaks.smUp } {
     h2 {
       font-size: 60px;
       margin-top: 0;
       margin-bottom: 40px;
+      text-align: initial;
     }
   }
 
   .oval {
-    height: 413px;
-    width: 413px;
-    border-radius: 50%; 
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
     background: linear-gradient(90deg, #0000FF 0%, #0000AA 100%);
     position: absolute;
-    left: 100px;
+    left: 0;
+    top: -20px;
     z-index: -1;
   }
   @media  ${ PageBreaks.smUp } {
     .oval {
+      height: 413px;
+      width: 413px;
       top: -40px;
+      left: 100px;
     }
   }
 
@@ -196,8 +207,18 @@ export default function Hiveconf() {
 
   .description p {
     color: white;
-    font-size: 18px;
-    line-height: 46px;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  @media ${ PageBreaks.smUp } {
+    .description p {
+      font-size: 18px;
+      line-height: 46px;
+      text-align: initial;
+      margin-bottom: initial;
+    }
   }
 
   .description img {
@@ -207,125 +228,268 @@ export default function Hiveconf() {
   }
 
   .feedback {
-    width: 60%;
-    margin: 100px auto 0 auto;
+    margin-top: 40px;
     display: grid;
     grid-template-columns: auto auto;
-    grid-column-gap: 32px;
+    grid-column-gap: 12px;
+  }
+  @media ${ PageBreaks.smUp } {
+    .feedback {
+      width: 60%;
+      margin: 100px auto 0 auto;
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-column-gap: 32px;
+    }
   }
 
   .thumbsup {
     background: linear-gradient(90deg, #0000FF 0%, #0000AA 100%);
-    width: 105px;
-    height: 105px;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
-    position: relative
+    position: relative;
+    text-align: center;
   }
+  @media ${ PageBreaks.smUp } {
+    .thumbsup {
+      background: linear-gradient(90deg, #0000FF 0%, #0000AA 100%);
+      width: 105px;
+      height: 105px;
+      border-radius: 50%;
+      position: relative
+    }
+  }
+
   .thumbsup img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-  }    
+    height: 24px;
+    margin-top: 10px;
+    margin-left: 8px;
+  }
+  @media ${ PageBreaks.smUp } {
+    .thumbsup img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      height: auto;
+    }
+  }
 
   .feedback p {
-    font-size: 27px;
-    line-height: 52px;
-    color: white; 
+    font-size: 16px;
+    line-height: 30px;
+    color: white;
     margin: 0;
+  }
+  @media ${ PageBreaks.smUp } {
+    .feedback p {
+      font-size: 27px;
+      line-height: 52px;
+    }
   }
 
   .testimonials {
     position: relative;
-    height: 650px;
+  }
+  @media ${ PageBreaks.smUp } {
+    .testimonials {
+      height: 650px;
+    }
   }
 
   .testimonials > :global(.carousel) {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    transform: translateY(-50%);
+    margin: 20px 0;
+    margin-bottom: 40px;
   }
-  .testimonials > :global(.carousel) > :global(.carousel-inner) {
-    max-width: 1100px;
-    margin: 0 auto;
-    height: 500px;
+  @media ${ PageBreaks.smUp } {
+    .testimonials > :global(.carousel) {
+      margin: 0;
+      margin-bottom: 0;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+    }
   }
+
+  @media ${ PageBreaks.smUp } {
+    .testimonials > :global(.carousel) > :global(.carousel-inner) {
+      max-width: 1100px;
+      margin: 0 auto;
+      height: 500px;
+    }
+  }
+
   .carouseloval {
-    width: 650px;
-    height: 650px;
-    background: linear-gradient(90deg, #0000FF 0%, #0000AA 100%);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    border-radius: 50%;
+    display: none;
+  }
+  @media ${ PageBreaks.smUp } {
+    .carouseloval {
+      display: initial;
+      width: 650px;
+      height: 650px;
+      background: linear-gradient(90deg, #0000FF 0%, #0000AA 100%);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      border-radius: 50%;
+    }
   }
 
   .testimonial {
     display: grid;
-    grid-template-columns: repeat(2, calc(50% - 15px));
+    grid-template-columns: repeat(1, 100%);
     grid-column-gap: 30px;
     grid-template-rows: auto;
     color: white;
   }
+  @media ${ PageBreaks.smUp } {
+    .testimonial {
+      display: grid;
+      grid-template-columns: repeat(2, calc(50% - 15px));
+      grid-column-gap: 30px;
+      grid-template-rows: auto;
+      color: white;
+    }
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+  @media ${ PageBreaks.smUp } {
+    .hide-mobile {
+      display: initial;
+    }
+  }
+
+  @media ${ PageBreaks.smUp } {
+    .hide-desktop {
+      display: none;
+    }
+  }
 
   .testimonial p {
-    font-size: 18px;
-    line-height: 46px;
+    font-size: 16px;
+    line-height: 30px;
     margin: 0;
+  }
+  @media ${ PageBreaks.smUp } {
+    .testimonial p {
+      font-size: 18px;
+      line-height: 46px;
+      margin: 0;
+    }
   }
 
   .testimonial h3 {
     font-weight: bold;
-    font-size: 36px;
-    line-height: 44px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  @media ${ PageBreaks.smUp } {
+    .testimonial h3 {
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 44px;
+    }
   }
 
   .testimonial .left {
     position: relative;
   }
+
   .testimonial .info {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    margin-top: 20px;
+  }
+  @media ${ PageBreaks.smUp } {
+    .testimonial .info {
+      position: absolute;
+      margin-top: 0;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  .title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  @media ${ PageBreaks.smUp } {
+    .title {
+      font-size: initial;
+      margin-bottom: 0;
+    }
+  }
+
+  .testimonial .name {
+    font-size: 22px;
+    margin-bottom: 0;
+  }
+  @media ${ PageBreaks.smUp } {
+    .testimonial .name {
+      font-size: 36px;
+    }
   }
 
   .testimonial .position {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 500;
-    line-height: 45px;
-    
+  }
+  @media ${ PageBreaks.smUp } {
+    .testimonial .position {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 45px;
+    }
   }
 
   .quotesign {
-    width: 80px;
-    margin-bottom: 50px;
+    width: 32px;
+    margin-bottom: 16px;
+    margin-right: 10px;
+    float: left;
+  }
+  @media ${ PageBreaks.smUp } {
+    .quotesign {
+      width: 80px;
+      margin-bottom: 50px;
+      float: none;
+    }
   }
 
-  .narrow {
-    width: 80%;
-    margin: 0 auto;
+  @media ${ PageBreaks.smUp } {
+    .narrow {
+      width: 80%;
+      margin: 0 auto;
+    }
   }
+
   .companies {
     max-width: 1100px;
     margin: 0 auto;
   }
 
   .companies h5 {
-    width: 80%;
     margin: 0 auto;
     color: white;
-    font-size: 30px;
+    font-size: 24px;
     line-height: 41px;
     font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
   }
   @media ${ PageBreaks.smUp } {
     .companies h5 {
+      width: 80%;
       margin-bottom: 50px;
+      margin-top: 0px;
+      font-size: 30px;
+      text-align: initial;
     }
   }
 
@@ -333,69 +497,127 @@ export default function Hiveconf() {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 40px;
+  }
+  @media ${ PageBreaks.smUp } {
+    .logos {
+      margin-bottom: 20px;
+    }
   }
 
   .logos img {
     flex: 0 0 calc(16.66% - 20px);
-    padding: 20px;
-    margin: 10px;
+    padding: 8px;
     max-width: 80px;
   }
+
   @media ${ PageBreaks.smUp } {
     .logos img {
       max-height: 100px;
       max-width: none;
+      padding: 20px;
     }
   }
-  .quotewrap {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    
+
+  .quotes {
+    margin: 0 -20px;
+    padding: 20px;
+    background-image: linear-gradient(to right, #0000c1 , #0000fc);
+  }
+  @media ${ PageBreaks.smUp } {
+    .quotes {
+      margin: 0;
+      padding: 0;
+      background-image: none;
+    }
   }
 
-  .quotewrap > img {
-    height: 500px;
-    z-index: 10;
-    margin-right: -200px;
+  @media ${ PageBreaks.smUp } {
+    .quotewrap {
+      display: grid;
+      grid-template-columns: auto 1fr;
+    }
   }
 
   .speaker-info {
-    background: linear-gradient(90deg, #0000FF 0%, #0000AA 100%);
-    padding: 80px 0 0 300px;
     color: white;
     position: relative;
   }
-  .speaker-info p {
-    font-size: 27px;
-    line-height: 52px;
-    margin: 0;
-    width: 500px;
+  @media ${ PageBreaks.smUp } {
+    .speaker-info {
+      background: linear-gradient(90deg, #0000FF 0%, #0000AA 100%);
+      padding: 80px 0 0 300px;
+      color: white;
+      position: relative;
+    }
   }
+
+  @media ${ PageBreaks.smUp } {
+    .quotewrap > img {
+      height: 500px;
+      z-index: 10;
+      margin-right: -200px;
+    }
+  }
+
+  @media ${ PageBreaks.smUp } {
+    .speaker-info p {
+      font-size: 27px;
+      line-height: 52px;
+      margin: 0;
+      width: 500px;
+    }
+  }
+
   .speaker-info h3 {
-    margin-top: 40px;
+    margin-top: 20px;
     font-weight: bold;
-    font-size: 36px;
-    line-height: 44px;
-  }
-  .speaker-info h4 {
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 45px;
-  }
-  .speaker-info .quotesign {
-    position: absolute;
-    width: 100px;
+    font-size: 20px;
+    text-align: right;
     margin-bottom: 0;
-    top: 130px;
-    left: 80px;
+  }
+  @media ${ PageBreaks.smUp } {
+    .speaker-info h3 {
+      margin-top: 40px;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 44px;
+      text-align: initial;
+    }
+  }
+
+  .speaker-info h4 {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: right;
+  }
+  @media ${ PageBreaks.smUp } {
+    .speaker-info h4 {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 45px;
+      text-align: initial;
+    }
+  }
+
+  .speaker-info .quotesign {
+    width: 40px;
+    margin-bottom: 20px;
     z-index: 101;
-    
+  }
+  @media ${ PageBreaks.smUp } {
+    .speaker-info .quotesign {
+      position: absolute;
+      width: 100px;
+      top: 130px;
+      left: 80px;
+      margin-bottom: 0px;
+    }
   }
 
   .quotes > :global(.carousel) > :global(.carousel-control-prev) {
     z-index: 101;
   }
-
 
   .cta-wrapper {
     max-width: 1100px;
@@ -404,36 +626,70 @@ export default function Hiveconf() {
   }
 
   .cta-container {
-    width: 80%;
     margin: 0 auto;
     color: white;
     position: relative;
   }
+  @media ${ PageBreaks.smUp } {
+    .cta-container {
+      width: 80%;
+      margin: 0 auto;
+      color: white;
+      position: relative;
+    }
+  }
 
   .cta-container h3 {
-    font-size: 30px;
-    line-height: 41px;
+    font-size: 20px;
     font-weight: bold;
+    text-align: center;
+  }
+  @media ${ PageBreaks.smUp } {
+    .cta-container h3 {
+      font-size: 30px;
+      line-height: 41px;
+      font-weight: bold;
+      text-align: initial;
+    }
   }
 
   .cta-container p {
-    font-size: 18px;
-    line-height: 46px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 600;
   }
+  @media ${ PageBreaks.smUp } {
+    .cta-container p {
+      font-size: 18px;
+      line-height: 46px;
+      text-align: initial;
+      font-weight: 400;
+    }
+  }
+
   .cta {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    display: inline-block;
     border-radius: 6px;
     background-color: #F9FF00;
     color: #000000;
-    font-size: 18px;
+    font-size: 12px;
     font-weight: bold;
-    line-height: 22px;
-    padding: 15px 40px;
+    padding: 8px 30px;
     cursor: pointer;
     text-decoration: none;
+    margin-left: calc(50vw - 80px);
+  }
+  @media ${ PageBreaks.smUp } {
+    .cta {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 18px;
+      line-height: 22px;
+      padding: 15px 40px;
+      margin-left: 0;
+    }
   }
   .cta:hover {
     background-color: #FFF;

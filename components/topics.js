@@ -22,7 +22,7 @@ export default function Topics() {
           <p>Stay on top of the latest trends in people analytics and learn how data can supercharge your people processes to increase employee engagement, improve retention and create scalable teams.</p>
         </div>
       </div>
-      
+
       <div className={"center"}>
         <a target="_blank" href="https://hiveconf19.eventbrite.com/?aff=website" className={"tickets"}>Get Tickets</a>
       </div>
@@ -40,7 +40,7 @@ export default function Topics() {
             margin-bottom: 0;
           }
         }
-        
+
         h2 {
           font-size: 36px;
           font-weight: 700;
@@ -63,7 +63,7 @@ export default function Topics() {
           left: 100px;
           z-index: -1;
         }
-        
+
         .topic-list {
           display: grid;
           margin: 0 auto;
@@ -114,7 +114,7 @@ export default function Topics() {
           color: #4A4A4A;
           font-size: 18px;
         }
-        
+
         .center {
           margin-top: 40px;
           text-align: center;
@@ -149,7 +149,7 @@ export default function Topics() {
           top: 300px;
         }
 
-      /** 
+      /**
            * Rotation Animation
            **/
           @-webkit-keyframes rotating /* Safari and Chrome */ {
