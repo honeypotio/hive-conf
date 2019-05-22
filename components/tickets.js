@@ -40,7 +40,7 @@ export default function Tickets() {
             padding: 60px 0;
           }
         }
-        
+
         h2 {
           font-size: 36px;
           font-weight: 700;
@@ -52,7 +52,7 @@ export default function Tickets() {
             margin-bottom: 30px;
           }
         }
-  
+
         .oval {	
           height: 246px;
           width: 246px;
@@ -101,7 +101,7 @@ export default function Tickets() {
         .ticketoptions {
           margin: 0 auto;
           margin-top: 100px;
-          display: grid; 
+          display: grid;
           grid-template-columns: repeat(1, auto);
           grid-row-gap: 35px;
         }
@@ -153,7 +153,7 @@ export default function Tickets() {
           position: relative;
           text-align: center;
         }
-        
+
         .box h3 {
           font-size: 80px;
           line-height: 41px;

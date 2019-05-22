@@ -68,24 +68,26 @@ export default class Location extends React.Component {
       }
 
       .oval {	
-        height: 246px;
-        width: 246px;
+        height: 160px;
+        width: 160px;
         border-radius: 50%;	
         background: linear-gradient(90deg, #FFFFFF 0%, #ECECEC 100%);
         position: absolute;
         top: 20px;
-        left: 100px;
+        left: 80px;
         z-index: -1;
       }
       @media  ${ PageBreaks.smUp } {
         .oval {
           top: 60px;
+          height: 246px;
+          width: 246px;
         }
       }
 
       .location-info {
         display: grid;
-        grid-template-columns: repeat (1, 100%);
+        grid-template-columns: repeat(1, 100%);
         grid-row-gap: 50px;
       }
       @media ${ PageBreaks.smUp } {
@@ -94,28 +96,51 @@ export default class Location extends React.Component {
           grid-column-gap: 60px;
         }
       }
+
       #location .icon {
-        height: 50px;
-        width: 50px;
-        margin-left: -10px;
-        margin-right: 20px;
+        height: 30px;
+        width: 30px;
+        margin-left: -5px;
+        margin-right: 5px;
       }
+      @media ${ PageBreaks.smUp } {
+        #location .icon {
+          height: 50px;
+          width: 50px;
+          margin-left: -10px;
+          margin-right: 20px;
+        }
+      }
+
       a {
-        font-size: 33px;
-        line-height: 40px;
+        font-size: 20px;
         font-weight: 600;
         color: #4A4A4A;
-        border-bottom: 3px solid #4a4a4a;
+        border-bottom: 2px solid #4a4a4a;
         text-decoration: none;
+      }
+      @media ${ PageBreaks.smUp } {
+        a {
+          font-size: 33px;
+          line-height: 40px;
+          font-weight: 600;
+        }
       }
 
       p {
-        margin-top: 40px;
-        margin-left: 10%;
-        font-size: 18px;
-        line-height: 46px;
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 30px;
         color: #4a4a4a;
-
+      }
+      @media ${ PageBreaks.smUp } {
+        p {
+          margin-top: 40px;
+          margin-left: 10%;
+          font-size: 18px;
+          line-height: 46px;
+          color: #4a4a4a;
+        }
       }
 
       .buttons {
@@ -236,10 +261,14 @@ export default class Location extends React.Component {
           border-bottom: 44px solid white;
         }
       }
-      .visual {
-        height: 600px;
-        margin-top: -200px;
+
+      @media ${ PageBreaks.smUp } {
+        .visual {
+          height: 600px;
+          margin-top: -200px;
+        }
       }
+
       .visual img{
         display: none;
         object-fit: cover;
@@ -252,9 +281,18 @@ export default class Location extends React.Component {
 
       .visual iframe {
         border: none;
-        width: 100%;
-        height: 100%;
         display: none;
+        width: 100vw;
+        margin-left: -20px;
+      }
+      @media ${ PageBreaks.smUp } {
+        .visual iframe {
+          border: none;
+          width: 100%;
+          height: 100%;
+          display: none;
+          margin: 0;
+        }
       }
     }`}</style>
     </div>
