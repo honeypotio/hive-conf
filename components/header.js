@@ -1,6 +1,7 @@
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import PageBreaks from '../utils/page-breaks';
 import React from 'react';
+import Link from 'next/link';
 
 const HeaderLinks = [
   {
@@ -57,7 +58,7 @@ export default class Header extends React.Component {
             </a>
           </li>
           <ul className={`mobile-dropdown ${ !this.state.menuCollapsed && "dropdown-expanded" }`}>
-            { 
+            {
               HeaderLinks.map(item => (<li className={"header-link"} key={ item.link }>
                               <AnchorLink href={`${item.link}`} className={item.btn ? "btn" : "link"}>
                                 { item.text }
@@ -73,12 +74,15 @@ export default class Header extends React.Component {
               <img className={ "hover-show" } src={"/static/images/HiveConf_Logo_White.svg"} alt={"Hive Logo"} />
             </a>
           </li>
-          { 
+          {
               HeaderLinks.map(item => (<li className={"header-link"} key={ item.link }>
-                              <AnchorLink href={`${item.link}`} className={item.btn ? "btn" : "link"}>
-                                { item.text }
-                              </AnchorLink>
-                            </li>))
+                {item.btn ?
+                 <Link href={item.link} ><a target="_blank" className="footer-link btn">{item.text}</a></Link>
+                :
+                <AnchorLink href={`${item.link}`} className="link">
+                    { item.text }
+                </AnchorLink>}
+              </li>))
           }
         </ul>
         <style jsx>{`
@@ -277,12 +281,12 @@ export default class Header extends React.Component {
           }
 
           @-webkit-keyframes slide-in-left {
-            0% { left: -80px; }  
+            0% { left: -80px; }
             100% { left: 0; }
           }
 
           @keyframes slide-in-left {
-            0% { left: -80px; }  
+            0% { left: -80px; }
             100% { left: 0; }
           }
 
