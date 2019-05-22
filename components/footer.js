@@ -122,20 +122,16 @@ export default class Footer extends React.Component {
             </div>
 
         <style jsx>{`
-          @media ${ PageBreaks.smUp } {
-            .footer {
-              padding-bottom: 80px;
-            }
-          }
-
           .footer {
             background-color: #ffffff;
-            background-size: 100vw;
-            background-repeat: no-repeat;
-            background-position-x: -10px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 0;
+            position: relative;
           }
           @media ${ PageBreaks.smUp } {
             .footer {
+              padding-bottom: 40px;
               background-position: 0 -250px;
             }
           }
