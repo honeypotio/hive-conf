@@ -1,8 +1,6 @@
 import PageBreaks from '../utils/page-breaks';
 import React from 'react';
 
-
-
 export default class Location extends React.Component {
   constructor(props) {
     super(props);
@@ -39,231 +37,225 @@ export default class Location extends React.Component {
             <img className={`venue ${this.state.filter === "Venue03" && "active"}`} src={`/static/images/venue/Venue03@2x.png`} alt={"Venue Image"}/>
           </div>
         </div>
-        
+
       </div>
 
     <style jsx>{`
-    .wrapper {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 40px 0;
-      position: relative;
-      z-index: 1;
-    }
-    @media  ${ PageBreaks.smUp } {
       .wrapper {
-        padding: 150px 0 60px 0;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 40px 0;
+        position: relative;
+        z-index: 1;
       }
-    }
-  
-    h2 {
-      font-size: 36px;
-      font-weight: 700;
-      letter-spacing: -0.4px;
-    }
-    @media ${ PageBreaks.smUp } {
+      @media  ${ PageBreaks.smUp } {
+        .wrapper {
+          padding: 150px 0 60px 0;
+        }
+      }
+
       h2 {
-        font-size: 60px;
-        margin-top: 0;
-        margin-bottom: 40px;
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: -0.4px;
       }
-    }
-  
-    .oval {	
-      height: 246px;
-      width: 246px;
-      border-radius: 50%;	
-      background: linear-gradient(90deg, #FFFFFF 0%, #ECECEC 100%);
-      position: absolute;
-      top: 20px;
-      left: 100px;
-      z-index: -1;
-    }
-    @media  ${ PageBreaks.smUp } {
-      .oval {
-        top: 60px;
+      @media ${ PageBreaks.smUp } {
+        h2 {
+          font-size: 60px;
+          margin-top: 0;
+          margin-bottom: 40px;
+        }
       }
-    }
-    
-    .location-info {
-      display: grid;
-      grid-template-columns: repeat (1, 100%);
-      grid-row-gap: 50px;
-    }
-    @media ${ PageBreaks.smUp } {
+
+      .oval {	
+        height: 246px;
+        width: 246px;
+        border-radius: 50%;	
+        background: linear-gradient(90deg, #FFFFFF 0%, #ECECEC 100%);
+        position: absolute;
+        top: 20px;
+        left: 100px;
+        z-index: -1;
+      }
+      @media  ${ PageBreaks.smUp } {
+        .oval {
+          top: 60px;
+        }
+      }
+
       .location-info {
-        grid-template-columns: repeat(2, calc(50% - 30px));
-        grid-column-gap: 60px;
+        display: grid;
+        grid-template-columns: repeat (1, 100%);
+        grid-row-gap: 50px;
       }
-    }
-    #location .icon {
-      height: 50px;
-      width: 50px;
-      margin-left: -10px;
-      margin-right: 20px;
-    }
-    a {
-      font-size: 33px;
-      line-height: 40px;
-      font-weight: 600;
-      color: #4A4A4A;
-      border-bottom: 3px solid #4a4a4a;
-      text-decoration: none;
-    }
+      @media ${ PageBreaks.smUp } {
+        .location-info {
+          grid-template-columns: repeat(2, calc(50% - 30px));
+          grid-column-gap: 60px;
+        }
+      }
+      #location .icon {
+        height: 50px;
+        width: 50px;
+        margin-left: -10px;
+        margin-right: 20px;
+      }
+      a {
+        font-size: 33px;
+        line-height: 40px;
+        font-weight: 600;
+        color: #4A4A4A;
+        border-bottom: 3px solid #4a4a4a;
+        text-decoration: none;
+      }
 
-    p {
-      margin-top: 40px;
-      margin-left: 10%;
-      font-size: 18px;
-      line-height: 46px;
-      color: #4a4a4a;
+      p {
+        margin-top: 40px;
+        margin-left: 10%;
+        font-size: 18px;
+        line-height: 46px;
+        color: #4a4a4a;
 
-    }
+      }
 
-    .buttons {
-      display: flex;
-      align-items: stretch;
-    }
+      .buttons {
+        display: flex;
+        align-items: stretch;
+      }
 
-    .buttons button {
-      font-size: 12px;
-      display: inline-block;
-      padding: 4px 5px;
-      border: none;
-      position: relative;
-      height: 30px;
-      background: linear-gradient(90deg, #FFFFFF 0%, #ECECEC 100%);
-      flex-grow: 1;
-    }
-    @media ${ PageBreaks.smUp } {
       .buttons button {
-        font-size: 16px;
-        padding: 10px 40px;
+        font-size: 12px;
+        display: inline-block;
+        padding: 4px 5px;
         border: none;
         position: relative;
-        height: 44px;
+        height: 30px;
         background: linear-gradient(90deg, #FFFFFF 0%, #ECECEC 100%);
-        flex-grow: initial;
+        flex-grow: 1;
       }
-    }
-    .buttons button.active {
-      background: #1A1A1A;
-      color: #ffffff;
-      outline: none;
-    }
-    .buttons button:active {
-      outline: none;
-    }
-    .buttons button:focus {
-      outline: none;
-    }
+      @media ${ PageBreaks.smUp } {
+        .buttons button {
+          font-size: 16px;
+          padding: 10px 40px;
+          border: none;
+          position: relative;
+          height: 44px;
+          background: linear-gradient(90deg, #FFFFFF 0%, #ECECEC 100%);
+          flex-grow: initial;
+        }
+      }
+      .buttons button.active {
+        background: #1A1A1A;
+        color: #ffffff;
+        outline: none;
+      }
+      .buttons button:active {
+        outline: none;
+      }
+      .buttons button:focus {
+        outline: none;
+      }
 
-    .buttons button.active:after, .buttons button.active:before {
-      border-top-color: #1A1A1A !important;
-      border-bottom-color: #1A1A1A !important;
-    }
+      .buttons button.active:after, .buttons button.active:before {
+        border-top-color: #1A1A1A !important;
+        border-bottom-color: #1A1A1A !important;
+      }
 
-    button.map {
-      border-radius: 3px 0 0 3px;
-    }
+      button.map {
+        border-radius: 3px 0 0 3px;
+      }
 
-    .buttons button.map:after {
-      position: absolute;
-      left: 100%;
-      top: 0;
-      content: " ";
-      width: 0; 
-      height: 0;
-      border-top: 30px solid #ECECEC; 
-      border-right: 20px solid transparent;
-    }
-    @media ${ PageBreaks.smUp } {
       .buttons button.map:after {
-        border-top: 44px solid #ECECEC; 
+        position: absolute;
+        left: 100%;
+        top: 0;
+        content: " ";
+        width: 0;
+        height: 0;
+        border-top: 30px solid #ECECEC;
+        border-right: 20px solid transparent;
       }
-    }
+      @media ${ PageBreaks.smUp } {
+        .buttons button.map:after {
+          border-top: 44px solid #ECECEC;
+        }
+      }
 
-    button.venue {
-      border-radius: 0 3px 3px 0;
-    }
+      button.venue {
+        border-radius: 0 3px 3px 0;
+      }
 
-    .buttons button.venue:before {
-      position: absolute;
-      right: 100%;
-      top: 0;
-      content: " ";
-      width: 0; 
-      height: 0; 
-      border-bottom: 30px solid white; 
-      border-left: 20px solid transparent;
-    }
-    @media ${ PageBreaks.smUp } {
       .buttons button.venue:before {
-        border-bottom: 44px solid white; 
+        position: absolute;
+        right: 100%;
+        top: 0;
+        content: " ";
+        width: 0;
+        height: 0;
+        border-bottom: 30px solid white;
+        border-left: 20px solid transparent;
       }
-    }
-
-    button.venue.middle {
-      border-radius: 0;
-    }
-
-    .buttons button.hr:after {
-      position: absolute;
-      left: 100%;
-      top: 0;
-      content: " ";
-      width: 0; 
-      height: 0; 
-      border-top: 30px solid #ECECEC; 
-      border-right: 20px solid transparent;
-    }
-    @media ${ PageBreaks.smUp } {
-      .buttons button.venue.middle:after {
-        border-top: 44px solid #ECECEC; 
+      @media ${ PageBreaks.smUp } {
+        .buttons button.venue:before {
+          border-bottom: 44px solid white;
+        }
       }
-    }
 
-    .buttons button.venue.middle:before {
-      position: absolute;
-      right: 100%;
-      top: 0;
-      content: " ";
-      width: 0; 
-      height: 0; 
-      border-bottom: 30px solid white; 
-      border-left: 20px solid transparent;
-    }
-    @media ${ PageBreaks.smUp } {
+      button.venue.middle {
+        border-radius: 0;
+      }
+
+      .buttons button.hr:after {
+        position: absolute;
+        left: 100%;
+        top: 0;
+        content: " ";
+        width: 0;
+        height: 0;
+        border-top: 30px solid #ECECEC;
+        border-right: 20px solid transparent;
+      }
+      @media ${ PageBreaks.smUp } {
+        .buttons button.venue.middle:after {
+          border-top: 44px solid #ECECEC;
+        }
+      }
+
       .buttons button.venue.middle:before {
-        border-bottom: 44px solid white; 
+        position: absolute;
+        right: 100%;
+        top: 0;
+        content: " ";
+        width: 0;
+        height: 0;
+        border-bottom: 30px solid white;
+        border-left: 20px solid transparent;
       }
-    }
-    .visual {
-      height: 600px;
-      margin-top: -200px;
-    }
-    .visual img{
-      display: none;
-      object-fit: cover;
-      height: 100%;
-      width: 100%;
-    }
-    .visual .active {
-      display: block !important;
-    }
+      @media ${ PageBreaks.smUp } {
+        .buttons button.venue.middle:before {
+          border-bottom: 44px solid white;
+        }
+      }
+      .visual {
+        height: 600px;
+        margin-top: -200px;
+      }
+      .visual img{
+        display: none;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
+      .visual .active {
+        display: block !important;
+      }
 
-    .visual iframe {
-      border: none;
-      width: 100%;
-      height: 100%;
-      display: none;
-    }
-
-    
-
-   
-
-    
+      .visual iframe {
+        border: none;
+        width: 100%;
+        height: 100%;
+        display: none;
+      }
     }`}</style>
     </div>
   )

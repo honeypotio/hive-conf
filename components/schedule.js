@@ -27,7 +27,7 @@ export default function Schedule() {
             margin-bottom: 0px;
           }
         }
-        
+
         h2 {
           font-size: 36px;
           font-weight: 700;
@@ -39,7 +39,7 @@ export default function Schedule() {
             margin-bottom: 30px;
           }
         }
-  
+
         .oval {	
           height: 160px;
           width: 160px;
@@ -51,7 +51,7 @@ export default function Schedule() {
           z-index: -1;
         }
         @media ${ PageBreaks.smUp } {
-          .oval { 
+          .oval {
             height: 246px;
             width: 246px;
           }
@@ -111,7 +111,7 @@ export default function Schedule() {
             margin-left: auto;
           }
         }
-        
+
         h3 {
           color: #1A1A1A;
           font-size: 18px;
