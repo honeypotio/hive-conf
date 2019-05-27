@@ -233,7 +233,7 @@ export default class Header extends React.Component {
           }
           @media ${ PageBreaks.smUp } {
             img {
-              max-height: 48px;
+              max-height: 42px;
               margin-top: 8px;
             }
           }
@@ -264,15 +264,21 @@ export default class Header extends React.Component {
           .header-link :global(.btn){
             color: #ffffff;
             padding: 6px 14px;
-            border-radius: 2px;
+            border-radius: 6px;
             text-decoration: none;
-            font-weight: 600;
-            background-image: linear-gradient(0.66turn, #0007ff, #0000bb);
+            font-weight: 700;
+            background: linear-gradient(270deg, #0000FF 0%, #0000AA 100%);
+          }
+          .header-link :global(.btn:hover){
+            color: #1A1A1A;
+            background: #FFF;
+            box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
           }
           @media ${ PageBreaks.mdUp } {
             .header-link :global(.btn){
-              padding: 14px 24px;
-              border-radius: 5px;
+              padding: 10px 24px;
+              border-radius: 6px;
+              background: linear-gradient(270deg, #0000FF 0%, #0000AA 100%);
             }
           }
           .header-link :global(.link:visited),
@@ -304,7 +310,7 @@ export default class Header extends React.Component {
 
           .hover-logo:hover .hover-show {
             display: block;
-            animation: slide-in-left 0.5s forwards;
+            animation: slide-in-left 0.7s forwards ease-in-out;
           }
 
           .hover-logo:hover .hover-hide {

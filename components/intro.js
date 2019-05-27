@@ -169,7 +169,7 @@ export default function Intro() {
         .btn {
           display: inline-block;
           text-decoration: none;
-          font-weight: 600;
+          font-weight: 700;
           font-size: 16px;
           padding: 8px 12px;
           border-radius: 5px;
@@ -184,7 +184,13 @@ export default function Intro() {
 
         .btn-tickets {
           color: #ffffff;
-          background-image: linear-gradient(0.66turn, #0007ff, #0000bb);
+          background: linear-gradient(270deg,#0000FF 0%,#0000AA 100%);
+        }
+
+        .btn-tickets:hover {
+          color: #000000;
+          box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
+          background-image: linear-gradient(0.66turn, #ffffff, #ffffff);
         }
 
         .btn-trailer {

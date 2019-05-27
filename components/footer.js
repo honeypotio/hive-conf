@@ -92,7 +92,7 @@ export default class Footer extends React.Component {
             FooterLinks.map(item => (<li className={"footer-link"} key={ item.link }>
 
                 {item.btn ?
-                 <Link href={item.link} ><a target="_blank" className="footer-link btn">{item.text}</a></Link>
+                 <Link href={item.link} ><a target="_blank" className="footer-link btn ticket-cta">{item.text}</a></Link>
                 :
                 <AnchorLink href={`${item.link}`} className="link">
                     { item.text }
@@ -244,17 +244,18 @@ export default class Footer extends React.Component {
             text-decoration: none;
             font-weight: 700;
             line-height: 22px;
-            background-image: linear-gradient(0.66turn, #0007ff, #0000bb);
+            background: linear-gradient(270deg, #0000FF 0%, #0000AA 100%);
           }
           .footer-link :global(.btn:hover){
-            background-color: #FFF;
+            color: #1A1A1A;
+            background: #FFF;
             box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
           }
           @media ${ PageBreaks.mdUp } {
             .footer-link :global(.btn){
-              padding: 15px 40px;
+              padding: 10px 24px;
               border-radius: 5px;
-              background-image: linear-gradient(0.66turn, #0007ff, #0000bb);
+              background: linear-gradient(270deg, #0000FF 0%, #0000AA 100%);
             }
           }
           .footer-link :global(.link:visited),

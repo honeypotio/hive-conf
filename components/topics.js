@@ -53,10 +53,10 @@ export default function Topics() {
           }
         }
 
-        .oval {	
+        .oval {
           height: 246px;
           width: 246px;
-          border-radius: 50%;	
+          border-radius: 50%;
           background: linear-gradient(90deg, #FFFFFF 0%, #ECECEC 100%);
           position: absolute;
           top: 20px;
@@ -75,9 +75,9 @@ export default function Topics() {
         }
         @media ${ PageBreaks.smUp } {
           .topic-list {
-            grid-template-columns: repeat(2, calc(50% - 60px));
-            grid-row-gap: 50px;
-            width: 80%;
+            margin: 0px auto;
+      width: 80%;
+      grid-template-columns: repeat(2, calc(50% - 15px));
             margin-bottom: 70px;
           }
         }

@@ -39,6 +39,7 @@ export default function Main() {
       <style jsx>{`
         :global(body) {
           margin: 0;
+          overflow-x:hidden;
         }
 
         * {
@@ -48,7 +49,7 @@ export default function Main() {
         .main > :global(div) {
           padding-left: 20px;
           padding-right: 20px;
-          overflow-x: hidden;
+
         }
 
         @media ${ PageBreaks.smUp } {
