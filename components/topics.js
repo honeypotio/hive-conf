@@ -76,8 +76,8 @@ export default function Topics() {
         @media ${ PageBreaks.smUp } {
           .topic-list {
             margin: 0px auto;
-      width: 80%;
-      grid-template-columns: repeat(2, calc(50% - 15px));
+            width: 80%;
+            grid-template-columns: repeat(2, calc(50% - 15px));
             margin-bottom: 70px;
           }
         }

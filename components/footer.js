@@ -223,6 +223,7 @@ export default class Footer extends React.Component {
 
             .footer-link :global(a) {
               font-size: 17px;
+              line-height: 30px;
             }
           }
 
@@ -236,6 +237,7 @@ export default class Footer extends React.Component {
           }
           .footer-link :global(.link){
             color: #4A4A4A;
+            max-width: 100px;
           }
           .footer-link :global(.btn){
             color: #ffffff;
@@ -254,7 +256,7 @@ export default class Footer extends React.Component {
           @media ${ PageBreaks.mdUp } {
             .footer-link :global(.btn){
               padding: 10px 24px;
-              border-radius: 5px;
+              border-radius: 6px;
               background: linear-gradient(270deg, #0000FF 0%, #0000AA 100%);
             }
           }

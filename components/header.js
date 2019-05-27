@@ -250,6 +250,7 @@ export default class Header extends React.Component {
 
             .header-link :global(a) {
               font-size: 17px;
+              line-height: 30px;
             }
           }
 
@@ -260,12 +261,14 @@ export default class Header extends React.Component {
           }
           .header-link :global(.link){
             color: #ffffff;
+            max-width: 100px;
           }
           .header-link :global(.btn){
             color: #ffffff;
             padding: 6px 14px;
             border-radius: 6px;
             text-decoration: none;
+            line-height: 22px;
             font-weight: 700;
             background: linear-gradient(270deg, #0000FF 0%, #0000AA 100%);
           }
@@ -284,6 +287,10 @@ export default class Header extends React.Component {
           .header-link :global(.link:visited),
           .header-link :global(.link:hover) {
             text-decoration: none;
+          }
+
+          .header-link :global(.link:hover) {
+            font-weight: 600;
           }
 
           @-webkit-keyframes slide-in-left {
