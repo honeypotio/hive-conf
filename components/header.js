@@ -300,8 +300,8 @@ export default class Header extends React.Component {
           }
 
           @keyframes slide-in-left {
-            0% { left: -80px; }
-            100% { left: 0; }
+            0% { left: -80px; opacity: 0 }
+            100% { left: 0; opacity: 1}
           }
 
           .hover-logo {
