@@ -14,8 +14,8 @@ export default function Intro() {
       <div className={"right"}>
         <p className={"description"}>HiveConf is a one-day conference for HR & Talent Acquisition Leaders, Technical Hiring managers, CTOs and VPs of Engineering focused on all aspects of building & scaling great tech teams.</p>
         <div className={ "btn-wrapper" }>
-          <a href="https://hiveconf19.eventbrite.com/?aff=website" className={"btn btn-tickets"}>Get Tickets</a>
-          <a href="https://www.youtube.com/watch?v=twa5saz97EU&feature=youtu.be" className={"btn btn-trailer"}>Watch Trailer</a>
+          <a href="https://hiveconf19.eventbrite.com/?aff=website" target="_blank" className={"btn btn-tickets"}>Get Tickets</a>
+          <a href="https://www.youtube.com/watch?v=twa5saz97EU&feature=youtu.be" target="_blank" className={"btn btn-trailer"}>Watch Trailer</a>
         </div>
       </div>
       <style jsx>{`
