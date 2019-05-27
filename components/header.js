@@ -272,6 +272,7 @@ export default class Header extends React.Component {
             line-height: 22px;
             font-weight: 700;
             background: linear-gradient(270deg, #0000FF 0%, #0000AA 100%);
+            border:none;
           }
           .header-link :global(.btn:hover){
             color: #1A1A1A;
@@ -295,8 +296,8 @@ export default class Header extends React.Component {
           }
 
           @-webkit-keyframes slide-in-left {
-            0% { left: -80px; }
-            100% { left: 0; }
+            0% { left: -80px;opacity: 0 }
+            100% { left: 0; opacity: 1 }
           }
 
           @keyframes slide-in-left {
