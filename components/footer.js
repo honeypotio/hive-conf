@@ -85,7 +85,7 @@ export default class Footer extends React.Component {
         <ul className={ "large-footer" }>
           <li>
             <a className={ "hover-logo" } href={""}>
-              <img className={ "hover-hide" } src="/static/images/HiveConf_Icon_Black.svg" alt="Hive Logo"/>
+
               <img className={ "hover-show" } src={"/static/images/HiveConf_Logo_Black.svg"} alt={"Hive Logo"} />
             </a>
           </li>
@@ -106,7 +106,9 @@ export default class Footer extends React.Component {
             <div className="left"> <span className=""><i className="fa fa-copyright"></i> 2019 Honeypot</span></div>
 
             <div className="right">
+
                 <ul className="social-set">
+                <p className='social-title'>Honeypot /</p>
                     {
                     SocialLinks.map(item => (
                         <li className={"social-link"} key={ item.link }>
@@ -239,15 +241,21 @@ export default class Footer extends React.Component {
           .footer-link :global(.btn){
             color: #ffffff;
             padding: 6px 14px;
-            border-radius: 2px;
+            border-radius: 5px;
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 700;
+            line-height: 22px;
             background-image: linear-gradient(0.66turn, #0007ff, #0000bb);
+          }
+          .footer-link :global(.btn:hover){
+            background-color: #FFF;
+            box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
           }
           @media ${ PageBreaks.mdUp } {
             .footer-link :global(.btn){
-              padding: 0px 24px;
+              padding: 15px 40px;
               border-radius: 5px;
+              background-image: linear-gradient(0.66turn, #0007ff, #0000bb);
             }
           }
           .footer-link :global(.link:visited),
@@ -277,21 +285,25 @@ export default class Footer extends React.Component {
             display: block;
           }
 
-          .hover-logo:hover .hover-show {
-            display: block;
-            animation: slide-in-left 0.5s forwards;
-          }
-
-          .hover-logo:hover .hover-hide {
-            display: none;
-          }
-
           .social-set {
             display:none;
           }
 
+          .social-title {
+            margin-top: 20px;
+            margin-right: 5px;
+          }
+
           .social-link{
             flex-grow: 0;
+          }
+
+          .social-link img{
+            filter: invert(20%) url(#colorFilter);
+          }
+
+          .social-link img:hover{
+            filter: invert(0%) url(#colorFilter);
           }
 
           .footer-second .left {
