@@ -272,7 +272,7 @@ export default class Header extends React.Component {
             line-height: 22px;
             font-weight: 700;
             background: linear-gradient(270deg, #0000FF 0%, #0000AA 100%);
-            border:none;
+            border: none;
           }
           .header-link :global(.btn:hover){
             color: #1A1A1A;
