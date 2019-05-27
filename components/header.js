@@ -29,6 +29,24 @@ const HeaderLinks = [
   },
 ];
 
+const fixedNavStyle = `
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 2000;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 0;
+`;
+
+const fixedLinkStyle = `
+  color: #000000;
+`
+
+const fixedHeaderStyle = `
+  height: 380px;
+`;
+
 export default class Header extends React.Component {
   constructor(props) {
     super(props);
@@ -42,6 +60,8 @@ export default class Header extends React.Component {
   }
 
   render() {
+    const isSticky = this.props.sticky;
+
     return (
       <div className={ `header ${ !this.state.menuCollapsed && "header-expanded"}` }>
         <ul className={ "mobile-header" }>
@@ -70,8 +90,8 @@ export default class Header extends React.Component {
         <ul className={ "large-header" }>
           <li>
             <a className={ "hover-logo" } href={""}>
-              <img className={ "hover-hide" } src="/static/images/hive-logo.svg" alt="Hive Logo"/>
-              <img className={ "hover-show" } src={"/static/images/HiveConf_Logo_White.svg"} alt={"Hive Logo"} />
+              <img className={ "hover-hide" } src={`/static/images/${ isSticky ? "HiveConf_Logo_Black.svg" : "hive-logo.svg" }`} alt="Hive Logo"/>
+              <img className={ "hover-show" } src={`/static/images/${ isSticky ? "HiveConf_Logo_Black.svg" : "HiveConf_Logo_White.svg" }`} alt={"Hive Logo"} />
             </a>
           </li>
           {
@@ -102,6 +122,7 @@ export default class Header extends React.Component {
           @media ${ PageBreaks.smUp } {
             .header {
               background-position: 0 -250px;
+              ${ isSticky && fixedHeaderStyle }
             }
           }
 
@@ -129,6 +150,8 @@ export default class Header extends React.Component {
               padding: 40px 20px;
               padding-bottom: 180px;
               background-color: rgba(0,0,0,0.6);
+              animation: slide-in-header 0.6s forwards;
+              ${ isSticky && fixedNavStyle }
             }
           }
 
@@ -263,6 +286,7 @@ export default class Header extends React.Component {
           .header-link :global(.link){
             color: #ffffff;
             max-width: 100px;
+            ${ isSticky && fixedLinkStyle }
           }
           .header-link :global(.btn){
             color: #ffffff;
@@ -303,6 +327,16 @@ export default class Header extends React.Component {
           @keyframes slide-in-left {
             0% { left: -80px; opacity: 0 }
             100% { left: 0; opacity: 1}
+          }
+
+          @-webkit-keyframes slide-in-header {
+            0% { top: -80px; }
+            100% { top: 0; }
+          }
+
+          @keyframes slide-in-header {
+            0% { top: -80px; }
+            100% { top: 0; }
           }
 
           .hover-logo {
