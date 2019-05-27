@@ -13,6 +13,11 @@ export default function Tickets() {
             <h3>€249</h3>
             <a target="_blank" href="https://hiveconf19.eventbrite.com/?aff=website#tickets" className={"ticket-cta"}>Get Tickets</a>
           </div>
+          <div className="circle">
+            <span className="active-circle"></span>
+            <span className="inactive-circle"></span>
+            <span className="inactive-circle"></span>
+          </div>
         </div>
         <div>
           <div className={"box"}>
@@ -53,21 +58,29 @@ export default function Tickets() {
           }
         }
 
-        .oval {	
-          height: 246px;
-          width: 246px;
-          border-radius: 50%;	
+        .oval {
+          height: 146px;
+          width: 146px;
+          border-radius: 50%;
           background: linear-gradient(90deg, #FFFFFF 0%, #ECECEC 100%);
           position: absolute;
-          top: 20px;
-          left: 100px;
+          top: -10px;
+          left: 80px;
           z-index: -1;
+        }
+        @media ${ PageBreaks.smUp } {
+          .oval {
+            height: 246px;
+            width: 246px;
+            top: 20px;
+            left: 100px;
+          }
         }
 
         .oval-big {
           height: 410px;
           width: 410px;
-          border-radius: 50%;	
+          border-radius: 50%;
           background: linear-gradient(90deg, #FFFFFF 0%, #ECECEC 100%);
           position: absolute;
           bottom: 50px;
@@ -102,7 +115,8 @@ export default function Tickets() {
           margin: 0 auto;
           margin-top: 100px;
           display: grid;
-          grid-template-columns: repeat(1, auto);
+          width: 80%;
+          grid-template-columns: repeat(3, auto);
           grid-row-gap: 35px;
         }
         @media ${ PageBreaks.smUp } {
@@ -127,9 +141,15 @@ export default function Tickets() {
           text-align: center;
           font-size: 24px;
           line-height: 41px;
-          color: #0000FF;^
+          color: #0000FF;
           font-weight: 500;
         }
+        @media ${ PageBreaks.smUp } {
+          .active .box:before {
+            font-size: 22px;
+          }
+        }
+
 
         .active .box:after {
           content: 'Until June 1st, 2019';
@@ -142,16 +162,52 @@ export default function Tickets() {
           line-height: 41px;
           color: black;
           font-weight: 500;
+
+        }
+
+        .circle {
+          text-align: center;
+        }
+
+        .circle span{
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          display: inline-block;
+          margin-top: 105px;
+          margin-left: 12px;
+        }
+
+        span.active-circle {
+          background-color: blue;
+        }
+
+        span.inactive-circle {
+          background-color: grey;
+        }
+
+        @media ${ PageBreaks.smUp } {
+          .circle {
+            display: none;
+          }
         }
 
         .box {
-          height: 280px;
-          width: 280px;
+          height: 250px;
+          width: 250px;
           background: linear-gradient(90deg, #FFFFFF 0%, #ECECEC 100%);
           border-radius: 26px;
           color: #ECECEC;
           position: relative;
+
           text-align: center;
+        }
+
+        @media ${ PageBreaks.smUp } {
+          .box {
+            height: 280px;
+            width: 280px;
+          }
         }
 
         .box h3 {
@@ -171,7 +227,12 @@ export default function Tickets() {
           line-height: 41px;
           font-size: 21px;
           text-align: center;
-          margin-top: 135px;
+          margin-top: 15px;
+        }
+        @media ${ PageBreaks.smUp } {
+          .groups {
+            margin-top: 135px;
+          }
         }
 
         .groups a {
