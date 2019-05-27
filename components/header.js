@@ -148,6 +148,7 @@ export default class Header extends React.Component {
           @media ${ PageBreaks.smUp } {
             .large-header {
               display: flex;
+              padding-right: 70px;
             }
             .mobile-header {
               display: none;
