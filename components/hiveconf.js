@@ -131,7 +131,7 @@ export default function Hiveconf() {
         <div className={"cta-container"}>
           <h3>HR Analytics: The Biggest Buzz at HiveConf’18</h3>
           <p>Read what our amazing speakers said last year about HR Analytics in our blog. </p>
-          <a target="_blank" href="mailto:hiveconf@honeypot.io" className={"cta"}>Read Now</a>
+          <a target="_blank" href="https://blog.honeypot.io/HR-analytics-shaping-hiring-trends-2019/" className={"cta"}>Read Now</a>
         </div>
 
       </div>
