@@ -85,7 +85,6 @@ export default class Footer extends React.Component {
         <ul className={ "large-footer" }>
           <li>
             <a className={ "hover-logo" } href={""}>
-
               <img className={ "hover-show" } src={"/static/images/HiveConf_Logo_Black.svg"} alt={"Hive Logo"} />
             </a>
           </li>

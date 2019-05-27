@@ -48,6 +48,7 @@ export default function Main() {
         .main > :global(div) {
           padding-left: 20px;
           padding-right: 20px;
+          overflow-x: hidden;
         }
 
         @media ${ PageBreaks.smUp } {
