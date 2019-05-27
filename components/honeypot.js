@@ -54,13 +54,15 @@ export default function Honeypot() {
         p{
           columns: 2;
           text-align: left;
-          margin-top: 56px;
+          margin-top: 30px;
+          grid-column-gap: 60px;
         }
       }
 
       img {
         width: 60%;
         margin-top: -7px;
+        margin-left: 10px
       }
       @media ${ PageBreaks.smUp } {
         img {
