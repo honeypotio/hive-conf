@@ -36,7 +36,7 @@ export default function Schedule() {
           h2 {
             font-size: 60px;
             margin-top: 50px;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
           }
         }
 
@@ -83,8 +83,7 @@ export default function Schedule() {
         }
         @media ${ PageBreaks.smUp } {
           .date {
-            font-size: 32px;
-            margin-bottom: 45px;
+            font-size: 27px;
           }
         }
 
@@ -96,8 +95,9 @@ export default function Schedule() {
         }
         @media ${ PageBreaks.smUp } {
           .date img {
-            height: 50px;
-            width: 50px;
+            height: 45px;
+            width: 45px;
+            margin-right: 15px;
           }
         }
 
@@ -120,7 +120,7 @@ export default function Schedule() {
         }
         @media ${ PageBreaks.smUp } {
           h3 {
-            font-size: 30px;
+            font-size: 27px;
           }
         }
 

@@ -43,14 +43,14 @@ export default class Speakers extends React.Component {
                 {speaker.linkedin &&
                   <li>
                     <a href={`${ speaker.linkedin }`} target="_blank">
-                      <img src={`/static/icons/Linkedin_Icon_Speaker.svg`}/>
+                      <i className={ `fa fa-linkedin` }></i>
                     </a>
                   </li>
                 }
                 {speaker.twitter &&
                   <li>
                     <a href={`${ speaker.twitter }`} target="_blank">
-                      <img src={`/static/icons/Twitter_Icon_Speaker.svg`}/>
+                      <i className={ `fa fa-twitter` }></i>
                     </a>
                   </li>
                 }
@@ -158,7 +158,7 @@ export default class Speakers extends React.Component {
           }
           @media ${ PageBreaks.smUp } {
             .filters button {
-              font-size: 16px;
+              font-size: 19px;
               padding: 15px 50px;
               border: none;
               position: relative;
@@ -179,6 +179,15 @@ export default class Speakers extends React.Component {
           }
           .filters button:focus {
             outline: none;
+          }
+
+          .filters button:hover {
+            background: #1A1A1A;
+            color: #ffffff;
+          }
+          .filters button:hover:after, .filters button:hover:before  {
+            border-top-color: #1A1A1A !important;
+            border-bottom-color: #1A1A1A !important;
           }
 
           .filters button.active:after, .filters button.active:before {
@@ -270,7 +279,7 @@ export default class Speakers extends React.Component {
             margin: 0 auto;
             grid-template-columns: repeat(2, 50%);
             grid-template-rows: auto;
-            grid-row-gap: 50px;
+            grid-row-gap: 35px;
           }
 
           @media ${ PageBreaks.smUp } {
@@ -287,7 +296,7 @@ export default class Speakers extends React.Component {
           }
 
           .speaker-image {
-            max-width: calc(100% - 50px);
+            max-width: calc(100% - 35px);
           }
 
           .speaker-name {
@@ -299,7 +308,7 @@ export default class Speakers extends React.Component {
           @media ${ PageBreaks.smUp } {
             .speaker-name {
               font-size: 18px;
-              line-heigt: 22px;
+              line-height: 22px;
               margin: 0;
               margin-top: 10px;
             }
@@ -329,9 +338,18 @@ export default class Speakers extends React.Component {
           .speaker-social li {
             margin: 0 5px;
           }
-          .speaker-social li img {
-            height: 30px;
-            width: 30px;
+
+          .speaker-social .fa {
+            height: 32px;
+            width: 32px;
+            line-height: 30px;
+            color: #000000;
+            border: 1px solid #000000;
+            border-radius: 50%;
+          }
+          .speaker-social .fa:hover {
+            color: #0007ff;
+            border: 1px solid #0007ff;
           }
 
           .speaker-card.you {
