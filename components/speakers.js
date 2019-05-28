@@ -90,7 +90,7 @@ export default class Speakers extends React.Component {
           }
           @media  ${ PageBreaks.smUp } {
             .wrapper {
-              padding: 60px 0;
+              padding: 60px 0 10px;
             }
           }
 
@@ -106,10 +106,10 @@ export default class Speakers extends React.Component {
             }
           }
 
-          .oval {	
+          .oval {
             height: 246px;
             width: 246px;
-            border-radius: 50%;	
+            border-radius: 50%;
             background: linear-gradient(90deg, #FFFFFF 0%, #ECECEC 100%);
             position: absolute;
             top: 20px;
@@ -173,7 +173,7 @@ export default class Speakers extends React.Component {
             color: #ffffff;
             outline: none;
           }
-          
+
           .filters button:active {
             outline: none;
           }
@@ -214,14 +214,14 @@ export default class Speakers extends React.Component {
             left: 100%;
             top: 0;
             content: " ";
-            width: 0; 
+            width: 0;
             height: 0;
-            border-top: 30px solid #ECECEC; 
+            border-top: 30px solid #ECECEC;
             border-right: 20px solid transparent;
           }
           @media ${ PageBreaks.smUp } {
             .filters button.all:after {
-              border-top: 54px solid #ECECEC; 
+              border-top: 54px solid #ECECEC;
             }
           }
 
@@ -230,14 +230,14 @@ export default class Speakers extends React.Component {
             right: -20px;
             top: 0px;
             content: " ";
-            width: 0; 
-            height: 0; 
-            border-top: 30px solid #ECECEC; 
+            width: 0;
+            height: 0;
+            border-top: 30px solid #ECECEC;
             border-right: 20px solid transparent;
           }
           @media ${ PageBreaks.smUp } {
             .filters button.hr:after {
-              border-top: 55px solid #ECECEC; 
+              border-top: 55px solid #ECECEC;
             }
           }
 
@@ -246,14 +246,14 @@ export default class Speakers extends React.Component {
             left: -20px;
             top: -1px;
             content: " ";
-            width: 0; 
-            height: 0; 
-            border-bottom: 30px solid white; 
+            width: 0;
+            height: 0;
+            border-bottom: 30px solid white;
             border-left: 20px solid transparent;
           }
           @media ${ PageBreaks.smUp } {
             .filters button.hr:before {
-              border-bottom: 55px solid white; 
+              border-bottom: 55px solid white;
             }
           }
 
@@ -262,14 +262,14 @@ export default class Speakers extends React.Component {
             left:-20px;
             top: -1px;
             content: " ";
-            width: 0; 
-            height: 0; 
-            border-bottom: 30px solid white; 
+            width: 0;
+            height: 0;
+            border-bottom: 30px solid white;
             border-left: 20px solid transparent;
           }
           @media ${ PageBreaks.smUp } {
             .filters button.tech:before {
-              border-bottom: 55px solid white; 
+              border-bottom: 55px solid white;
             }
           }
 
@@ -310,7 +310,8 @@ export default class Speakers extends React.Component {
               font-size: 18px;
               line-height: 22px;
               margin: 0;
-              margin-top: 10px;
+              margin-top: 1rem;
+              margin-bottom: 0.5rem;
             }
           }
 
@@ -325,6 +326,7 @@ export default class Speakers extends React.Component {
               font-size: 16px;
               line-heigt: 34px;
               padding: 0px 10px;
+              margin-bottom: 0.7rem;
             }
           }
 
@@ -388,7 +390,7 @@ export default class Speakers extends React.Component {
           @media ${ PageBreaks.smUp } {
             .cta-container {
               position: relative;
-              left: calc(-100% - 22px);
+              left: calc(-100% - 13px);
             }
           }
 
@@ -449,7 +451,7 @@ export default class Speakers extends React.Component {
             box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
           }
 
-          /** 
+          /**
            * Rotation Animation
            **/
           @-webkit-keyframes rotating /* Safari and Chrome */ {
@@ -488,7 +490,7 @@ export default class Speakers extends React.Component {
             animation: rotating 60s linear infinite;
           }
 
-          /* For speaker cards */ 
+          /* For speaker cards */
           @-webkit-keyframes slide-in-left {
             0% { transform: rotate3d(0,1,0, 120deg); opacity: 0; }
             100% { transform: rotate3d(0,1,0, 0deg); opacity: 1; }
