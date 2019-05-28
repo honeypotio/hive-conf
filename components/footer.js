@@ -102,7 +102,7 @@ export default class Footer extends React.Component {
 
         </ul>
         <div className="footer-second">
-            <div className="left"> <span className=""><i className="fa fa-copyright"></i> 2019 Honeypot</span></div>
+            <div className="left"> <span><i className="fa fa-copyright"></i> 2019 Honeypot</span></div>
 
             <div className="right">
 
@@ -306,6 +306,7 @@ export default class Footer extends React.Component {
           .social-set{
               display: flex;
               margin: 0 10px 0 20px;
+              margin-right: 0px;
           }
           .footer-second .left {
             text-align: left;
@@ -315,7 +316,7 @@ export default class Footer extends React.Component {
             flex-grow: 4;
             flex-direction: column;
             justify-content: center;
-            margin-left: 20px;
+            margin-left: 10px;
           }
           .right {
             flex-grow: 0;
