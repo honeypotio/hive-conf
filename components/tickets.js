@@ -113,7 +113,7 @@ export default function Tickets() {
         }
         .ticketoptions {
           margin: 0 auto;
-          margin-top: 100px;
+          margin-top: 80px;
           display: grid;
           width: 80%;
           grid-template-columns: repeat(3, auto);
@@ -152,7 +152,7 @@ export default function Tickets() {
 
 
         .active .box:after {
-          content: 'Until June 1st, 2019';
+
           position: absolute;
           bottom: -80px;
           left: 0%;
@@ -231,7 +231,7 @@ export default function Tickets() {
         }
         @media ${ PageBreaks.smUp } {
           .groups {
-            margin-top: 135px;
+            margin-top: 115px;
           }
         }
 
