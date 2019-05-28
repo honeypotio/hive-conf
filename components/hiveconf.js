@@ -144,7 +144,7 @@ export default function Hiveconf() {
   .wrapper {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 60px 0;
+    padding: 20px 0;
     position: relative;
     z-index: 1;
   }
@@ -192,7 +192,8 @@ export default function Hiveconf() {
   .description {
     display: grid;
     width: 100%;
-    margin: 20px auto;
+    margin: 0px auto;
+    margin-left: 20px;
     grid-template-columns: 100%;
     grid-column-gap: 30px;
     grid-template-rows: auto;

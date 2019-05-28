@@ -169,7 +169,7 @@ export default class Location extends React.Component {
       @media ${ PageBreaks.smUp } {
         p {
           margin-top: 30px;
-          margin-left: 10%;
+          margin-left: 15%;
           margin-bottom: 3rem;
           font-size: 18px;
           line-height: 46px;
