@@ -29,7 +29,7 @@ export default function Topics() {
       <style jsx>{`
         .wrapper {
           max-width: 1100px;
-          margin: 0 auto;
+          margin: 0px auto;
           margin-bottom: 60px;
           padding: 20px 0;
           position: relative;
