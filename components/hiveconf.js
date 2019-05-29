@@ -144,12 +144,12 @@ export default function Hiveconf() {
                 <img src={`/static/images/quotes/${quote.img}@2x.png`} className={ "hide-mobile" } />
                 <div className={"speaker-info"}>
                   <img className={"quotesign"} src={`/static/icons/Quote.svg`} alt={"Quote Signs"}/>
-                  <p className={"quote-text"}>{quote.text}</p>
+                  <p className={""}>{quote.text}</p>
                   <h3 className={""}>{quote.name}</h3>
                   <h4 className={""}>{quote.position}</h4>
                   <div className={"quote-hive18"}><img src={`/static/images/logos/Logo_Hive2018.svg`} alt={"HiveConf 18 Logo"} /></div>
-                </div>
               </div>
+                </div>
             </Carousel.Item>
           ))}
         </Carousel>
