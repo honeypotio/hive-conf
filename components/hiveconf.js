@@ -443,8 +443,8 @@ export default function Hiveconf() {
   @media ${ PageBreaks.smUp } {
     .testimonial h3 {
       font-weight: bold;
-      font-size: 36px;
-      line-height: 44px;
+      font-size: 21px;
+      line-height: 31px;
     }
   }
 
@@ -726,6 +726,7 @@ export default function Hiveconf() {
       line-height: 46px;
       text-align: initial;
       font-weight: 400;
+      margin-bottom: 0;
     }
   }
 
