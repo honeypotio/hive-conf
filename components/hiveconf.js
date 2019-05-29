@@ -144,12 +144,14 @@ export default function Hiveconf() {
                 <img src={`/static/images/quotes/${quote.img}@2x.png`} className={ "hide-mobile" } />
                 <div className={"speaker-info"}>
                   <img className={"quotesign"} src={`/static/icons/Quote.svg`} alt={"Quote Signs"}/>
-                  <p className={""}>{quote.text}</p>
-                  <h3 className={""}>{quote.name}</h3>
-                  <h4 className={""}>{quote.position}</h4>
-                  <div className={"quote-hive18"}><img src={`/static/images/logos/Logo_Hive2018.svg`} alt={"HiveConf 18 Logo"} /></div>
-              </div>
+                  <div className='speaker-info-centered'>
+                    <p className={""}>{quote.text}</p>
+                    <h3 className={""}>{quote.name}</h3>
+                    <h4 className={""}>{quote.position}</h4>
+                    <div className={"quote-hive18"}><img src={`/static/images/logos/Logo_Hive2018.svg`} alt={"HiveConf 18 Logo"} /></div>
+                  </div>
                 </div>
+              </div>
             </Carousel.Item>
           ))}
         </Carousel>
@@ -602,6 +604,13 @@ export default function Hiveconf() {
       padding: 80px 0 0 300px;
       color: white;
       position: relative;
+    }
+    .speaker-info-centered {
+      margin: 0;
+      position: absolute;
+      top: 55%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
     }
   }
 
