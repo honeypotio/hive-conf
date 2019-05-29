@@ -232,10 +232,6 @@ export default function Hiveconf() {
       left: -250px;
       margin-top: 115px;
     }
-
-    .quote-text{
-      min-height: 500px;
-    }
   }
 
   .description {
@@ -433,7 +429,7 @@ export default function Hiveconf() {
       font-size: 18px;
       line-height: 46px;
       margin: 0;
-      min-height: 380px;
+      min-height: 250px;
     }
   }
 
