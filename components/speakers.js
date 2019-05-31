@@ -20,7 +20,8 @@ export default class Speakers extends React.Component {
     let currentSpeakers = SpeakerList.filter(speaker => {
       return !this.state.filter || speaker.type === this.state.filter;
     });
-    let placeholders = 3 - (currentSpeakers.length  % 4) ;
+    // have at least one placeholder speaker due to c2a overlap with speaker info
+    let placeholders = (currentSpeakers.length  % 4) === 3 ? 4 : 3 - (currentSpeakers.length  % 4);
     return (
       <div id={ "speakers" } className={"wrapper"}>
         <h2>Speakers</h2>

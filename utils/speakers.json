@@ -1,19 +1,20 @@
 [
+    
     {
-        "img": "Anna_Low@2x.jpg",
-        "name": "Anna Low",
-        "title": "Head of People @ Giant Swarm",
-        "linkedin": "https://www.linkedin.com/in/anna-l%C3%B6w-b834395/",
-        "twitter": "https://twitter.com/anna__loew?lang=en",
-        "type": "hr"
+        "img": "Maria_Gutierrez@2x.jpg",
+        "name": "Maria Gutierrez",
+        "title": "Head of Engineering @ Intercom",
+        "linkedin": "https://www.linkedin.com/in/mariagutierrez/",
+        "twitter": "https://twitter.com/mariagutierrez",
+        "type": "tech"
     },
     {
-        "img": "Emma_Tracey@2x.png",
-        "name": "Emma Tracey",
-        "title": "Co-Founder @ Honeypot ",
-        "linkedin": "https://www.linkedin.com/in/emmalouisetracey/",
-        "twitter": "https://twitter.com/emchenita?lang=en",
-        "type": "tech"
+        "img": "Leslie_Kivit@2x.jpg",
+        "name": "Leslie Kivit",
+        "title": "Global Recruiting @ Oculus VR",
+        "linkedin": "https://www.linkedin.com/in/mariagutierrez/",
+        "twitter": "https://twitter.com/lesliekivit",
+        "type": "hr"
     },
     {
         "img": "Eva_Glanzer@2x.jpg",
@@ -21,38 +22,6 @@
         "title": "VP of People @ GetYourGuide",
         "linkedin": "https://www.linkedin.com/in/evaglanzer/",
         "twitter": "https://twitter.com/GetYourGuide ",
-        "type": "hr"
-    },
-    {
-        "img": "Jenny_Jung@2x.png",
-        "name": "Jenny Jung",
-        "title": "Founder @ MindTheLeader (former VP People & Organization @ EyeEm, former COO @ Factory)",
-        "linkedin": "https://www.linkedin.com/in/jennyejung/",
-        "twitter": "https://twitter.com/jung?lang=en",
-        "type": "hr"
-    },
-    {
-        "img": "Kaya_Taner@2x.jpg",
-        "name": "Kaya Taner",
-        "title": "Co-Founder @ Honeypot",
-        "linkedin": "https://www.linkedin.com/in/kayataner/",
-        "twitter": "https://twitter.com/kayataner1?lang=en",
-        "type": "hr"
-    },
-    {
-        "img": "Jessica_Jordan@2x.png",
-        "name": "Jessica Jordan",
-        "title": "Software Engineer @ simplabs and Community Support @ Ember Learning Core Team",
-        "linkedin": "https://www.linkedin.com/in/jessicajordanfedev/",
-        "twitter": "https://twitter.com/jjordan_dev?lang=en",
-        "type": "tech"
-    },
-    {
-        "img": "Carsten_Wenzel@2x.jpg",
-        "name": "Carsten Wenzel",
-        "title": "Talent Acquisition Lead @ IT Adidas",
-        "linkedin": "https://www.linkedin.com/in/carstenwenzel/",
-        "twitter": "https://twitter.com/adidascareers",
         "type": "hr"
     },
     {
@@ -64,11 +33,59 @@
         "type": "tech"
     },
     {
-        "img": "Maria_Gutierrez@2x.jpg",
-        "name": "Maria Gutierrez",
-        "title": "Head of Engineering @ Intercom",
-        "linkedin": "https://www.linkedin.com/in/mariagutierrez/",
-        "twitter": "https://twitter.com/mariagutierrez?lang=en",
+        "img": "Jenny_Jung@2x.png",
+        "name": "Jenny Jung",
+        "title": "Founder @ MindTheLeader (former VP People & Organization @ EyeEm, former COO @ Factory)",
+        "linkedin": "https://www.linkedin.com/in/jennyejung/",
+        "twitter": "https://twitter.com/jung",
+        "type": "hr"
+    },
+    {
+        "img": "Carsten_Wentzel@2x.png",
+        "name": "Carsten Wenzel",
+        "title": "Talent Acquisition Lead @ IT Adidas",
+        "linkedin": "https://www.linkedin.com/in/carstenwenzel/",
+        "twitter": "https://twitter.com/adidascareers",
+        "type": "hr"
+    },
+    {
+        "img": "Anna_Low@2x.jpg",
+        "name": "Anna Low",
+        "title": "Head of People @ Giant Swarm",
+        "linkedin": "https://www.linkedin.com/in/anna-l%C3%B6w-b834395/",
+        "twitter": "https://twitter.com/anna__loew",
+        "type": "hr"
+    },
+    {
+        "img": "Sebastian_Waschnick@2x.jpg",
+        "name": "Sebastian Waschnick",
+        "title": "CTO @ Axel Springer Ideas Engineering",
+        "linkedin": "https://www.linkedin.com/in/sebastian-waschnick/",
+        "twitter": "https://twitter.com/waschnick",
         "type": "tech"
+    },
+    {
+        "img": "Jessica_Jordan@2x.png",
+        "name": "Jessica Jordan",
+        "title": "Software Engineer @ simplabs and Community Support @ Ember Learning Core Team",
+        "linkedin": "https://www.linkedin.com/in/jessicajordanfedev/",
+        "twitter": "https://twitter.com/jjordan_dev",
+        "type": "tech"
+    },
+    {
+        "img": "Emma_Tracey@2x.png",
+        "name": "Emma Tracey",
+        "title": "Co-Founder @ Honeypot ",
+        "linkedin": "https://www.linkedin.com/in/emmalouisetracey/",
+        "twitter": "https://twitter.com/emchenita",
+        "type": "tech"
+    },
+    {
+        "img": "Kaya_Taner@2x.jpg",
+        "name": "Kaya Taner",
+        "title": "Co-Founder @ Honeypot",
+        "linkedin": "https://www.linkedin.com/in/kayataner/",
+        "twitter": "https://twitter.com/kayataner1",
+        "type": "hr"
     }
 ]
