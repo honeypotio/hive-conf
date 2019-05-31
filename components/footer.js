@@ -102,7 +102,7 @@ export default class Footer extends React.Component {
 
         </ul>
         <div className="footer-second">
-            <div className="left"> <span className=""><i className="fa fa-copyright"></i> 2019 Honeypot</span></div>
+            <div className="left"> <span><i className="fa fa-copyright"></i> 2019 Honeypot</span></div>
 
             <div className="right">
 
@@ -206,7 +206,7 @@ export default class Footer extends React.Component {
           }
           @media ${ PageBreaks.smUp } {
             img {
-              max-height: 48px;
+              max-height: 40px;
               margin-top: 8px;
             }
           }
@@ -265,26 +265,11 @@ export default class Footer extends React.Component {
             text-decoration: none;
           }
 
-          @-webkit-keyframes slide-in-left {
-            0% { left: -80px; }
-            100% { left: 0; }
-          }
-
-          @keyframes slide-in-left {
-            0% { left: -80px; }
-            100% { left: 0; }
-          }
-
           .hover-logo {
             position: relative;
             display: block;
             overflow: hidden;
             height: 60px;
-          }
-
-          .hover-show {
-            position: absolute;
-            display: block;
           }
 
           .social-set {
@@ -311,17 +296,17 @@ export default class Footer extends React.Component {
           .footer-second .left {
             justify-content: flex-end;
             text-align: right;
-            margin-top: -20px;
-            margin-bottom: 30px;
           }
           @media  ${ PageBreaks.smUp } {
           .footer-second {
             display: flex;
             margin: 40px 20px;
+            align-items: center;
           }
           .social-set{
               display: flex;
               margin: 0 10px 0 20px;
+              margin-right: 0px;
           }
           .footer-second .left {
             text-align: left;
@@ -331,7 +316,7 @@ export default class Footer extends React.Component {
             flex-grow: 4;
             flex-direction: column;
             justify-content: center;
-            margin-left: 20px
+            margin-left: 10px;
           }
           .right {
             flex-grow: 0;

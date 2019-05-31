@@ -19,9 +19,9 @@ export default class Location extends React.Component {
       <div>
         <div className={"oval"}></div>
         <h2>Location</h2>
-        <img className={"icon"} src={`/static/icons/Location.svg`}/><a target={"_blank"} href={"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9716.118371794813!2d13.4515843!3d52.4967039!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc26594a9f6726b2e!2sFestsaal+Kreuzberg!5e0!3m2!1sen!2s!4v1533318256540"}>Festsaal Kreuzberg</a>
+        <div className="location"><img className={"icon"} src={`/static/icons/Location.svg`}/><a target={"_blank"} href={"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9716.118371794813!2d13.4515843!3d52.4967039!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc26594a9f6726b2e!2sFestsaal+Kreuzberg!5e0!3m2!1sen!2s!4v1533318256540"}>Festsaal Kreuzberg</a></div>
         <div className="location-info">
-          <div>
+          <div className="location-info-text">
             <p>Join us at Festsaal Kreuzberg, one of Berlin’s coolest venues. Located close to the Spree in the heart of the city, Festsaal is the perfect location for intimate talks, interactive workshops & networking. The conference runs from 9am to 6pm.</p>
             <div className={"buttons"}>
               <button className={`map ${this.state.filter === null && "active"}`} onClick={this.changeFilter.bind(this, null)}>Map</button>
@@ -63,14 +63,40 @@ export default class Location extends React.Component {
         h2 {
           font-size: 60px;
           margin-top: 0;
-          margin-bottom: 40px;
+          margin-bottom: 20px;
         }
       }
 
-      .oval {	
+      .location {
+        font-size: 20px;
+        font-weight: 600;
+        color: #4A4A4A;
+        line-height: 40px;
+      }
+      @media ${ PageBreaks.smUp } {
+        .location {
+          font-size: 27px;
+        }
+      }
+
+      .location img {
+        height: 25px;
+        width: 25px;
+        margin-top: -5px;
+        margin-right: 8px;
+      }
+      @media ${ PageBreaks.smUp } {
+        .location img {
+          height: 45px;
+          width: 45px;
+          margin-right: 15px;
+        }
+      }
+
+      .oval {
         height: 160px;
         width: 160px;
-        border-radius: 50%;	
+        border-radius: 50%;
         background: linear-gradient(90deg, #FFFFFF 0%, #ECECEC 100%);
         position: absolute;
         top: 20px;
@@ -95,6 +121,10 @@ export default class Location extends React.Component {
           grid-template-columns: repeat(2, calc(50% - 30px));
           grid-column-gap: 60px;
         }
+        .location-info-text {
+          margin: 0px auto;
+          width: 80%;
+        }
       }
 
       #location .icon {
@@ -107,7 +137,7 @@ export default class Location extends React.Component {
         #location .icon {
           height: 50px;
           width: 50px;
-          margin-left: -10px;
+          margin-left: -5px;
           margin-right: 20px;
         }
       }
@@ -121,9 +151,12 @@ export default class Location extends React.Component {
       }
       @media ${ PageBreaks.smUp } {
         a {
-          font-size: 33px;
+          font-size: 27px;
           line-height: 40px;
+          color: #4A4A4A;
           font-weight: 600;
+          margin-left: -10px;
+
         }
       }
 
@@ -135,8 +168,9 @@ export default class Location extends React.Component {
       }
       @media ${ PageBreaks.smUp } {
         p {
-          margin-top: 40px;
-          margin-left: 10%;
+          margin-top: 30px;
+          margin-left: 15%;
+          margin-bottom: 3rem;
           font-size: 18px;
           line-height: 46px;
           color: #4a4a4a;
@@ -228,6 +262,7 @@ export default class Location extends React.Component {
 
       button.venue.middle {
         border-radius: 0;
+        padding: 10px 48px 10px 32px;
       }
 
       .buttons button.hr:after {

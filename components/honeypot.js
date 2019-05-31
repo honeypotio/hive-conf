@@ -2,7 +2,7 @@ import PageBreaks from '../utils/page-breaks';
 
 export default function Honeypot() {
   return (
-    <div id={"honeypot"} >
+    <div id={"honeypot"}>
       <div className={"wrapper"}>
       <h2>About <img src="/static/images/logos/Logo_Honeypot.svg"/></h2>
       <p>Honeypot is Europe’s leading tech job platform. We help build great tech teams by connecting companies with technical talents from all over the world. On Honeypot, you can hire faster through our pre-screened talents and recruit more transparently through profiles stating tech-stack, salary and location preferences. We believe technical recruitment should be simple and efficient. </p>
@@ -11,14 +11,13 @@ export default function Honeypot() {
       <style jsx>{`
       #honeypot {
         background: linear-gradient(90deg, #FFFFFF 0%, #ECECEC 100%);
-        padding-bottom: 60px;
       }
       .wrapper {
-        max-width: 960px;
-        margin: 0 auto;
+        max-width: 1100px;
+        margin: 0px auto;
+        margin-bottom: 40px;
         padding: 20px 0;
         position: relative;
-
       }
       @media  ${ PageBreaks.smUp } {
         .wrapper {
@@ -29,17 +28,13 @@ export default function Honeypot() {
       h2 {
         font-size: 36px;
         font-weight: 700;
-        text-align: center;
-        margin-top: 50px;
-        margin-bottom: 30px;
       }
       @media ${ PageBreaks.smUp } {
         h2 {
           font-size: 60px;
           margin-top: 50px;
           margin-bottom: 30px;
-          text-align: left;
-          margin-left: -100px;
+          padding-left: 20px;
         }
       }
 
@@ -49,6 +44,7 @@ export default function Honeypot() {
         color: #4A4A4A;
         columns: 1;
         text-align: center;
+        margin: 0 auto;
       }
       @media ${ PageBreaks.smUp } {
         p{
@@ -56,6 +52,7 @@ export default function Honeypot() {
           text-align: left;
           margin-top: 30px;
           grid-column-gap: 60px;
+          width: 80%;
         }
       }
 
@@ -79,7 +76,6 @@ export default function Honeypot() {
       }
       @media ${ PageBreaks.smUp } {
         .cta{
-          text-align: left;
           padding-top: 20px;
         }
       }

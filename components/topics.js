@@ -29,14 +29,14 @@ export default function Topics() {
       <style jsx>{`
         .wrapper {
           max-width: 1100px;
-          margin: 0 auto;
+          margin: 0px auto;
           margin-bottom: 60px;
           padding: 20px 0;
           position: relative;
         }
         @media  ${ PageBreaks.smUp } {
           .wrapper {
-            padding: 60px 0;
+            padding: 60px 0 100px;
             margin-bottom: 0;
           }
         }
@@ -78,7 +78,7 @@ export default function Topics() {
             margin: 0px auto;
             width: 80%;
             grid-template-columns: repeat(2, calc(50% - 15px));
-            margin-bottom: 70px;
+            margin-bottom: 45px;
           }
         }
 
@@ -93,10 +93,10 @@ export default function Topics() {
         @media ${ PageBreaks.smUp } {
           h3 {
             max-width: auto;
-            font-size: 30px;
+            font-size: 27px;
             text-align: left;
-            line-height: 41px;
-            margin: 0 auto;
+            line-height: 39px;
+            margin: 0 auto 10px;
           }
         }
 
@@ -114,6 +114,12 @@ export default function Topics() {
           color: #4A4A4A;
           font-size: 18px;
         }
+        @media ${ PageBreaks.smUp } {
+          p{
+            line-height: 43px;
+            font-size: 17px
+          }
+        }
 
         .center {
           margin-top: 40px;
@@ -121,14 +127,21 @@ export default function Topics() {
         }
 
         .tickets {
-          color: white;
-          font-size: 18px;
-          line-height: 22px;
-          padding: 22px 50px;
-          background: linear-gradient(270deg, #0000FF 0%, #0000AA 100%);
-          border-radius: 6px;
+          display: inline-block;
           text-decoration: none;
-          font-weight: bold;
+          font-weight: 700;
+          font-size: 16px;
+          padding: 8px 12px;
+          border-radius: 5px;
+          margin-right: 20px;
+          background: linear-gradient(270deg,#0000FF 0%,#0000AA 100%);
+          color: white;
+        }
+        @media ${ PageBreaks.smUp } {
+          .tickets {
+            font-size: 20px;
+            padding: 10px 36px;
+          }
         }
         .tickets:hover {
           color: #1A1A1A;

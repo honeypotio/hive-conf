@@ -1,6 +1,5 @@
 import PageBreaks from '../utils/page-breaks';
 import Carousel from 'react-bootstrap/Carousel';
-import CarouselItem from 'react-bootstrap/CarouselItem';
 
 const Testimonials = [{
   "title" : "Share Experiences Across Teams",
@@ -10,12 +9,37 @@ const Testimonials = [{
 },
 {
   "title" : "Share Experiences Across Teams",
-  "name" : "Teddy Tod",
-  "position" : "Talent Manager",
-  "text" : "I really loved to see people who were interested in how to improve recruitment in their companies! After all, we are all in it and the sooner we become \"partners in crime\" (Thanks Kevin!) the better!"
-}];
+  "name" : "Ayca",
+  "position" : "Senior Recruiter & Employer Branding ",
+  "text" : "Hive Conference connects modern HR professionals who have an understanding of people and people management. It's not traditional, that's what works best."
+},
+{
+  "title" : "Enjoy diverse topics",
+  "name" : "Barbara",
+  "position" : "HR Manager",
+  "text" : "Being an HR Manager in tech for many years I always looked for something just like this. It fulfilled all my expectations. Very interesting, very inspirational. Thanks a million and I will look forward to attend again next year!"
+},
+{
+  "title" : "Enjoy diverse topics",
+  "name" : "Lars",
+  "position" : "Head of Technology",
+  "text" : "Recruitment does not stop when you have successfully hired a new engineer. Each company needs to continue providing a great employee experience to retain and grow their talents. The makers of the Hive conference and their speakers definitely understand that recruiting is a full cycle."
+},
+{
+  "title" : "Have fun and network",
+  "name" : "José",
+  "position" : "Talent Acquisition Lead / Product & Technology",
+  "text" : "If you are looking for a small but very exclusive HR-Tech conference, Hive is the right one for you."
+},
+{
+  "title" : "Have fun and network",
+  "name" : "Dominik",
+  "position" : "Head of Engineering",
+  "text" : "I had an amazing time at the HiveConf18. Gained a lot of insights and already put some of those into action. #PartnersInCrime Honeypot for organizing this event! Thanks to all of you! Looking forward to next time!"
+},
+];
 
-const Logos = ["Logo_LinkedIn_White", "Logo_Soundcloud_White", "Logo_ProSieben_White", "Logo_DeliveryHero_White", "Logo_Blacklane_White", "Logo_HeyCar_White", "Logo_Lufthansa_White", "Logo_Zalando_White", "Logo_Flixbus_White", "Logo_Auto1_White", "Logo_Omio_White"
+const Logos = ["Logo_Soundcloud_White", "Logo_ProSieben_White", "Logo_DeliveryHero_White", "Logo_Blacklane_White", "Logo_HeyCar_White", "Logo_Lufthansa_White", "Logo_Zalando_White", "Logo_Flixbus_White", "Logo_Auto1_White", "Logo_Omio_White"
 ];
 
 const Quotes = [{
@@ -26,27 +50,27 @@ const Quotes = [{
 },
 {
   "img" : "AleksandraGavrilovska",
-  "text" : "All functions that touch the employee journey should be \"in service\" to the employee.",
+  "text" : "A team is a group of people doing a better job together.",
   "name" : "Aleksandra Gavrilovska",
-  "position" : "Former Airbnb Employee Experience Pioneer"
+  "position" : "Engineering Manager @ SoundCloud"
 },
 {
   "img" : "DanielKrauss",
-  "text" : "All functions that touch the employee journey should be \"in service\" to the employee.",
+  "text" : "Hire people who are better than you in the roles you hired them for.",
   "name" : "Daniel Krauss",
-  "position" : "Former Airbnb Employee Experience Pioneer"
+  "position" : "Co-Founder & CIO @ Flixbus"
 },
 {
   "img" : "KevinGoldsmith",
-  "text" : "All functions that touch the employee journey should be \"in service\" to the employee.",
+  "text" : "We went from only using Ruby to implementing Elixir 30% of the time and were the only ones in town doing it. That makes you different and helps a lot.",
   "name" : "Kevin Goldsmith",
-  "position" : "Former Airbnb Employee Experience Pioneer"
+  "position" : "VP of Engineering @ AstrumU"
 },
 {
   "img" : "MartinaNiemann",
-  "text" : "All functions that touch the employee journey should be \"in service\" to the employee.",
+  "text" : "It’s our job to support employees to adapt to new developments and help drive them forward.",
   "name" : "Martina Niemann",
-  "position" : "Former Airbnb Employee Experience Pioneer"
+  "position" : "VP HR Management @ Lufthansa"
 }]
 
 export default function Hiveconf() {
@@ -55,10 +79,11 @@ export default function Hiveconf() {
       <div className={"wrapper"}>
         <div className={"oval"}></div>
         <h2>HiveConf'18</h2>
+        <div className={"hive18-logo"}><img src={`/static/images/logos/Logo_Hive2018.svg`} alt={"HiveConf 18 Logo"} /></div>
         <div className={"description"}>
-          <p>Last year, HiveConf brought together 200 attendees, from C-level executives to team leads and managers in HR and Tech. With 22 speakers and topics including scaling tech teams, optimizing organizational design and preparing engineering pipelines, the first edition of HiveConf was a blast!  Let’s check out some highlights from last year’s event!
+          <p>Last year, HiveConf brought together 200 attendees, from C-level executives to team leads and managers in HR and Tech. With 22 speakers and topics including scaling tech teams, optimizing organizational design and preparing engineering pipelines, the first edition of HiveConf was a blast. Let’s check out some highlights from last year’s event!
           </p>
-          <img src={`/static/images/nav-bg.jpg`} alt={"HiveConf 18 Video"} />
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/NP0tIEelhFM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div className={"feedback"}>
           <div className={"thumbsup"}>
@@ -70,6 +95,7 @@ export default function Hiveconf() {
       <div className={"testimonials"}>
         <div className={"carouseloval"}></div>
           <Carousel
+          pauseOnHover={true}
           indicators={false}
           nextIcon={<img aria-hidden="true" src={`/static/icons/ArrowYellow_Right.svg`} className={ "hide-mobile" } />}
           prevIcon={<img aria-hidden="true" src={`/static/icons/ArrowYellow_Left.svg`} className={ "hide-mobile" } />}>
@@ -118,9 +144,12 @@ export default function Hiveconf() {
                 <img src={`/static/images/quotes/${quote.img}@2x.png`} className={ "hide-mobile" } />
                 <div className={"speaker-info"}>
                   <img className={"quotesign"} src={`/static/icons/Quote.svg`} alt={"Quote Signs"}/>
-                  <p className={""}>{quote.text}</p>
-                  <h3 className={""}>{quote.name}</h3>
-                  <h4 className={""}>{quote.position}</h4>
+                  <div className='speaker-info-centered'>
+                    <p className={""}>{quote.text}</p>
+                    <h3 className={""}>{quote.name}</h3>
+                    <h4 className={""}>{quote.position}</h4>
+                    <div className={"quote-hive18"}><img src={`/static/images/logos/Logo_Hive2018.svg`} alt={"HiveConf 18 Logo"} /></div>
+                  </div>
                 </div>
               </div>
             </Carousel.Item>
@@ -144,7 +173,7 @@ export default function Hiveconf() {
   .wrapper {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 60px 0;
+    padding: 20px 0;
     position: relative;
     z-index: 1;
   }
@@ -180,6 +209,20 @@ export default function Hiveconf() {
     top: -20px;
     z-index: -1;
   }
+  .hive18-logo {
+    position: absolute;
+    left: 0px;
+  }
+
+  .quote-hive18 {
+    margin-top: -110px;
+    margin-left: 360px;
+  }
+
+  .quote-hive18 img{
+    width: 65%;
+  }
+
   @media  ${ PageBreaks.smUp } {
     .oval {
       height: 413px;
@@ -187,12 +230,17 @@ export default function Hiveconf() {
       top: -40px;
       left: 100px;
     }
+    .hive18-logo {
+      left: -250px;
+      margin-top: 115px;
+    }
   }
 
   .description {
     display: grid;
     width: 100%;
-    margin: 20px auto;
+    margin: 0px auto;
+    margin-left: 20px;
     grid-template-columns: 100%;
     grid-column-gap: 30px;
     grid-template-rows: auto;
@@ -383,6 +431,7 @@ export default function Hiveconf() {
       font-size: 18px;
       line-height: 46px;
       margin: 0;
+      min-height: 250px;
     }
   }
 
@@ -406,6 +455,7 @@ export default function Hiveconf() {
   .testimonial .info {
     margin-top: 20px;
   }
+
   @media ${ PageBreaks.smUp } {
     .testimonial .info {
       position: absolute;
@@ -419,16 +469,19 @@ export default function Hiveconf() {
     font-size: 22px;
     margin-bottom: 20px;
   }
+
   @media ${ PageBreaks.smUp } {
     .title {
       font-size: initial;
       margin-bottom: 0;
+      max-width: 400px;
     }
   }
 
   .testimonial .name {
     font-size: 22px;
     margin-bottom: 0;
+    text-align: right;
   }
   @media ${ PageBreaks.smUp } {
     .testimonial .name {
@@ -439,12 +492,14 @@ export default function Hiveconf() {
   .testimonial .position {
     font-size: 18px;
     font-weight: 500;
+    text-align: right;
+    max-width: 260px;
   }
   @media ${ PageBreaks.smUp } {
     .testimonial .position {
-      font-size: 24px;
+      font-size: 21px;
       font-weight: 500;
-      line-height: 45px;
+      line-height: 31px;
     }
   }
 
@@ -471,7 +526,7 @@ export default function Hiveconf() {
 
   .companies {
     max-width: 1100px;
-    margin: 0 auto;
+    margin: 0 auto 100px;
   }
 
   .companies h5 {
@@ -486,7 +541,7 @@ export default function Hiveconf() {
   @media ${ PageBreaks.smUp } {
     .companies h5 {
       width: 80%;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
       margin-top: 0px;
       font-size: 30px;
       text-align: initial;
@@ -550,6 +605,13 @@ export default function Hiveconf() {
       color: white;
       position: relative;
     }
+    .speaker-info-centered {
+      margin: 0;
+      position: absolute;
+      top: 55%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
   }
 
   @media ${ PageBreaks.smUp } {
@@ -609,8 +671,8 @@ export default function Hiveconf() {
     .speaker-info .quotesign {
       position: absolute;
       width: 100px;
-      top: 130px;
-      left: 80px;
+      top: 95px;
+      left: 135px;
       margin-bottom: 0px;
     }
   }
@@ -664,6 +726,7 @@ export default function Hiveconf() {
       line-height: 46px;
       text-align: initial;
       font-weight: 400;
+      margin-bottom: 0;
     }
   }
 
