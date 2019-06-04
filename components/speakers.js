@@ -24,7 +24,7 @@ export default class Speakers extends React.Component {
   }
 
   handleCloseModal = () => {
-    this.setState({ showModal: false });
+    this.setState({ showModal: false, selectedSpeaker: null });
   }
 
   render() {
