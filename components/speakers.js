@@ -1,19 +1,30 @@
 import PageBreaks from '../utils/page-breaks';
-import React from 'react';
+import React, {Fragment} from 'react';
 import SpeakerList from '../utils/speakers.json';
+import CustomModal from './modal';
 
 export default class Speakers extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor () {
+    super();
     this.state = {
-      filter: null
+      filter: null,
+      showModal: false,
+      selectedSpeaker: null
     };
   }
 
-  changeFilter(type) {
+  changeFilter = (type) => {
     this.setState(() => ({
       filter: type
     }));
+  }
+
+  handleOpenModal = (index) =>{
+    this.setState({ showModal: true, selectedSpeaker: index });
+  }
+
+  handleCloseModal = () => {
+    this.setState({ showModal: false });
   }
 
   render() {
@@ -34,30 +45,34 @@ export default class Speakers extends React.Component {
         </div>
 
         <div className={"speaker-list"}>
+        <CustomModal closeModal={this.handleCloseModal} isModalOpen={this.state.showModal} className="modal" speaker={currentSpeakers[this.state.selectedSpeaker]}/>
           {
-            currentSpeakers.map(speaker => (
-              <div key={`${ speaker.name }-${ this.state.filter }`} className={"speaker-card"}>
-                <img className={"speaker-image"} src={`/static/images/speakers/${ speaker.img }`} alt={ speaker.name }/>
-                <p className={ "speaker-name" }>{ speaker.name }</p>
-                <p className={ "speaker-title" }>{ speaker.title }</p>
-                <ul className={"speaker-social"}>
-                {speaker.linkedin &&
-                  <li>
-                    <a href={`${ speaker.linkedin }`} target="_blank">
-                      <i className={ `fa fa-linkedin` }></i>
-                    </a>
-                  </li>
-                }
-                {speaker.twitter &&
-                  <li>
-                    <a href={`${ speaker.twitter }`} target="_blank">
-                      <i className={ `fa fa-twitter` }></i>
-                    </a>
-                  </li>
-                }
-                </ul>
+            currentSpeakers.map((speaker, index) => (
+              <Fragment>
+                {/* {console.log(currentSpeakers[this.state.selectedSpeaker])} */}
+                <div key={`${ speaker.name }-${ this.state.filter }`} className={"speaker-card"} onClick={() => this.handleOpenModal(index)}>
+                  <img className={"speaker-image"} src={`/static/images/speakers/${ speaker.img }`} alt={ speaker.name }/>
+                  <p className={ "speaker-name" }>{ speaker.name }</p>
+                  <p className={ "speaker-title" }>{ speaker.title }</p>
+                  <ul className={"speaker-social"}>
+                  {speaker.linkedin &&
+                    <li>
+                      <a href={`${ speaker.linkedin }`} target="_blank">
+                        <i className={ `fa fa-linkedin` }></i>
+                      </a>
+                    </li>
+                  }
+                  {speaker.twitter &&
+                    <li>
+                      <a href={`${ speaker.twitter }`} target="_blank">
+                        <i className={ `fa fa-twitter` }></i>
+                      </a>
+                    </li>
+                  }
+                  </ul>
 
-              </div>
+                </div>
+              </Fragment>
             ))
           }
 
@@ -295,6 +310,7 @@ export default class Speakers extends React.Component {
             text-align: center;
             animation: slide-in-left 1s forwards;
             transform-origin: left;
+            cursor: pointer;
           }
 
           .speaker-image {

@@ -1,12 +1,30 @@
 [
-    
+
     {
-        "img": "Maria_Gutierrez@2x.jpg",
+        "img": "Anna_Low@2x.jpg",
+        "name": "Anna Low",
+        "title": "Head of People @ Giant Swarm",
+        "linkedin": "https://www.linkedin.com/in/anna-l%C3%B6w-b834395/",
+        "twitter": "https://twitter.com/anna__loew?lang=en",
+        "type": "HR",
+        "about": "Anna Löw has been working with tech startups for the past 8 years and she's seen the whole bandwidth from startup to corporate. In her work she has built up broad HR experience in different companies cultures and industries. Anna is a trained and certified systemic coach and mediator. Her MTL consulting work focuses on international recruiting, remote work, agile leadership , conflict resolution and personnel development. She is also leading the People & Organisational Development function at Giant Swarm."
+    },
+    {
+        "img": "Emma_Tracey@2x.png",
+        "name": "Emma Tracey",
+        "title": "Co-Founder @ Honeypot ",
+        "linkedin": "https://www.linkedin.com/in/emmalouisetracey/",
+        "twitter": "https://twitter.com/emchenita?lang=en",
+        "type": "Tech",
+        "about": "Emma Tracey is Co-Founder of Honeypot. Previous to Honeypot, Emma founded Lifa Communications in South Africa and before that she worked as a financial journalist covering investment into emerging markets. "
+    },
+        {"img": "Maria_Gutierrez@2x.jpg",
         "name": "Maria Gutierrez",
         "title": "Head of Engineering @ Intercom",
         "linkedin": "https://www.linkedin.com/in/mariagutierrez/",
         "twitter": "https://twitter.com/mariagutierrez",
-        "type": "tech"
+        "type": "Tech",
+        "about": ""
     },
     {
         "img": "Leslie_Kivit@2x.jpg",
@@ -14,7 +32,8 @@
         "title": "Global Recruiting @ Oculus VR",
         "linkedin": "https://www.linkedin.com/in/mariagutierrez/",
         "twitter": "https://twitter.com/lesliekivit",
-        "type": "hr"
+        "type": "HR",
+        "about": ""
     },
     {
         "img": "Eva_Glanzer@2x.jpg",
@@ -22,7 +41,8 @@
         "title": "VP of People @ GetYourGuide",
         "linkedin": "https://www.linkedin.com/in/evaglanzer/",
         "twitter": "https://twitter.com/GetYourGuide ",
-        "type": "hr"
+        "type": "HR",
+        "about": "Eva Glanzer is the VP of People at GetYourGuide where she has been a key player in expanding the GetYourGuide team to a global workforce of over 500 people. Eva has preserved and evolved GetYourGuide’s strong workplace culture, ensuring growth and development of all employees. As the first female member of GetYourGuide’s Executive Committee, Eva serves as a mentor to women in her workplace, and passionately advocates for their advancement. Prior to joining GetYourGuide in 2014, she served as the Head of HR at DaWanda."
     },
     {
         "img": "Kevin_Goldsmith@2x.jpg",
@@ -30,15 +50,27 @@
         "title": "CTO @ Onfido",
         "linkedin": "https://www.linkedin.com/in/goldsmith/",
         "twitter": "https://twitter.com/KevinGoldsmith",
-        "type": "tech"
+        "type": "Tech",
+        "about":""
     },
     {
         "img": "Jenny_Jung@2x.png",
         "name": "Jenny Jung",
-        "title": "Founder @ MindTheLeader (former VP People & Organization @ EyeEm, former COO @ Factory)",
+        "title": "Founder @ MindTheLeader",
+        "subtitle": "former VP People & Organization @ EyeEm, former COO @ Factory",
         "linkedin": "https://www.linkedin.com/in/jennyejung/",
-        "twitter": "https://twitter.com/jung",
-        "type": "hr"
+        "twitter": "https://twitter.com/jung?lang=en",
+        "type": "HR",
+        "about": "Jenny Jung has been working with fast-growing businesses in the digital world for the last decade. Her previous roles include VP People & Operations at EyeEm, Portfolio Manager at the VC firm Lakestar and founding member & COO of Factory Berlin. At MTL she consults founders and teams on all things people and organisational development. A systemic coach and natural born facilitator, she loves working on \"growing pains\" while her trainings focus on hands-on managerial skills. "
+    },
+    {
+        "img": "Kaya_Taner@2x.jpg",
+        "name": "Kaya Taner",
+        "title": "Co-Founder @ Honeypot",
+        "linkedin": "https://www.linkedin.com/in/kayataner/",
+        "twitter": "https://twitter.com/kayataner1?lang=en",
+        "type": "HR",
+        "about": "Kaya Taner is Co-Founder of Honeypot. Previous to Honeypot, Kaya co-founded AppLift and lead it, as CEO, to over 250 people with offices across the world."
     },
     {
         "img": "Carsten_Wentzel@2x.png",
@@ -46,15 +78,8 @@
         "title": "Talent Acquisition Lead @ IT Adidas",
         "linkedin": "https://www.linkedin.com/in/carstenwenzel/",
         "twitter": "https://twitter.com/adidascareers",
-        "type": "hr"
-    },
-    {
-        "img": "Anna_Low@2x.jpg",
-        "name": "Anna Low",
-        "title": "Head of People @ Giant Swarm",
-        "linkedin": "https://www.linkedin.com/in/anna-l%C3%B6w-b834395/",
-        "twitter": "https://twitter.com/anna__loew",
-        "type": "hr"
+        "type": "HR",
+        "about": ""
     },
     {
         "img": "Sebastian_Waschnick@2x.jpg",
@@ -62,30 +87,35 @@
         "title": "CTO @ Axel Springer Ideas Engineering",
         "linkedin": "https://www.linkedin.com/in/sebastian-waschnick/",
         "twitter": "https://twitter.com/waschnick",
-        "type": "tech"
+        "type": "Tech",
+        "about": ""
     },
     {
         "img": "Jessica_Jordan@2x.png",
         "name": "Jessica Jordan",
         "title": "Software Engineer @ simplabs and Community Support @ Ember Learning Core Team",
         "linkedin": "https://www.linkedin.com/in/jessicajordanfedev/",
-        "twitter": "https://twitter.com/jjordan_dev",
-        "type": "tech"
+        "twitter": "https://twitter.com/jjordan_dev?lang=en",
+        "type": "Tech",
+        "about": "Jessica Jordan is a member of the Ember Learning Core team and a software engineer at simplabs. She is an editor at The Ember Times and organises the Ember Berlin meetup. She is passionate about open-source, art and comics."
+    },
+
+    {
+        "img": "Kevin_Goldsmith@2x.jpg",
+        "name": "Kevin Goldsmith",
+        "title": "CTO @ Onfido",
+        "linkedin": "https://www.linkedin.com/in/goldsmith/",
+        "twitter": "https://twitter.com/KevinGoldsmith",
+        "type": "Tech",
+        "about": "With over 27 years of experience, Kevin Goldsmith has held roles ranging from CTO, VP, Director, software architect and developer in both startups and large corporations. Currently, he’s the CTO at Onfido, a startup aiming to bring the world’s legal identities safely online. Kevin previously oversaw all Product Development, Data, Dev Ops and IT teams as CTO at Avvo. For three years, he was the VP of Engineering, Consumer at Spotify in Stockholm, Sweden, leading the development of the multi-platform product and streaming services. Kevin spent nine years at Adobe Systems as a Director of Engineering, leading the Adobe Revel product group and the Adobe Image Foundation group. He spent eight years as a developer and development lead at Microsoft in the Windows and Research teams."
     },
     {
-        "img": "Emma_Tracey@2x.png",
-        "name": "Emma Tracey",
-        "title": "Co-Founder @ Honeypot ",
-        "linkedin": "https://www.linkedin.com/in/emmalouisetracey/",
-        "twitter": "https://twitter.com/emchenita",
-        "type": "tech"
-    },
-    {
-        "img": "Kaya_Taner@2x.jpg",
-        "name": "Kaya Taner",
-        "title": "Co-Founder @ Honeypot",
-        "linkedin": "https://www.linkedin.com/in/kayataner/",
-        "twitter": "https://twitter.com/kayataner1",
-        "type": "hr"
+        "img": "Maria_Gutierrez@2x.jpg",
+        "name": "Maria Gutierrez",
+        "title": "Head of Engineering @ Intercom",
+        "linkedin": "https://www.linkedin.com/in/mariagutierrez/",
+        "twitter": "https://twitter.com/mariagutierrez?lang=en",
+        "type": "Tech",
+        "about": "With over 19 years of experience in the software industry, Maria Gutierrez is the Head of Engineering and co-site lead at Intercom London. Maria was formerly the VP of Engineering at Edinburgh-based FreeAgent, one of the UK's largest and most popular online accounting software providers. She previously worked at LivingSocial leading globally distributed teams, and at Adobe where she worked in the developer technologies group. Maria is one of the Directors of the WomenWhoCode Edinburgh network."
     }
 ]
