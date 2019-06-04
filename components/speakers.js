@@ -24,7 +24,7 @@ export default class Speakers extends React.Component {
   }
 
   handleCloseModal = () => {
-    this.setState({ showModal: false });
+    this.setState({ showModal: false, selectedSpeaker: null });
   }
 
   render() {
@@ -49,9 +49,11 @@ export default class Speakers extends React.Component {
           {
             currentSpeakers.map((speaker, index) => (
               <Fragment>
-                {/* {console.log(currentSpeakers[this.state.selectedSpeaker])} */}
                 <div key={`${ speaker.name }-${ this.state.filter }`} className={"speaker-card"} onClick={() => this.handleOpenModal(index)}>
+                  <div className="speaker-image-info">
                   <img className={"speaker-image"} src={`/static/images/speakers/${ speaker.img }`} alt={ speaker.name }/>
+                  <img className={"speaker-info-icon"} src="/static/icons/Info_Icon_Speaker.svg" alt="info-icon"/>
+                  </div>
                   <p className={ "speaker-name" }>{ speaker.name }</p>
                   <p className={ "speaker-title" }>{ speaker.title }</p>
                   <ul className={"speaker-social"}>
@@ -317,6 +319,10 @@ export default class Speakers extends React.Component {
             max-width: calc(100% - 35px);
           }
 
+          .speaker-image-info {
+            position: relative;
+          }
+
           .speaker-name {
             font-size: 16px;
             margin: 0;
@@ -346,6 +352,18 @@ export default class Speakers extends React.Component {
               padding: 0px 10px;
               margin-bottom: 0.7rem;
             }
+          }
+
+          .speaker-info-icon {
+            position: absolute;
+            max-width: calc(100% - 35px);
+            right: 20px;
+            bottom: 0px;
+            display: none;
+          }
+
+          .speaker-image-info:hover .speaker-info-icon{
+            display: block;
           }
 
           .speaker-social {

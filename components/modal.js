@@ -39,8 +39,8 @@ const CustomModal = (props) => {
           </li>
           }
       </ul>
-      <div className="modal-info"><p>Time</p></div>
-      <div className="modal-info"><p>Keynote?</p></div>
+      <div className="modal-info"><p>{props.speaker.time}</p></div>
+      <div className="modal-info"><p>{props.speaker.format}</p></div>
       <div className="modal-info"><p>{props.speaker.type}</p></div>
       <img className={"modal-background-logo"} src={`/static/graphics/Hive_WhiteGradient_null.svg`}/>
       </div>
@@ -51,9 +51,9 @@ const CustomModal = (props) => {
       <div className="oval"></div>
           <div className="modal-topic-titles">
           <div className="modal-topic-name"><h3>About <br/> {props.speaker.name}</h3></div>
-        <div className="modal-topic-talkname"><h3>A talk name that will probably be pretty Long and will take three lines</h3></div>
+        <div className="modal-topic-talkname"><h3>{props.speaker.talkname ? props.speaker.talkname : "TBC"}</h3></div>
           </div>
-        <p className="modal-topic-about">{props.speaker.about}</p>
+        <p className="modal-topic-about">{props.speaker.about ? props.speaker.about : "TBC"}</p>
         <div className="oval-small"></div>
     </div>
     </Fragment>}
