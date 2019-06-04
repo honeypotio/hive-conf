@@ -1,4 +1,5 @@
 [
+
     {
         "img": "Anna_Low@2x.jpg",
         "name": "Anna Low",
@@ -17,6 +18,23 @@
         "type": "Tech",
         "about": "Emma Tracey is Co-Founder of Honeypot. Previous to Honeypot, Emma founded Lifa Communications in South Africa and before that she worked as a financial journalist covering investment into emerging markets. "
     },
+        {"img": "Maria_Gutierrez@2x.jpg",
+        "name": "Maria Gutierrez",
+        "title": "Head of Engineering @ Intercom",
+        "linkedin": "https://www.linkedin.com/in/mariagutierrez/",
+        "twitter": "https://twitter.com/mariagutierrez",
+        "type": "Tech",
+        "about": ""
+    },
+    {
+        "img": "Leslie_Kivit@2x.jpg",
+        "name": "Leslie Kivit",
+        "title": "Global Recruiting @ Oculus VR",
+        "linkedin": "https://www.linkedin.com/in/mariagutierrez/",
+        "twitter": "https://twitter.com/lesliekivit",
+        "type": "HR",
+        "about": ""
+    },
     {
         "img": "Eva_Glanzer@2x.jpg",
         "name": "Eva Glanzer",
@@ -25,6 +43,15 @@
         "twitter": "https://twitter.com/GetYourGuide ",
         "type": "HR",
         "about": "Eva Glanzer is the VP of People at GetYourGuide where she has been a key player in expanding the GetYourGuide team to a global workforce of over 500 people. Eva has preserved and evolved GetYourGuide’s strong workplace culture, ensuring growth and development of all employees. As the first female member of GetYourGuide’s Executive Committee, Eva serves as a mentor to women in her workplace, and passionately advocates for their advancement. Prior to joining GetYourGuide in 2014, she served as the Head of HR at DaWanda."
+    },
+    {
+        "img": "Kevin_Goldsmith@2x.jpg",
+        "name": "Kevin Goldsmith",
+        "title": "CTO @ Onfido",
+        "linkedin": "https://www.linkedin.com/in/goldsmith/",
+        "twitter": "https://twitter.com/KevinGoldsmith",
+        "type": "Tech",
+        "about":""
     },
     {
         "img": "Jenny_Jung@2x.png",
@@ -46,6 +73,24 @@
         "about": "Kaya Taner is Co-Founder of Honeypot. Previous to Honeypot, Kaya co-founded AppLift and lead it, as CEO, to over 250 people with offices across the world."
     },
     {
+        "img": "Carsten_Wentzel@2x.png",
+        "name": "Carsten Wenzel",
+        "title": "Talent Acquisition Lead @ IT Adidas",
+        "linkedin": "https://www.linkedin.com/in/carstenwenzel/",
+        "twitter": "https://twitter.com/adidascareers",
+        "type": "HR",
+        "about": ""
+    },
+    {
+        "img": "Sebastian_Waschnick@2x.jpg",
+        "name": "Sebastian Waschnick",
+        "title": "CTO @ Axel Springer Ideas Engineering",
+        "linkedin": "https://www.linkedin.com/in/sebastian-waschnick/",
+        "twitter": "https://twitter.com/waschnick",
+        "type": "Tech",
+        "about": ""
+    },
+    {
         "img": "Jessica_Jordan@2x.png",
         "name": "Jessica Jordan",
         "title": "Software Engineer @ simplabs and Community Support @ Ember Learning Core Team",
@@ -54,14 +99,7 @@
         "type": "Tech",
         "about": "Jessica Jordan is a member of the Ember Learning Core team and a software engineer at simplabs. She is an editor at The Ember Times and organises the Ember Berlin meetup. She is passionate about open-source, art and comics."
     },
-    {
-        "img": "Carsten_Wenzel@2x.jpg",
-        "name": "Carsten Wenzel",
-        "title": "Talent Acquisition Lead @ IT Adidas",
-        "linkedin": "https://www.linkedin.com/in/carstenwenzel/",
-        "twitter": "https://twitter.com/adidascareers",
-        "type": "HR"
-    },
+
     {
         "img": "Kevin_Goldsmith@2x.jpg",
         "name": "Kevin Goldsmith",
