@@ -14,13 +14,13 @@
         "img": "Leslie_Kivit@2x.jpg",
         "name": "Leslie Kivit",
         "title": "Global Recruiting @ Oculus VR",
-        "linkedin": "https://www.linkedin.com/in/mariagutierrez/",
+        "linkedin": "https://www.linkedin.com/in/lesliekivit/ ",
         "twitter": "https://twitter.com/lesliekivit",
         "type": "HR",
         "about": "",
         "format": "Keynote",
         "time": "10:00",
-        "talkname": "Recruitment"
+        "talkname": "How we interview at Facebook."
     },
     {
         "img": "Eva_Glanzer@2x.jpg",
@@ -32,7 +32,7 @@
         "about": "Eva Glanzer is the VP of People at GetYourGuide where she has been a key player in expanding the GetYourGuide team to a global workforce of over 500 people. Eva has preserved and evolved GetYourGuide’s strong workplace culture, ensuring growth and development of all employees. As the first female member of GetYourGuide’s Executive Committee, Eva serves as a mentor to women in her workplace, and passionately advocates for their advancement. Prior to joining GetYourGuide in 2014, she served as the Head of HR at DaWanda.",
         "format": "Case Study",
         "time": "10:30",
-        "talkname": ""
+        "talkname": "Ideas: Talent Pools, Candidate Relationship Management, Recruitment Automation, GDPR"
     },
     {
         "img": "Kevin_Goldsmith@2x.jpg",
@@ -69,7 +69,7 @@
         "about": "",
         "format": "Lightening Talk",
         "time": "14:45",
-        "talkname": ""
+        "talkname": "Ideas: Blueprinting Organizations: Lessons from Adidas The Evolution of the TA Function at Adidas, HR Analytics at Adidas"
     },
     {
         "img": "Anna_Low@2x.jpg",
@@ -91,7 +91,7 @@
         "twitter": "https://twitter.com/waschnick",
         "type": "Tech",
         "about": "",
-        "format": "",
+        "format": "Keynote",
         "time": "12:00",
         "talkname": ""
     },
@@ -105,7 +105,7 @@
         "about": "Jessica Jordan is a member of the Ember Learning Core team and a software engineer at simplabs. She is an editor at The Ember Times and organises the Ember Berlin meetup. She is passionate about open-source, art and comics.",
         "format": "Lightening Talk",
         "time": "14:30",
-        "talkname": "Developer Experience"
+        "talkname": "That’s What You Get for Letting Your Developers Work on Open-Source"
     },
     {
         "img": "Emma_Tracey@2x.png",
