@@ -5,7 +5,10 @@
         "linkedin": "https://www.linkedin.com/in/mariagutierrez/",
         "twitter": "https://twitter.com/mariagutierrez",
         "type": "Tech",
-        "about": ""
+        "about": "",
+        "format": "Keynote",
+        "time": "09:20",
+        "talkname": "Leadership in Engineering"
     },
     {
         "img": "Leslie_Kivit@2x.jpg",
@@ -14,7 +17,10 @@
         "linkedin": "https://www.linkedin.com/in/mariagutierrez/",
         "twitter": "https://twitter.com/lesliekivit",
         "type": "HR",
-        "about": ""
+        "about": "",
+        "format": "Keynote",
+        "time": "10:00",
+        "talkname": "Recruitment"
     },
     {
         "img": "Eva_Glanzer@2x.jpg",
@@ -23,7 +29,10 @@
         "linkedin": "https://www.linkedin.com/in/evaglanzer/",
         "twitter": "https://twitter.com/GetYourGuide ",
         "type": "HR",
-        "about": "Eva Glanzer is the VP of People at GetYourGuide where she has been a key player in expanding the GetYourGuide team to a global workforce of over 500 people. Eva has preserved and evolved GetYourGuide’s strong workplace culture, ensuring growth and development of all employees. As the first female member of GetYourGuide’s Executive Committee, Eva serves as a mentor to women in her workplace, and passionately advocates for their advancement. Prior to joining GetYourGuide in 2014, she served as the Head of HR at DaWanda."
+        "about": "Eva Glanzer is the VP of People at GetYourGuide where she has been a key player in expanding the GetYourGuide team to a global workforce of over 500 people. Eva has preserved and evolved GetYourGuide’s strong workplace culture, ensuring growth and development of all employees. As the first female member of GetYourGuide’s Executive Committee, Eva serves as a mentor to women in her workplace, and passionately advocates for their advancement. Prior to joining GetYourGuide in 2014, she served as the Head of HR at DaWanda.",
+        "format": "Case Study",
+        "time": "10:30",
+        "talkname": ""
     },
     {
         "img": "Kevin_Goldsmith@2x.jpg",
@@ -32,7 +41,10 @@
         "linkedin": "https://www.linkedin.com/in/goldsmith/",
         "twitter": "https://twitter.com/KevinGoldsmith",
         "type": "Tech",
-        "about":""
+        "about":"",
+        "format": "Keynote",
+        "time": "09:20",
+        "talkname": ""
     },
     {
         "img": "Jenny_Jung@2x.png",
@@ -42,7 +54,10 @@
         "linkedin": "https://www.linkedin.com/in/jennyejung/",
         "twitter": "https://twitter.com/jung?lang=en",
         "type": "HR",
-        "about": "Jenny Jung has been working with fast-growing businesses in the digital world for the last decade. Her previous roles include VP People & Operations at EyeEm, Portfolio Manager at the VC firm Lakestar and founding member & COO of Factory Berlin. At MTL she consults founders and teams on all things people and organisational development. A systemic coach and natural born facilitator, she loves working on \"growing pains\" while her trainings focus on hands-on managerial skills. "
+        "about": "Jenny Jung has been working with fast-growing businesses in the digital world for the last decade. Her previous roles include VP People & Operations at EyeEm, Portfolio Manager at the VC firm Lakestar and founding member & COO of Factory Berlin. At MTL she consults founders and teams on all things people and organisational development. A systemic coach and natural born facilitator, she loves working on \"growing pains\" while her trainings focus on hands-on managerial skills. ",
+        "format": "Workshop",
+        "time": "15:00",
+        "talkname": ""
     },
     {
         "img": "Carsten_Wentzel@2x.png",
@@ -51,7 +66,10 @@
         "linkedin": "https://www.linkedin.com/in/carstenwenzel/",
         "twitter": "https://twitter.com/adidascareers",
         "type": "HR",
-        "about": ""
+        "about": "",
+        "format": "Lightening Talk",
+        "time": "14:45",
+        "talkname": ""
     },
     {
         "img": "Anna_Low@2x.jpg",
@@ -60,7 +78,10 @@
         "linkedin": "https://www.linkedin.com/in/anna-l%C3%B6w-b834395/",
         "twitter": "https://twitter.com/anna__loew?lang=en",
         "type": "HR",
-        "about": "Anna Löw has been working with tech startups for the past 8 years and she's seen the whole bandwidth from startup to corporate. In her work she has built up broad HR experience in different companies cultures and industries. Anna is a trained and certified systemic coach and mediator. Her MTL consulting work focuses on international recruiting, remote work, agile leadership , conflict resolution and personnel development. She is also leading the People & Organisational Development function at Giant Swarm."
+        "about": "Anna Löw has been working with tech startups for the past 8 years and she's seen the whole bandwidth from startup to corporate. In her work she has built up broad HR experience in different companies cultures and industries. Anna is a trained and certified systemic coach and mediator. Her MTL consulting work focuses on international recruiting, remote work, agile leadership , conflict resolution and personnel development. She is also leading the People & Organisational Development function at Giant Swarm.",
+        "format": "Workshop",
+        "time": "15:00",
+        "talkname": ""
     },
     {
         "img": "Sebastian_Waschnick@2x.jpg",
@@ -69,7 +90,10 @@
         "linkedin": "https://www.linkedin.com/in/sebastian-waschnick/",
         "twitter": "https://twitter.com/waschnick",
         "type": "Tech",
-        "about": ""
+        "about": "",
+        "format": "",
+        "time": "12:00",
+        "talkname": ""
     },
     {
         "img": "Jessica_Jordan@2x.png",
@@ -78,7 +102,10 @@
         "linkedin": "https://www.linkedin.com/in/jessicajordanfedev/",
         "twitter": "https://twitter.com/jjordan_dev?lang=en",
         "type": "Tech",
-        "about": "Jessica Jordan is a member of the Ember Learning Core team and a software engineer at simplabs. She is an editor at The Ember Times and organises the Ember Berlin meetup. She is passionate about open-source, art and comics."
+        "about": "Jessica Jordan is a member of the Ember Learning Core team and a software engineer at simplabs. She is an editor at The Ember Times and organises the Ember Berlin meetup. She is passionate about open-source, art and comics.",
+        "format": "Lightening Talk",
+        "time": "14:30",
+        "talkname": "Developer Experience"
     },
     {
         "img": "Emma_Tracey@2x.png",
@@ -87,7 +114,10 @@
         "linkedin": "https://www.linkedin.com/in/emmalouisetracey/",
         "twitter": "https://twitter.com/emchenita?lang=en",
         "type": "Tech",
-        "about": "Emma Tracey is Co-Founder of Honeypot. Previous to Honeypot, Emma founded Lifa Communications in South Africa and before that she worked as a financial journalist covering investment into emerging markets. "
+        "about": "Emma Tracey is Co-Founder of Honeypot. Previous to Honeypot, Emma founded Lifa Communications in South Africa and before that she worked as a financial journalist covering investment into emerging markets.",
+        "format": "Welcome Talk",
+        "time": "09:20",
+        "talkname": ""
     },
     {
         "img": "Kaya_Taner@2x.jpg",
@@ -96,6 +126,9 @@
         "linkedin": "https://www.linkedin.com/in/kayataner/",
         "twitter": "https://twitter.com/kayataner1?lang=en",
         "type": "HR",
-        "about": "Kaya Taner is Co-Founder of Honeypot. Previous to Honeypot, Kaya co-founded AppLift and lead it, as CEO, to over 250 people with offices across the world."
+        "about": "Kaya Taner is Co-Founder of Honeypot. Previous to Honeypot, Kaya co-founded AppLift and lead it, as CEO, to over 250 people with offices across the world.",
+        "format": "Welcome Talk",
+        "time": "09:20",
+        "talkname": ""
     }
 ]
