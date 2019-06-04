@@ -14,7 +14,7 @@ const CustomModal = (props) => {
     >
       {props.speaker &&
       <Fragment>
-      <div className="modal-close-button" onClick={props.closeModal}><p>X</p></div>
+      <div className="modal-close-button" onClick={props.closeModal}><p ><img alt="Cross" src="/static/icons/CrossX.svg"/></p></div>
       <div className="modal-topic-list-header">
       <div className="modal-topic">
           <img className="modal-speaker-image" src={`/static/images/speakers/${ props.speaker.img }`} alt={ props.speaker.name }/>
