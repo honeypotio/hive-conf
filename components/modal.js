@@ -19,7 +19,7 @@ const CustomModal = (props) => {
       <div className="modal-topic">
           <img className="modal-speaker-image" src={`/static/images/speakers/${ props.speaker.img }`} alt={ props.speaker.name }/>
       </div>
-      <div>
+      <div className="modal-topic-list-header-details">
           <h2 className="modal-speaker-name">{ props.speaker.name }</h2>
           <p className="modal-speaker-title">{ props.speaker.title }</p>
           <p className="modal-speaker-subtitle">{props.speaker.subtitle && props.speaker.subtitle}</p>
@@ -50,10 +50,9 @@ const CustomModal = (props) => {
       <div className="modal-topic-list">
       <div className="oval"></div>
           <div className="modal-topic-titles">
-          <div className="modal-topic-name"><h3>About the Speaker</h3></div>
-        <div className="modal-topic-talkname"><h3>{props.speaker.talkname ? props.speaker.talkname : "TBC"}</h3></div>
+          <div className="modal-topic-name"><h3>About the Speaker</h3><p className="modal-topic-about">{props.speaker.about ? props.speaker.about : "TBC"}</p></div>
+          <div className="modal-topic-talkname"><h3>{props.speaker.talkname ? props.speaker.talkname : "TBC"}</h3><p className="modal-topic-about">TBC</p></div>
           </div>
-        <p className="modal-topic-about">{props.speaker.about ? props.speaker.about : "TBC"}</p>
         <div className="oval-small"></div>
     </div>
     </Fragment>}
