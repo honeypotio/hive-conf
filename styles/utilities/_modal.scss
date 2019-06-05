@@ -1,11 +1,34 @@
 .test {
+  position:absolute;
+  background-color: #fff;
+  top: 20px;
+  left: 6%;
+  right: 6%;
+  bottom: 10px;
+  overflow-y: scroll;
+  height: auto;
+  min-height: 500px;
+  z-index: 2;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+@media  (min-width: 768px) {
+  .test {
     position:absolute;
     background-color: #fff;
     top: 100px;
     left: 26%;
     right: 26%;
     bottom: 10px;
-    overflow: scroll;
+    overflow-y: scroll;
     height: auto;
     min-height: 500px;
     z-index: 2;
@@ -18,6 +41,7 @@
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.15);
+}
 }
 
 .oval {
@@ -60,11 +84,15 @@
   .modal-topic-list-header {
     display: grid;
     margin: 0 auto;
-    margin-left: 20px;
+
     grid-template-columns: repeat(1, 100%);
     grid-column-gap: 20px;
     grid-template-rows: auto;
     grid-row-gap: 20px;
+  }
+
+  .modal-topic-list-header-details {
+    margin-left: 20px;
   }
 
   @media (min-width: 768px) {
@@ -86,22 +114,14 @@
     margin-top: 30px;
     margin: 0px auto;
     color: #4A4A4A;
-    min-height: 200px;
+    min-height: 50px;
 }
-
 .modal-topic-titles {
+  padding-top: 20px;
   width: 80%;
   margin: 0px auto;
-  display: flex;
 }
 
-.modal-topic-talkname, .modal-topic-name {
-  width: 50%;
-}
-
-.modal-topic-talkname {
-  margin-left: 52px;
-}
 
 .modal-topic-talkname h3 {
   font-size: 18px;
@@ -119,6 +139,28 @@
   margin-bottom: 28px;
   color: #1A1A1A;
 }
+
+@media (min-width: 768px) {
+  .modal-topic-titles {
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+  }
+
+  .modal-topic-about{
+    min-height: 200px;
+  }
+  .modal-topic-talkname, .modal-topic-name {
+    width: 50%;
+  }
+
+  .modal-topic-talkname {
+    margin-left: 52px;
+  }
+
+}
+
+
 
 .modal-close-button{
   position: absolute;
