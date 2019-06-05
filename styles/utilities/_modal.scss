@@ -82,21 +82,25 @@
 .modal-topic-about{
     font-size: 12px;
     line-height: 27px;
-    columns: 2;
     text-align: left;
     margin-top: 30px;
-    grid-column-gap: 60px;
-    width: 80%;
     margin: 0px auto;
     color: #4A4A4A;
     min-height: 200px;
 }
 
 .modal-topic-titles {
-  columns: 2;
-  grid-column-gap: 60px;
   width: 80%;
   margin: 0px auto;
+  display: flex;
+}
+
+.modal-topic-talkname, .modal-topic-name {
+  width: 50%;
+}
+
+.modal-topic-talkname {
+  margin-left: 52px;
 }
 
 .modal-topic-talkname h3 {
