@@ -69,6 +69,10 @@ export default class Main extends React.Component {
             overflow-x: hidden;
           }
 
+          :global(html){
+            overflow-x:hidden;
+          }
+
           * {
             box-sizing: border-box;
           }
