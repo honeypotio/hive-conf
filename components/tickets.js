@@ -10,7 +10,7 @@ export default function Tickets() {
         <div className={"active"}>
           <div className={"box"}>
             <h4>Early Bird</h4>
-            <h3>€249</h3>
+            <h3>€299</h3>
             <a target="_blank" href="https://hiveconf19.eventbrite.com/?aff=website#tickets" className={"ticket-cta"}>Get Tickets</a>
           </div>
           <div className="circle">
