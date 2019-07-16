@@ -99,11 +99,11 @@ export default function Schedule() {
     let trigger = <div style={{display: 'flex', fontWeight: 'bold', fontSize: '24px', paddingTop: '40px', paddingBottom: '40px', borderBottom: '3px solid #ECECEC', lineHeight: '40px'}}><div style={{width: '20%'}}>{event.time}</div><div style={{width: '75%'}}><div>{event.title}</div><div style={{color: '#4A4A4A', fontSize: '24px',	lineHeight: '40px', fontWeight: 'normal'}}>{event.speaker}</div></div><div style={{verticalAlign: 'top', textAlign: 'right', width: '5%'}}><img src="./static/icons/Arrow_Down_Schedule.svg"/></div></div>
     return (
       <Fragment key={event.time}>
-        <Collapsible trigger={trigger} triggerClassName="CustomTriggerCSS">
-          <p style={{ width: '75%', marginLeft: '20%', color: '#4A4A4A', fontSize: '21px', lineHeight: '41px'}}>{event.content}</p>
-        </Collapsible>
+          <Collapsible trigger={trigger} triggerClassName="CustomTriggerCSS">
+            <p style={{ width: '75%', marginLeft: '20%', color: '#4A4A4A', fontSize: '21px', lineHeight: '41px'}}>{event.content}</p>
+          </Collapsible>
       </Fragment>
-      // need a nested collapsible for See All
+
     )
   })
   return (
@@ -113,7 +113,9 @@ export default function Schedule() {
       <div className={"oval-small"}></div>
       <div className={"date"}><img src={`/static/icons/Calendar.svg`} alt={"Calendar Icon"}/>September 19, 2019</div>
       <div className={"information"}>
-      {collapsiblePanel}
+        <Collapsible lazyRender trigger="See All">
+          {collapsiblePanel}
+        </Collapsible>
       </div>
       <style jsx>{`
         .wrapper {
