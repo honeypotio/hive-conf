@@ -11,7 +11,7 @@ import Location from '../components/location';
 import Tickets from '../components/tickets';
 import Schedule from '../components/schedule';
 import Footer from '../components/footer';
-import img from './static/images/201905_HiveConf_Facebook_Cover.png'
+import img from '../static/images/201905_HiveConf_Facebook_Cover.png'
 
 import "../styles/main.scss";
 
