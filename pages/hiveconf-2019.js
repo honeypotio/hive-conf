@@ -11,7 +11,6 @@ import Location from '../components/location';
 import Tickets from '../components/tickets';
 import Schedule from '../components/schedule';
 import Footer from '../components/footer';
-import img from './static/images/'
 
 import "../styles/main.scss";
 
