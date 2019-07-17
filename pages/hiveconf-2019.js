@@ -11,6 +11,7 @@ import Location from '../components/location';
 import Tickets from '../components/tickets';
 import Schedule from '../components/schedule';
 import Footer from '../components/footer';
+import img from '/static/images/201905_HiveConf_Facebook_Cover.png';
 
 import "../styles/main.scss";
 
@@ -51,14 +52,14 @@ export default class Main extends React.Component {
           <meta property="og:type" content="website"/>
           <meta property="og:title" content="HiveConf'19 - Where Tech meets HR" />
           <meta property="og:description" content="HiveConf is a one-day conference for HR & Talent Acquisition Leaders, Technical Hiring managers, CTOs and VPs of Engineering focused on all aspects of building & scaling great tech teams."/>
-          <meta property="og:image" content="../static/images/201905_HiveConf_Facebook_Cover.png"/>
+          <meta property="og:image" content={img}/>
           <meta property="og:image:alt" content="HiveConf'19 - Where Tech meets HR"/>
 
           <meta name="twitter:card" content="summary_large_image"/>
           <meta name="twitter:site" content="@honeypotio"/>
           <meta name="twitter:title" content="HiveConf'19 - Where Tech meets HR"/>
           <meta name="twitter:description" content="HiveConf is a one-day conference for HR & Talent Acquisition Leaders, Technical Hiring managers, CTOs and VPs of Engineering focused on all aspects of building & scaling great tech teams."/>
-          <meta name="twitter:image" content="../static/images/201905_HiveConf_Facebook_Cover.png"/>
+          <meta name="twitter:image" content={img}/>
         </Head>
 
         <Header sticky={ this.state.sticky } />
