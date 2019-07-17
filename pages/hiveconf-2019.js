@@ -54,8 +54,6 @@ export default class Main extends React.Component {
           <meta property="og:image" content="https://hive.honeypot.io/static/images/201905_HiveConf_Facebook_Cover.png"/>
           <meta property="og:url" content="https://hive.honeypot.io/hiveconf-2019/" />
           <meta property="og:image:alt" content="HiveConf'19 - Where Tech meets HR"/>
-          <meta property="og:image:width" content="1640"/>
-          <meta property="og:image:height" content="930"/>
 
           <meta name="twitter:card" content="summary_large_image"/>
           <meta name="twitter:site" content="@honeypotio"/>
