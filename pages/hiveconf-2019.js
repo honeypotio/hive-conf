@@ -59,7 +59,8 @@ export default class Main extends React.Component {
           <meta name="twitter:site" content="@honeypotio"/>
           <meta name="twitter:title" content="HiveConf'19 - Where Tech meets HR"/>
           <meta name="twitter:description" content="HiveConf is a one-day conference for HR & Talent Acquisition Leaders, Technical Hiring managers, CTOs and VPs of Engineering focused on all aspects of building & scaling great tech teams."/>
-          <meta name="twitter:image" content="./static/images/201905_HiveConf_Facebook_Cover.png"/>
+          <meta name="twitter:image" content="
+https://hive.honeypot.io/static/images/201905_HiveConf_Facebook_Cover.png"/>
         </Head>
 
         <Header sticky={ this.state.sticky } />
