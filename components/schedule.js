@@ -403,12 +403,18 @@ export default class Schedule extends Component{
           }
           .gradient {
              width: 100%;
-             height: 300px;
-             top: 1250px;
+             height: 500px;
+             top: 2500px;
              margin: 0 auto;
              background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
              z-index: 999;
              position: absolute;
+          }
+          @media ${ PageBreaks.smUp } {
+            .gradient {
+              top: 1250px;
+              height: 300px;
+            }
           }
         `}</style>
       </div>
