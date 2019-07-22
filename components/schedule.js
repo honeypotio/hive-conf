@@ -71,7 +71,7 @@ export default class Schedule extends Component{
         time: '14:45',
         type: 'Lightening',
         title: 'TBA',
-        speaker: 'Ekaterina Lubenets, Senior Digital Recruiter (IT) @ adidas',
+        speaker: 'Ekaterina Lubenets, Senior Digital Recruiter @ adidas',
       },
       {
         time: '15:00',
@@ -83,7 +83,7 @@ export default class Schedule extends Component{
         time: '15:00',
         type: 'Workshop',
         title: 'Surprise Workshop',
-        speaker: 'TBA @ TBA',
+        speaker: '',
       },
       {
         time: '16:00',
@@ -100,12 +100,12 @@ export default class Schedule extends Component{
         time: '17:00',
         type: 'Keynote',
         title: 'Developing your Developers: Constructing Career Paths for your Technologists',
-        speaker: 'Kevin Goldsmith, VP of Engineering @ Onfido',
+        speaker: 'Kevin Goldsmith, CTO @ Onfido',
       },
       {
         time: '17:45',
-        type: '',
-        title: 'Closing',
+        type: 'Closing',
+        title: 'Closing Talk',
         speaker: 'Emma Tracey, Co-Founder @ Honeypot',
       },
       {
@@ -157,6 +157,8 @@ export default class Schedule extends Component{
           case 'Workshop':
             return (<div style={{height: '30px', width: '98px', borderRadius: '3.6px', backgroundColor: '#EF8748'}}><p style={{color: '#FFFFFF', fontSize: '15px', fontWeight: 'bold', lineHeight: '18px', textAlign: 'center', transform: 'translateY(40%)'}}>{param}</p></div>)
           case 'Opening':
+            return (<div style={{height: '30px', width: '98px', borderRadius: '3.6px', backgroundColor: '#76A1CF'}}><p style={{color: '#FFFFFF', fontSize: '15px', fontWeight: 'bold', lineHeight: '18px', textAlign: 'center', transform: 'translateY(40%)'}}>{param}</p></div>)
+          case 'Closing':
             return (<div style={{height: '30px', width: '98px', borderRadius: '3.6px', backgroundColor: '#76A1CF'}}><p style={{color: '#FFFFFF', fontSize: '15px', fontWeight: 'bold', lineHeight: '18px', textAlign: 'center', transform: 'translateY(40%)'}}>{param}</p></div>)
           default:
             return ''
