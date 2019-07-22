@@ -8,7 +8,7 @@
         "about": "",
         "format": "Keynote",
         "time": "09:20",
-        "talkname": "Leadership in Engineering"
+        "talkname": "How We Made Hiring, Growing and Recognising Engineers Everyone’s Job"
     },
     {
         "img": "Leslie_Kivit@2x.jpg",
@@ -20,19 +20,19 @@
         "about": "",
         "format": "Keynote",
         "time": "10:00",
-        "talkname": "How we interview at Facebook."
+        "talkname": "How We Interview at Facebook"
     },
     {
-        "img": "Eva_Glanzer@2x.jpg",
-        "name": "Eva Glanzer",
-        "title": "VP of People @ GetYourGuide",
-        "linkedin": "https://www.linkedin.com/in/evaglanzer/",
-        "twitter": "https://twitter.com/GetYourGuide ",
+        "img": "Dirk_Jonker@2x.png",
+        "name": "Dirk Jonker",
+        "title": "Founder & CEO  @ Crunchr Workforce Analytics",
+        "linkedin": "https://www.linkedin.com/in/crunchr/?originalSubdomain=nl",
+        "twitter": "https://twitter.com/datadirk?s=17",
         "type": "HR",
-        "about": "Eva Glanzer is the VP of People at GetYourGuide where she has been a key player in expanding the GetYourGuide team to a global workforce of over 500 people. Eva has preserved and evolved GetYourGuide’s strong workplace culture, ensuring growth and development of all employees. As the first female member of GetYourGuide’s Executive Committee, Eva serves as a mentor to women in her workplace, and passionately advocates for their advancement. Prior to joining GetYourGuide in 2014, she served as the Head of HR at DaWanda.",
+        "about": "",
         "format": "Case Study",
-        "time": "10:30",
-        "talkname": "Ideas: Talent Pools, Candidate Relationship Management, Recruitment Automation, GDPR"
+        "time": "11:30",
+        "talkname": "Boost Recruitment Effectiveness with Workforce Analytics!"
     },
     {
         "img": "Kevin_Goldsmith@2x.jpg",
@@ -43,13 +43,13 @@
         "type": "Tech",
         "about":"",
         "format": "Keynote",
-        "time": "09:20",
-        "talkname": ""
+        "time": "17:00",
+        "talkname": "Developing your Developers: Constructing Career Paths for your Technologists"
     },
     {
         "img": "Jenny_Jung@2x.png",
         "name": "Jenny Jung",
-        "title": "Founder @ MindTheLeader",
+        "title": "Co-Founder @ MindTheLeader",
         "subtitle": "former VP People & Organization @ EyeEm, former COO @ Factory",
         "linkedin": "https://www.linkedin.com/in/jennyejung/",
         "twitter": "https://twitter.com/jung?lang=en",
@@ -57,31 +57,19 @@
         "about": "Jenny Jung has been working with fast-growing businesses in the digital world for the last decade. Her previous roles include VP People & Operations at EyeEm, Portfolio Manager at the VC firm Lakestar and founding member & COO of Factory Berlin. At MTL she consults founders and teams on all things people and organisational development. A systemic coach and natural born facilitator, she loves working on \"growing pains\" while her trainings focus on hands-on managerial skills. ",
         "format": "Workshop",
         "time": "15:00",
-        "talkname": ""
-    },
-    {
-        "img": "Carsten_Wentzel@2x.png",
-        "name": "Carsten Wenzel",
-        "title": "Talent Acquisition Lead @ IT Adidas",
-        "linkedin": "https://www.linkedin.com/in/carstenwenzel/",
-        "twitter": "https://twitter.com/adidascareers",
-        "type": "HR",
-        "about": "",
-        "format": "Lightening Talk",
-        "time": "14:45",
-        "talkname": "Ideas: Blueprinting Organizations: Lessons from Adidas The Evolution of the TA Function at Adidas, HR Analytics at Adidas"
+        "talkname": "How to Make Peer2Peer Coaching Work for your Team"
     },
     {
         "img": "Anna_Low@2x.jpg",
-        "name": "Anna Low",
-        "title": "Head of People @ Giant Swarm",
+        "name": "Anna Löw",
+        "title": "Coach @ MindTheLeader",
         "linkedin": "https://www.linkedin.com/in/anna-l%C3%B6w-b834395/",
         "twitter": "https://twitter.com/anna__loew?lang=en",
         "type": "HR",
         "about": "Anna Löw has been working with tech startups for the past 8 years and she's seen the whole bandwidth from startup to corporate. In her work she has built up broad HR experience in different companies cultures and industries. Anna is a trained and certified systemic coach and mediator. Her MTL consulting work focuses on international recruiting, remote work, agile leadership , conflict resolution and personnel development. She is also leading the People & Organisational Development function at Giant Swarm.",
         "format": "Workshop",
         "time": "15:00",
-        "talkname": ""
+        "talkname": "How to Make Peer2Peer Coaching Work for your Team"
     },
     {
         "img": "Sebastian_Waschnick@2x.jpg",
@@ -93,7 +81,7 @@
         "about": "",
         "format": "Keynote",
         "time": "12:00",
-        "talkname": ""
+        "talkname": "How to Self-organize the On-boarding Process for New Colleagues"
     },
     {
         "img": "Jessica_Jordan@2x.png",
@@ -108,6 +96,42 @@
         "talkname": "That’s What You Get for Letting Your Developers Work on Open-Source"
     },
     {
+        "img": "Ben_Dunstan@2x.png",
+        "name": "Ben Dunstan",
+        "title": "Head of Organisational Development Science @ Peakon",
+        "linkedin": "https://www.linkedin.com/in/bendunstan/",
+        "twitter": "",
+        "type": "Tech",
+        "about": "",
+        "format": "Case Study",
+        "time": "16:30",
+        "talkname": "What Can We Learn from Engineers about Building Engaged Teams"
+    },
+    {
+        "img": "Jenny_Herald@2x.png",
+        "name": "Jenny Herald",
+        "title": "CPO @ Gtmhub",
+        "linkedin": "https://www.linkedin.com/in/jenny-herald-23b4656/",
+        "twitter": "https://twitter.com/twojing",
+        "type": "Tech",
+        "about": "",
+        "format": "Case Study",
+        "time": "14:00",
+        "talkname": "When and How to Mobilize a Growing Product Team"
+    },
+    {
+        "img": "PH_Speaker1.png",
+        "name": "Ekaterina Lubenets",
+        "title": "Senior Digital Recruiter @ adidas",
+        "linkedin": "https://de.linkedin.com/in/ekaterina-lubenets-1bb560b",
+        "twitter": "",
+        "type": "HR",
+        "about": "",
+        "format": "Case Study",
+        "time": "14:45",
+        "talkname": "TBA"
+    },
+    {
         "img": "Emma_Tracey@2x.png",
         "name": "Emma Tracey",
         "title": "Co-Founder @ Honeypot ",
@@ -115,9 +139,9 @@
         "twitter": "https://twitter.com/emchenita?lang=en",
         "type": "Tech",
         "about": "Emma Tracey is Co-Founder of Honeypot. Previous to Honeypot, Emma founded Lifa Communications in South Africa and before that she worked as a financial journalist covering investment into emerging markets.",
-        "format": "Welcome Talk",
+        "format": "Opening",
         "time": "09:20",
-        "talkname": ""
+        "talkname": "Welcome Talk"
     },
     {
         "img": "Kaya_Taner@2x.jpg",
@@ -129,6 +153,6 @@
         "about": "Kaya Taner is Co-Founder of Honeypot. Previous to Honeypot, Kaya co-founded AppLift and lead it, as CEO, to over 250 people with offices across the world.",
         "format": "Welcome Talk",
         "time": "09:20",
-        "talkname": ""
+        "talkname": "Welcome"
     }
 ]
