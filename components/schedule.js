@@ -63,13 +63,13 @@ export default class Schedule extends Component{
       },
       {
         time: '14:30',
-        type: 'Lightening',
+        type: 'Lightning',
         title: 'That’s What You Get for Letting Your Developers Work on Open-Source',
         speaker: 'Jessica Jordan, Software Engineer and Open Source Developer @ Simplabs',
       },
       {
         time: '14:45',
-        type: 'Lightening',
+        type: 'Lightning',
         title: 'TBA',
         speaker: 'Ekaterina Lubenets, Senior Digital Recruiter @ adidas',
       },
@@ -150,7 +150,7 @@ export default class Schedule extends Component{
         switch(param){
           case 'Keynote':
             return (<div style={{height: '30px', width: '98px', borderRadius: '3.6px', backgroundColor: '#4FA8BB'}}><p style={{color: '#FFFFFF', fontSize: '15px', fontWeight: 'bold', lineHeight: '18px', textAlign: 'center', transform: 'translateY(40%)'}}>{param}</p></div>)
-          case 'Lightening':
+          case 'Lightning':
             return (<div style={{height: '30px', width: '98px', borderRadius: '3.6px', backgroundColor: '#F3AE3D'}}><p style={{color: '#FFFFFF', fontSize: '15px', fontWeight: 'bold', lineHeight: '18px', textAlign: 'center', transform: 'translateY(40%)'}}>{param}</p></div>)
           case 'Case Study':
             return (<div style={{height: '30px', width: '98px', borderRadius: '3.6px', backgroundColor: '#4C89A0'}}><p style={{color: '#FFFFFF', fontSize: '15px', fontWeight: 'bold', lineHeight: '18px', textAlign: 'center', transform: 'translateY(40%)'}}>{param}</p></div>)
