@@ -25,7 +25,7 @@ export default class Schedule extends Component{
         time: '10:00',
         type: 'Keynote',
         title: 'How We Interview at Facebook',
-        speaker: 'Leslie Kivitt, Global Recruiting and Talent Leader @ Facebook, Oculus VR',
+        speaker: 'Leslie Kivit, Global Recruiting and Talent Leader @ Facebook, Oculus VR',
       },
       {
         time: '10:30',
