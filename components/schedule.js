@@ -59,7 +59,7 @@ export default class Schedule extends Component{
         time: '14:00',
         type: 'Case Study',
         title: 'When and How to Mobilize a Growing Product Team',
-        speaker: 'Jenny Herald, CPO @ GtmHub',
+        speaker: 'Jenny Herald, CPO @ Gtmhub',
       },
       {
         time: '14:30',
