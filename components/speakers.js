@@ -78,15 +78,15 @@ export default class Speakers extends React.Component {
             ))
           }
 
-          {
+          {/* {
             new Array(placeholders).fill(1).map((el, index) => {
               return (<div key={`Placeholder-${index}-${ this.state.filter }`} className={"speaker-card"}>
                         <img className={"speaker-image"} src={`/static/images/speakers/PH_Speaker${index}.png`} alt="Placeholder"/>
                       </div>)
             })
-          }
+          } */}
 
-          <div className={"speaker-card you"}>
+          {/* <div className={"speaker-card you"}>
             <div className={"speaker-image"}>
               <div className={"content"}>You?</div>
             </div>
@@ -96,7 +96,7 @@ export default class Speakers extends React.Component {
                 <a target="_blank" href="mailto:hiveconf@honeypot.io" className={"submit"}>Contact us</a>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <style jsx>{`
