@@ -10,10 +10,9 @@ import Hiveconf from '../components/hiveconf';
 import Location from '../components/location';
 import Tickets from '../components/tickets';
 import Schedule from '../components/schedule';
-import PageBreaks from '../utils/page-breaks';
 import Footer from '../components/footer';
 
-import "../styles/main.scss"
+import "../styles/main.scss";
 
 export default class Main extends React.Component {
 
@@ -45,10 +44,23 @@ export default class Main extends React.Component {
     return (
       <div className={ "main" }>
         <Head>
-          <title>{ "HiveConf'19 - Where Tech meets HR" }</title>
+          <title>HiveConf'19 - Where Tech meets HR</title>
           <link rel={"icon"} type={"image/svg"} href={"/static/images/favicon.png"} />
           <link rel={"stylesheet"} href={"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"} />
-          <link rel={"stylesheet"} href={"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"} integrity={"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"} crossOrigin={"anonymous"} />
+          <link rel={"stylesheet"} href={"https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"} integrity={"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"} crossOrigin="anonymous" />
+          <meta property="og:type" content="website"/>
+          <meta property="og:title" content="HiveConf'19 - Where Tech meets HR" />
+          <meta property="og:description" content="HiveConf is a one-day conference for HR & Talent Acquisition Leaders, Technical Hiring managers, CTOs and VPs of Engineering focused on all aspects of building & scaling great tech teams."/>
+          <meta property="og:image" content="https://hive.honeypot.io/static/images/201905_HiveConf_Facebook_Cover.png"/>
+          <meta property="og:url" content="https://hive.honeypot.io/hiveconf-2019/" />
+          <meta property="og:image:alt" content="HiveConf'19 - Where Tech meets HR"/>
+
+          <meta name="twitter:card" content="summary_large_image"/>
+          <meta name="twitter:site" content="@honeypotio"/>
+          <meta name="twitter:title" content="HiveConf'19 - Where Tech meets HR"/>
+          <meta name="twitter:description" content="HiveConf is a one-day conference for HR & Talent Acquisition Leaders, Technical Hiring managers, CTOs and VPs of Engineering focused on all aspects of building & scaling great tech teams."/>
+          <meta name="twitter:image" content="
+https://hive.honeypot.io/static/images/201905_HiveConf_Facebook_Cover.png"/>
         </Head>
 
         <Header sticky={ this.state.sticky } />
