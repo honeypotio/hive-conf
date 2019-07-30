@@ -32,7 +32,7 @@ export default function Tickets() {
           </div>
         </div>
       </div>
-      <div className={"groups"}>Bring your team for a discounted price with our <a target={"_blank"} href={"https://www.eventbrite.ie/e/hiveconf19-where-tech-meets-hr-tickets-60047828672?aff=website#grouptickets"}>group tickets!</a></div>
+      <div className={"groups"}>Bring your team for a discounted price with our <a target={"_blank"} href={"https://hiveconf19.eventbrite.com/?aff=website#tickets"}>group tickets!</a></div>
       <style jsx>{`
         .wrapper {
           max-width: 1100px;
