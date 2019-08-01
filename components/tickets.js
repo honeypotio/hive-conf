@@ -7,22 +7,22 @@ export default function Tickets() {
       <div className={"oval"}></div>
       <div className={"oval-big"}></div>
       <div className={"ticketoptions"}>
-        <div className={"active"}>
+        <div className={"earlybird"}>
           <div className={"box"}>
             <h4>Early Bird</h4>
             <h3>€299</h3>
-            <a target="_blank" href="https://hiveconf19.eventbrite.com/?aff=website#tickets" className={"ticket-cta"}>Get Tickets</a>
-          </div>
-          <div className="circle">
-            <span className="active-circle"></span>
-            <span className="inactive-circle"></span>
-            <span className="inactive-circle"></span>
           </div>
         </div>
-        <div>
+        <div className={"active"}>
           <div className={"box"}>
             <h4>Regular</h4>
             <h3>€399</h3>
+            <a target="_blank" href="https://hiveconf19.eventbrite.com/?aff=website#tickets" className={"ticket-cta"}>Get Tickets</a>
+          </div>
+          <div className="circle">
+            <span className="inactive-circle"></span>
+            <span className="active-circle"></span>
+            <span className="inactive-circle"></span>
           </div>
         </div>
         <div>
@@ -32,7 +32,7 @@ export default function Tickets() {
           </div>
         </div>
       </div>
-      <div className={"groups"}>Bring your team for a discounted price with our <a target={"_blank"} href={"https://www.eventbrite.ie/e/hiveconf19-where-tech-meets-hr-tickets-60047828672?aff=website#grouptickets"}>group tickets!</a></div>
+      <div className={"groups"}>Bring your team for a discounted price with our <a target={"_blank"} href={"https://hiveconf19.eventbrite.com/?aff=website#tickets"}>group tickets!</a></div>
       <style jsx>{`
         .wrapper {
           max-width: 1100px;
@@ -132,8 +132,17 @@ export default function Tickets() {
           color: white;
         }
 
-        .active .box:before {
-          content: 'First come, first serve!';
+        .earlybird {
+          order: 1;
+        }
+        @media ${ PageBreaks.smUp } {
+          .earlybird {
+            order: unset;
+          }
+        }
+
+        .earlybird .box:before {
+          content: 'Sold out!';
           position: absolute;
           top: -50px;
           left: 0%;
@@ -150,6 +159,14 @@ export default function Tickets() {
           }
         }
 
+        .active {
+          order: 0;
+        }
+        @media ${ PageBreaks.smUp } {
+          .active {
+            order: unset;
+          }
+        }
 
         .active .box:after {
 
