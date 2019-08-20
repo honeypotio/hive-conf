@@ -24,14 +24,14 @@ export default class Schedule extends Component{
       {
         time: '10:00',
         type: 'Keynote',
-        title: 'How We Interview at Facebook',
+        title: 'Facebook Zurich, Building a Site from Scratch',
         speaker: 'Leslie Kivit, Global Recruiting and Talent Leader @ Facebook, Oculus VR',
       },
       {
         time: '10:30',
         type: 'Case Study',
-        title: 'TBA',
-        speaker: 'TBA',
+        title: 'Tech Hiring at Scale without Lowering the Bar: Introducing a Hire by Committee Approach; Wins, Pitfalls and Learnings.',
+        speaker: 'Eva Glanzer, VP of People @ GetYourGuide',
       },
       {
         time: '11:00',
