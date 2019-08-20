@@ -11,7 +11,7 @@ export default function Topics() {
       <div className={"topic-list"}>
         <div className={"topic"}>
           <h3>Discover & Recruit the Best People</h3>
-          <p>Learn from both sides of the spectrum as technical leaders and recruiters share insights on recruiting the best technical hires. Topics include sourcing, interviewing, employer branding, candidate experience, automation and fighting unconscious bias.</p>
+          <p>Learn from both sides of the spectrum as technical leaders and recruiters share insights on recruiting the best technical talent. Topics include sourcing, interviewing, employer branding, candidate experience, automation and fighting unconscious bias.</p>
         </div>
         <div className={"topic"}>
           <h3>Empower<br className="hide-sm" /> Your Tech Team</h3>
