@@ -7,7 +7,18 @@ export default function Sponsorships() {
         <div className={"oval"}></div>
         <h2>Partner with us</h2>
         <p>HiveConf is an excellent opportunity to reach CTOs, CHROs, VPs of Engineering, and Talent Acquisition Leaders in the industry. Contact our partnership team at <a target="_blank" href="mailto:hiveconf@honeypot.io" className={"active-link"}>hiveconf@honeypot.io</a> to learn about sponsorship opportunities and ways to highlight your brand.</p>
+        <div className={"sponsors"}>
+          <div className={"partnerships"}>
+            <h3>Community Partner</h3>
+            <img src="/static/images/sponsors/harver_logo_RGB.svg" alt="Harver Logo"/>
+          </div>
+          <div className={"sponsorships"}>
+            <h3>Silver Sponsor</h3>
+            <img className={"taxfix"} src="/static/images/sponsors/taxfix-wordmark-oval.png" alt="Taxfix Logo"/>
+          </div>
+        </div>
       </div>
+
       <style jsx>{`
       .wrapper {
         max-width: 1100px;
@@ -69,6 +80,37 @@ export default function Sponsorships() {
         color: #0d0dff;
         text-decoration: none;
       }
+
+      .sponsors {
+        margin-top: 50px;
+        width: 100%;
+      }
+
+      h3 {
+        font-size: 36px;
+        font-weight: 700;
+        width: 100%;
+        margin-bottom: 50px;
+      }
+
+      .sponsorships, .partnerships {
+        width: 80%;
+        margin: 0px auto;
+      }
+
+      .sponsorships h3 {
+        margin-top: 50px;
+      }
+
+      .sponsors img {
+        height: 40px;
+        width: auto;
+      }
+
+      .taxfix {
+        height: 120px !important;
+      }
+
       `}</style>
     </div>
   )
