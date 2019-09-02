@@ -70,7 +70,7 @@ export default class Schedule extends Component{
       {
         time: '14:45',
         type: 'Lightning',
-        title: 'TBA',
+        title: 'Digital Transformation at Adidas',
         speaker: 'Ekaterina Lubenets, Senior Digital Recruiter @ adidas',
       },
       {
