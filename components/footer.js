@@ -163,6 +163,13 @@ export default class Footer extends React.Component {
             display: none;
           }
 
+          .social-link img{
+            filter: invert(20%);
+          }
+          .social-link img:hover{
+            filter: invert(0%);
+          }
+
           .mobile-footer {
             flex-direction: row;
             flex-flow: row wrap;
@@ -283,14 +290,6 @@ export default class Footer extends React.Component {
 
           .social-link{
             flex-grow: 0;
-          }
-
-          .social-link img{
-            filter: invert(20%) url(#colorFilter);
-          }
-
-          .social-link img:hover{
-            filter: invert(0%) url(#colorFilter);
           }
 
           .footer-second .left {

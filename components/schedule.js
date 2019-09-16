@@ -13,7 +13,7 @@ export default class Schedule extends Component{
         time: '09:00',
         type: 'Opening',
         title: 'Welcome Talk',
-        speaker: 'Emma Tracey & Kaya Taner, Co-Founders @ Honeypot',
+        speaker: 'Emma Tracey, Co-Founder @ Honeypot',
       },
       {
         time: '09:20',
@@ -69,9 +69,9 @@ export default class Schedule extends Component{
       },
       {
         time: '14:45',
-        type: 'Lightning',
-        title: 'Digital Transformation at Adidas',
-        speaker: 'Ekaterina Lubenets, Senior Digital Recruiter @ adidas',
+        type: 'Case Study',
+        title: 'Digital Transformation at adidas',
+        speaker: 'Ekaterina Lubenets - Senior Digital Recruiter & Mona Mehler - Recruiter @ adidas',
       },
       {
         time: '15:00',
@@ -82,8 +82,8 @@ export default class Schedule extends Component{
       {
         time: '15:00',
         type: 'Workshop',
-        title: 'Surprise Workshop',
-        speaker: '',
+        title: 'Round Tables',
+        speaker: 'A selection of round table discussions with hosts from N26, Zalando and Honeypot',
       },
       {
         time: '16:00',
