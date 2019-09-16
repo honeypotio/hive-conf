@@ -51,7 +51,7 @@ const CustomModal = (props) => {
       <div className="oval"></div>
           <div className="modal-topic-titles">
           <div className="modal-topic-name"><h3>About the Speaker</h3><p className="modal-topic-about">{props.speaker.about ? props.speaker.about : "TBC"}</p></div>
-          <div className="modal-topic-talkname"><h3>{props.speaker.talkname ? props.speaker.talkname : "TBC"}</h3><p className="modal-topic-about">TBC</p></div>
+          <div className="modal-topic-talkname"><h3>{props.speaker.talkname ? props.speaker.talkname : "TBC"}</h3><p className="modal-topic-about">{props.speaker.talkabout ? props.speaker.talkabout : "TBC"}</p></div>
           </div>
         <div className="oval-small"></div>
     </div>

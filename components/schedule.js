@@ -69,7 +69,7 @@ export default class Schedule extends Component{
       },
       {
         time: '14:45',
-        type: 'Lightning',
+        type: 'Case Study',
         title: 'Digital Transformation at Adidas',
         speaker: 'Ekaterina Lubenets - Senior Digital Recruiter & Mona Mehler - Recruiter @ adidas',
       },
