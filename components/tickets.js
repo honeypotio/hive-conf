@@ -181,7 +181,7 @@ export default function Tickets() {
           font-weight: 500;
         }
         @media ${ PageBreaks.smUp } {
-          .earlybird .box:before {
+          .regular .box:before {
             font-size: 22px;
           }
         }

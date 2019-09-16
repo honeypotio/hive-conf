@@ -10,11 +10,11 @@ export default function Sponsorships() {
         <div className={"sponsors"}>
           <div className={"partnerships"}>
             <h3>Community Partner</h3>
-            <img src="/static/images/sponsors/harver_logo_RGB.svg" alt="Harver Logo"/>
+            <a href="https://www.harver.com" target="_blank"><img src="/static/images/sponsors/harver_logo_RGB.svg" alt="Harver Logo"/></a>
           </div>
           <div className={"sponsorships"}>
             <h3>Silver Sponsor</h3>
-            <img className={"taxfix"} src="/static/images/sponsors/taxfix-wordmark-oval.png" alt="Taxfix Logo"/>
+            <a href="https://www.taxfix.de" target="_blank"><img className={"taxfix"} src="/static/images/sponsors/taxfix-wordmark-oval.png" alt="Taxfix Logo"/></a>
           </div>
         </div>
       </div>
