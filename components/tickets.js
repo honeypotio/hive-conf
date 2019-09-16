@@ -169,7 +169,7 @@ export default function Tickets() {
         }
 
         .regular .box:before {
-          content: 'Last chance';
+          content: 'Sold out!';
           position: absolute;
           top: -50px;
           left: 0%;
@@ -182,6 +182,24 @@ export default function Tickets() {
         }
         @media ${ PageBreaks.smUp } {
           .regular .box:before {
+            font-size: 22px;
+          }
+        }
+
+        .active .box:before {
+          content: 'Last chance';
+          position: absolute;
+          top: -50px;
+          left: 0%;
+          width: 100%;
+          text-align: center;
+          font-size: 24px;
+          line-height: 41px;
+          color: #0000FF;
+          font-weight: 500;
+        }
+        @media ${ PageBreaks.smUp } {
+          .active .box:before {
             font-size: 22px;
           }
         }
