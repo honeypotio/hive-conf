@@ -71,7 +71,7 @@ export default class Schedule extends Component{
         time: '14:45',
         type: 'Lightning',
         title: 'Digital Transformation at Adidas',
-        speaker: 'Ekaterina Lubenets, Senior Digital Recruiter @ adidas',
+        speaker: 'Ekaterina Lubenets - Senior Digital Recruiter & Mona Mehler - Recruiter @ adidas',
       },
       {
         time: '15:00',
@@ -82,8 +82,8 @@ export default class Schedule extends Component{
       {
         time: '15:00',
         type: 'Workshop',
-        title: 'Surprise Workshop',
-        speaker: '',
+        title: 'Round Tables',
+        speaker: 'A selection of round table discussions with hosts from N26, Zalando and Honeypot',
       },
       {
         time: '16:00',
