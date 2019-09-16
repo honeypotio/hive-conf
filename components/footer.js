@@ -285,14 +285,6 @@ export default class Footer extends React.Component {
             flex-grow: 0;
           }
 
-          .social-link img{
-            filter: invert(20%) url(#colorFilter);
-          }
-
-          .social-link img:hover{
-            filter: invert(0%) url(#colorFilter);
-          }
-
           .footer-second .left {
             justify-content: flex-end;
             text-align: right;
