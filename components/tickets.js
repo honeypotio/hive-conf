@@ -13,7 +13,7 @@ export default function Tickets() {
             <h3>€299</h3>
           </div>
         </div>
-        <div className="regular">
+        <div className={"regular"}>
           <div className={"box"}>
             <h4>Regular</h4>
             <h3>€399</h3>
