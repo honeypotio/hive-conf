@@ -13,22 +13,22 @@ export default function Tickets() {
             <h3>€299</h3>
           </div>
         </div>
-        <div className={"active"}>
+        <div className="regular">
           <div className={"box"}>
             <h4>Regular</h4>
             <h3>€399</h3>
+          </div>
+        </div>
+        <div className={"active"}>
+          <div className={"box"}>
+            <h4>Late Bird</h4>
+            <h3>€599</h3>
             <a target="_blank" href="https://hiveconf19.eventbrite.com/?aff=website#tickets" className={"ticket-cta"}>Get Tickets</a>
           </div>
           <div className="circle">
             <span className="inactive-circle"></span>
             <span className="active-circle"></span>
             <span className="inactive-circle"></span>
-          </div>
-        </div>
-        <div>
-          <div className={"box"}>
-            <h4>Late Bird</h4>
-            <h3>€599</h3>
           </div>
         </div>
       </div>
@@ -141,6 +141,15 @@ export default function Tickets() {
           }
         }
 
+        .regular {
+          order: 2;
+        }
+        @media ${ PageBreaks.smUp } {
+          .regular {
+            order: unset;
+          }
+        }
+
         .earlybird .box:before {
           content: 'Sold out!';
           position: absolute;
@@ -154,7 +163,25 @@ export default function Tickets() {
           font-weight: 500;
         }
         @media ${ PageBreaks.smUp } {
-          .active .box:before {
+          .earlybird .box:before {
+            font-size: 22px;
+          }
+        }
+
+        .regular .box:before {
+          content: 'Last chance';
+          position: absolute;
+          top: -50px;
+          left: 0%;
+          width: 100%;
+          text-align: center;
+          font-size: 24px;
+          line-height: 41px;
+          color: #0000FF;
+          font-weight: 500;
+        }
+        @media ${ PageBreaks.smUp } {
+          .earlybird .box:before {
             font-size: 22px;
           }
         }
