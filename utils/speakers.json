@@ -1,5 +1,6 @@
 [
-    {"img": "Maria_Gutierrez@2x.jpg",
+    {
+        "img": "Maria_Gutierrez@2x.jpg",
         "name": "Maria Gutierrez",
         "title": "Head of Engineering @ Intercom London",
         "linkedin": "https://www.linkedin.com/in/mariagutierrez/",
@@ -8,7 +9,7 @@
         "about": "With over 19 years of experience in the software industry, Maria Gutierrez is the Head of Engineering and co-site lead at Intercom London. Maria was formerly the VP of Engineering at Edinburgh-based FreeAgent, one of the UK's largest and most popular online accounting software providers. She previously worked at LivingSocial leading globally distributed teams, and at Adobe where she worked in the developer technologies group. Maria is one of the Directors of the WomenWhoCode Edinburgh network",
         "format": "Keynote",
         "time": "09:20",
-        "talkabout": "",
+        "talkabout": "What does it take to build the right team and keep everyone engaged, solving your most critical priorities and improving every day? People are the core of any successful business and investing in the team should be a priority for everyone; not just a manager’s or HR concern.In this talk, we’ll discuss how Engineering and People Operations functions can collaborate to invest in people so that those closest to the problems, at any level in the organisation, are empowered to improve how we work.",
         "talkname": "How We Made Hiring, Growing and Recognising Engineers Everyone’s Job"
     },
     {
@@ -47,7 +48,7 @@
         "about":"With over 27 years of experience, Kevin Goldsmith has held roles ranging from CTO, VP, Director, software architect and developer in both startups and large corporations. Currently, he’s the CTO at Onfido, a startup aiming to bring the world’s legal identities safely online. Kevin previously oversaw all Product Development, Data, Dev Ops and IT teams as CTO at Avvo. For three years, he was the VP of Engineering, Consumer at Spotify in Stockholm, Sweden, leading the development of the multi-platform product and streaming services. Kevin spent nine years at Adobe Systems as a Director of Engineering, leading the Adobe Revel product group and the Adobe Image Foundation group. He spent eight years as a developer and development lead at Microsoft in the Windows and Research teams.",
         "format": "Keynote",
         "time": "17:00",
-        "talkabout": "",
+        "talkabout": "How you construct development paths in your company can support and deepen your company values. Doing it well means heightening employee engagement and improving retention. This talk gives technology and people team leaders a place to start their conversations.",
         "talkname": "Developing your Developers: Constructing Career Paths for your Technologists"
     },
     {
@@ -84,10 +85,10 @@
         "linkedin": "https://www.linkedin.com/in/sebastian-waschnick/",
         "twitter": "https://twitter.com/waschnick",
         "type": "Tech",
-        "about": "",
+        "about": "As an electrical engineering graduate, Sebastian started his career as an automation engineer within a brown coal mining facility. When he moved to software development he started to work for a medium-sized IT company, as an engineer, team lead and later as project lead. A few years ago, he transitioned to Axel Springer and started living the agile way. Within Axel Springer, as CTO of Ideas Engineering, Sebastian is one of the key drivers to transform this historic corporation into a modern tech company. This challenge and his passion for a great team culture motivates him every single day!",
         "format": "Keynote",
         "time": "12:00",
-        "talkabout": "",
+        "talkabout": "Not only the market is changing at a rapid pace, but also the way we work together. The hierarchies become flatter and the teams independent and self-organized. Within most companies recruiting is already done by the teams themselves. But also within most companies, those responsibilities stop after the applicant is hired. But what about the on-boarding process? What about the probation, feedback cycles or expectation management? Without the typical hierarchies, how do you self-organized these processes? This talk will give you the answers!",
         "talkname": "How to Self-organize the On-boarding Process for New Colleagues"
     },
     {
@@ -139,7 +140,7 @@
         "about": "Eva Glanzer is the VP of People at GetYourGuide where she has been a key player in expanding the GetYourGuide team to a global workforce of over 500 people. Eva has preserved and evolved GetYourGuide’s strong workplace culture, ensuring growth and development of all employees. As the first female member of GetYourGuide’s Executive Committee, Eva serves as a mentor to women in her workplace, and passionately advocates for their advancement. Prior to joining GetYourGuide in 2014, she served as the Head of HR at DaWanda.",
         "format": "Case Study",
         "time": "10:30",
-        "talkabout": "",
+        "talkabout": "At times of hyper-growth and highly competitive talent market in the tech industry, it is crucial to apply high-quality, consistent, and bias-free hiring processes. Learn how the Engineering Team at GetYourGuide tackled this challenge and built a strong selection engine by implementing a committee decision model. One year after the rollout and dozens of high-performing hires, GetYourGuide's CPO Eva Glanzer will share some key insights with us: on valuable learnings the team gathered over time, the benefits of the model, and why they wished someone had explained a committee decision model to them in last year's Hive conference.",
         "talkname": "Tech Hiring at Scale without Lowering the Bar: Introducing a Hire by Committee Approach; Wins, Pitfalls and Learnings."
     },
     {
@@ -153,7 +154,7 @@
         "format": "Case Study",
         "time": "14:45",
         "talkabout": "In 2016 adidas decided to put more emphasis on digital & IT functions to cope with the fast digital change in retail industry.  Having in mind our top ambition to be the best sports company in the world we took up the challenge to ramp up our tech hubs from 100 to 280 people at multiple locations worldwide. We are going to share our challenges, learnings and success stories we faced during our ongoing journey.",
-        "talkname": "Digital Transformation at Adidas"
+        "talkname": "adidas tech recruitment"
     },
     {
         "img": "Mona_Mehler@2x.jpg",
@@ -166,7 +167,7 @@
         "format": "Case Study",
         "time": "14:45",
         "talkabout": "In 2016 adidas decided to put more emphasis on digital & IT functions to cope with the fast digital change in retail industry.  Having in mind our top ambition to be the best sports company in the world we took up the challenge to ramp up our tech hubs from 100 to 280 people at multiple locations worldwide. We are going to share our challenges, learnings and success stories we faced during our ongoing journey.",
-        "talkname": "Digital Transformation at Adidas"
+        "talkname": "adidas tech recruitment"
     },
     {
         "img": "Emma_Tracey@2x.png",
