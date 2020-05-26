@@ -61,6 +61,7 @@ export default class Main extends React.Component {
           <meta name="twitter:description" content="HiveConf is a one-day conference for HR & Talent Acquisition Leaders, Technical Hiring managers, CTOs and VPs of Engineering focused on all aspects of building & scaling great tech teams."/>
           <meta name="twitter:image" content="
 https://hive.honeypot.io/static/images/201905_HiveConf_Facebook_Cover.png"/>
+          <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="655a20ad-cf53-4ece-92a5-5416ccf68716" data-blockingmode="auto" type="text/javascript"></script>
         </Head>
 
         <Header sticky={ this.state.sticky } />
