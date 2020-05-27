@@ -23,6 +23,9 @@ const FooterLinks = [
     text: "Sponsorship",
     link: "#sponsorship"
   },{
+    text: "Privacy Policy",
+    link: "https://www.honeypot.io/en/privacy_policy/"
+  },{
     text: "Get Tickets",
     link: `https://hiveconf19.eventbrite.com/?aff=website`,
     btn: true,
